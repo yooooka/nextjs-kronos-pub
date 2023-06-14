@@ -11,6 +11,9 @@ import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
 import Drawer from "./drawer";
+import { FaArrowDown } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -22,9 +25,7 @@ export default function Home() {
               <h1 className="px-6">
                 話題のDX導入って、 何から始めればいいの？
               </h1>
-              <div className="material-symbols-rounded animate-bounce !text-6xl text-kronos-300 group-hover:text-primary-light animation-delay-[2.5s]">
-                arrow_downward
-              </div>
+              <FaArrowDown className="font-light animate-bounce text-3xl text-kronos-300 group-hover:text-primary-light animation-delay-[2.5s] mx-auto" />
               <div className="text-stone-500">Scroll</div>
             </a>
           </section>
@@ -32,9 +33,9 @@ export default function Home() {
 
         <div
           id="split-top"
-          className="lg:flex lg:flex-row relative overflow-auto"
+          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
         >
-          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10">
+          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10">
             <Drawer />
             <div className="mx-auto">
               <nav className="p-3 hidden sm:flex justify-between items-center h-12 lg:h-14">
@@ -55,9 +56,7 @@ export default function Home() {
               <menu className="m-8 not-prose font-bold mt-8">
                 <ul className="not-prose list-none space-y-4 text-lg">
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                      arrow_right_alt
-                    </span>
+                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                     <a href="#dx-explained">
                       <span className="border-b-4 border-kronos-200 pb-1">
                         DXとは？
@@ -65,9 +64,8 @@ export default function Home() {
                     </a>
                   </li>
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                      arrow_right_alt
-                    </span>
+                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
                     <a href="#steps">
                       <span className="border-b-4 border-kronos-200 pb-1">
                         DX導入の5つのステップ
@@ -75,9 +73,8 @@ export default function Home() {
                     </a>
                   </li>
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                      arrow_right_alt
-                    </span>
+                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
                     <a href="#recommendations">
                       <span className="border-b-4 border-kronos-200 pb-1">
                         5つのDXサービス
@@ -85,9 +82,8 @@ export default function Home() {
                     </a>
                   </li>
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                      arrow_right_alt
-                    </span>
+                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
                     <a href="#cases">
                       <span className="border-b-4 border-kronos-200 pb-1">
                         導入事例
@@ -95,9 +91,8 @@ export default function Home() {
                     </a>
                   </li>
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                      arrow_right_alt
-                    </span>
+                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
                     <a href="#faq">
                       <span className="border-b-4 border-kronos-200 pb-1">
                         よくある質問
@@ -152,7 +147,7 @@ export default function Home() {
                   <Image
                     alt="work on later"
                     src={title00}
-                    className="mx-auto mb-2 h-[60px] max-w-none lg:mt-4 animate"
+                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
                   />
                   <h2 className="sr-only">DXによる！</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
@@ -182,7 +177,7 @@ export default function Home() {
                   <Image
                     alt="work on later"
                     src={title01}
-                    className="mx-auto mb-2 h-[60px] max-w-none animate"
+                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
                   />
                   <h2 className="sr-only">クロノスがお手伝いする</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
@@ -278,7 +273,7 @@ export default function Home() {
                   <Image
                     alt="work on later"
                     src={title02}
-                    className="mx-auto mb-2 h-[60px] max-w-none animate"
+                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
                   />
                   <h2 className="sr-only">クロノスがおすすめする!</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
@@ -341,7 +336,7 @@ export default function Home() {
                   </div>
                   <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
                     <h3 className="text-center pb-4">
-                      バックアップにかける時間を「0」に
+                      バックアップにかける時間を"0"に
                     </h3>
                     <h3 className="sr-only">AOS BOX</h3>
                     <Image
@@ -392,9 +387,7 @@ export default function Home() {
                         Q. DXやクラウドの知識がなくても相談できますか︖
                       </span>
                       <div className="ml-auto">
-                        <span className="material-symbols-rounded opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 !text-4xl pt-1">
-                          chevron_right
-                        </span>
+                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
                       </div>
                     </summary>
                     <div className="transition-all p-6 bg-kronos-50">
@@ -410,9 +403,7 @@ export default function Home() {
                         Q. パンフレットやカタログなどはありますか？
                       </span>
                       <div className="ml-auto">
-                        <span className="material-symbols-rounded opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 !text-4xl pt-1">
-                          chevron_right
-                        </span>
+                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
                       </div>
                     </summary>
                     <div className="transition-all p-6 bg-kronos-50">
@@ -428,9 +419,7 @@ export default function Home() {
                         Q. 契約前にサービスを試すことはできますか？
                       </span>
                       <div className="ml-auto">
-                        <span className="material-symbols-rounded opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 !text-4xl pt-1">
-                          chevron_right
-                        </span>
+                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
                       </div>
                     </summary>
                     <div className="transition-all p-6 bg-kronos-50">
@@ -446,9 +435,7 @@ export default function Home() {
                         Q. 遠方でも相談や打ち合わせは可能ですか？
                       </span>
                       <div className="ml-auto">
-                        <span className="material-symbols-rounded opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 !text-4xl pt-1">
-                          chevron_right
-                        </span>
+                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
                       </div>
                     </summary>
                     <div className="transition-all p-6 bg-kronos-50">
@@ -464,9 +451,7 @@ export default function Home() {
                         Q. 導入後はどのようなサポートを受けられますか？
                       </span>
                       <div className="ml-auto">
-                        <span className="material-symbols-rounded opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 !text-4xl pt-1">
-                          chevron_right
-                        </span>
+                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
                       </div>
                     </summary>
                     <div className="transition-all p-6 bg-kronos-50">
