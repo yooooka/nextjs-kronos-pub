@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="79" viewBox="0 0 79 79">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.237" y1="0.197" x2="0.796" y2="0.838" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f96420"/>
+      <stop offset="1" stop-color="#fb843b"/>
+    </linearGradient>
+  </defs>
+  <g id="step5" transform="translate(-297 -705)">
+    <g id="Path_1094" data-name="Path 1094" transform="translate(359.424 763.692) rotate(20)" fill="#f96420">
+      <path d="M 12.71726703643799 12.02506160736084 L 4.371050357818604 12.02506160736084 L 8.544156074523926 4.930778980255127 L 12.71726703643799 12.02506160736084 Z" stroke="none"/>
+      <path d="M 8.544155120849609 1.9073486328125e-06 L 17.08830451965332 14.52506160736084 L -5.7220458984375e-06 14.52506160736084 L 8.544155120849609 1.9073486328125e-06 Z" stroke="none" fill="#cfcb87"/>
+    </g>
+    <g id="Ellipse_80" data-name="Ellipse 80" transform="translate(297 705)" stroke="#cfcb87" stroke-width="5" fill="url(#linear-gradient)">
+      <circle cx="39.5" cy="39.5" r="39.5" stroke="none"/>
+      <circle cx="39.5" cy="39.5" r="37" fill="none"/>
+    </g>
+    <text id="STEP_5" data-name="STEP
+5" transform="translate(337 734)" fill="#fff" font-size="16" font-family="NotoSans-Bold, Noto Sans" font-weight="700" letter-spacing="-0.006em"><tspan x="-18.4" y="0">STEP</tspan><tspan font-size="38" font-family="Avenir-Heavy, Avenir" font-weight="800"><tspan x="-11.248" y="33">5</tspan></tspan></text>
+  </g>
+</svg>

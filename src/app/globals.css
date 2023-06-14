@@ -1,27 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;600&family=Noto+Sans:wght@200;300;400;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  #anchor {
+    @apply scroll-smooth;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  #split-top {
+    @apply scroll-smooth;
+  }
+  .step-ol > li.arrow:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 25px 18px 0 18px;
+    border-color: #cfcb87 transparent transparent transparent;
+    opacity: 0.25;
+    bottom: -7%;
+    left: 19%;
+    right: auto;
+    transform: translate(50%, 50%);
+  }
+  details summary::-webkit-details-marker {
+    @apply hidden; /* for Safari */
+  }
+  .typewriter h1 {
+    @apply w-0;
+    border-right: 0.08em solid #cfcb87;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(21, end) forwards, caret 1s step-end 10;
+  }
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 21.3em;
+    }
+  }
+  @keyframes caret {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      @apply border-kronos-300;
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
 }
