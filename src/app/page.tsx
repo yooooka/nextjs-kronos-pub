@@ -35,7 +35,7 @@ export default function Home() {
           id="split-top"
           className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
         >
-          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10">
+          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10 relative">
             <Drawer />
             <div className="mx-auto">
               <nav className="p-3 hidden sm:flex justify-between items-center h-12 lg:h-14">

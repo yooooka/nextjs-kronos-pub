@@ -20,8 +20,8 @@ const Drawer: React.FC = () => {
       </button>
       <div
         className={`${
-          isOpen ? "block" : "hidden"
-        } absolute right-0 bg-primary h-screen w-64`}
+          isOpen ? "opacity-0 -right-[100%]" : "block right-0"
+        } fixed top-0 right-0 z-10 max-w-screen-sm h-full transition-all duration-500 bg-kronos-50/60 backdrop-blur-md`}
       >
         <button onClick={toggleDrawer}>Close</button>
         <menu className="m-8 not-prose font-bold mt-8">
