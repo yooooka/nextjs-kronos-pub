@@ -4,15 +4,19 @@ import aosbox from "./assets/aosbox.svg";
 import gmoLogin from "./assets/gmo-logo.svg";
 import gmoSign from "./assets/gmosign.svg";
 import samba from "./assets/mv-logo.svg";
+import title00 from "./assets/title00.svg";
+import title01 from "./assets/title01.svg";
+import title02 from "./assets/title02.svg";
+import helpDesk from "./assets/help-desk.svg";
+import consultation from "./assets/consultation.svg";
+import filesLaptop from "./assets/files-laptop.svg";
+import Drawer from "./drawer";
 
 export default function Home() {
   return (
     <>
-      <div
-        id="anchor"
-        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
-      >
-        <header className="snap-start snap-always">
+      <div id="anchor" className="text-stone-900 h-screen overflow-y-scroll">
+        <header>
           <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
             <a href="#split-top" className="group no-underline">
               <h1 className="px-6">
@@ -28,32 +32,26 @@ export default function Home() {
 
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
+          className="lg:flex lg:flex-row relative overflow-auto"
         >
-          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10">
-            <input
-              type="checkbox"
-              id="drawer-toggle"
-              className="relative sr-only peer group h-0"
-              checked
-            />
-            <label
-              htmlFor="drawer-toggle"
-              className="inline-block rounded-full bg-neptune-600 p-3 text-white hover:bg-neptune-200 hover:text-neptune-600 focus:outline-none focus:ring active:text-neptune-500 fixed bottom-5 right-5 z-20 peer-checked:rotate-0 shadow-md"
-            >
-              <span className="sr-only">ナビゲーション</span>
-              <span className="material-symbols-rounded !text-[28px] !leading-[33px] w-8 h-8 text-center align-middle group-checked:hidden transition-all duration-500">
-                menu
-              </span>
-            </label>
-
-            <div className="fixed top-0 right-0 z-10 max-w-screen-sm h-full transition-all duration-500 transform peer-checked:translate-x-full bg-white shadow-lg -translate-x-0 bg-kronos-50/60 backdrop-blur-md">
-              <nav className="p-3 flex justify-between items-center h-12 lg:h-14">
-                <div className="bg-[url('/src/assets/kronos.svg')] bg-no-repeat w-[200px] h-[36px]">
+          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10">
+            <Drawer />
+            <div className="mx-auto">
+              <nav className="p-3 hidden sm:flex justify-between items-center h-12 lg:h-14">
+                <div className="bg-[url('/src/assets/kronos.svg')] bg-no-repeat w-[200px] h-[36px] absolute top-3 left-6">
                   <span className="sr-only">Kronos</span>
                 </div>
               </nav>
-
+              <div className="mx-auto prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:leading-7 max-w-xl">
+                <h1 className="text-4xl text-center">寄り添い力</h1>
+                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
+                  株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い。
+                </h2>
+                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
+                  ITのプロフェッショナルが
+                  継続した業務効率化でビジネスを成功に導きます。
+                </h2>
+              </div>
               <menu className="m-8 not-prose font-bold mt-8">
                 <ul className="not-prose list-none space-y-4 text-lg">
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
@@ -108,54 +106,6 @@ export default function Home() {
                   </li>
                 </ul>
               </menu>
-
-              <section className="w-full flex items-center place-content-center p-4 flex-col">
-                <div className="text-sm p-2">
-                  <span>もっと詳しく知りたい／導入を検討したい</span>
-                  <p>DXって何？という方も、まずはご相談を！</p>
-                </div>
-
-                <a href="#contact">
-                  <button className="prose group relative inline-flex items-center rounded-lg bg-secondary px-8 py-3 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
-                    <span className="absolute -end-full opacity-0 transition-all group-hover:end-4 group-hover:opacity-100">
-                      <svg
-                        className="h-5 w-5 rtl:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </span>
-                    <span className="font-semibold transition-all group-hover:me-4">
-                      お問合せはこちら
-                    </span>
-                  </button>
-                </a>
-              </section>
-            </div>
-            <div className="mx-auto">
-              <nav className="p-3 hidden sm:flex justify-between items-center h-12 lg:h-14">
-                <div className="bg-[url('/src/assets/kronos.svg')] bg-no-repeat w-[200px] h-[36px] absolute top-3 left-6">
-                  <span className="sr-only">Kronos</span>
-                </div>
-              </nav>
-              <div className="mx-auto prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:leading-7 max-w-xl">
-                <h1 className="text-4xl text-center">寄り添い力</h1>
-                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
-                  株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い。
-                </h2>
-                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
-                  ITのプロフェッショナルが
-                  継続した業務効率化でビジネスを成功に導きます。
-                </h2>
-              </div>
             </div>
             <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full z-10 hidden sm:flex items-center place-content-center p-4 flex-wrap">
               <div className="text-sm p-2">
@@ -187,6 +137,7 @@ export default function Home() {
               </a>
             </section>
           </aside>
+
           <main className="lg:flex-[0_0_50%] lg:w-[50%]">
             <div className="bg-kronos-50">
               <Image
@@ -199,9 +150,8 @@ export default function Home() {
               <section id="dx-explained">
                 <div className="p-12">
                   <Image
-                    fill={true}
                     alt="work on later"
-                    src="/src/assets/title00.svg"
+                    src={title00}
                     className="mx-auto mb-2 h-[60px] max-w-none lg:mt-4 animate"
                   />
                   <h2 className="sr-only">DXによる！</h2>
@@ -230,9 +180,8 @@ export default function Home() {
               <section id="steps">
                 <div className="p-12">
                   <Image
-                    fill={true}
                     alt="work on later"
-                    src="/src/assets/title01.svg"
+                    src={title01}
                     className="mx-auto mb-2 h-[60px] max-w-none animate"
                   />
                   <h2 className="sr-only">クロノスがお手伝いする</h2>
@@ -256,7 +205,7 @@ export default function Home() {
                       </span>
                     </li>
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-[url('/src/assets/files-laptop.svg')] bg-no-repeat bg-center"></span>
+                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-[url('./assets/files-laptop.svg')] bg-no-repeat bg-center"></span>
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
@@ -327,9 +276,8 @@ export default function Home() {
               <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
                 <div className="mx-auto prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
                   <Image
-                    fill={true}
                     alt="work on later"
-                    src="/src/assets/title02.svg"
+                    src={title02}
                     className="mx-auto mb-2 h-[60px] max-w-none animate"
                   />
                   <h2 className="sr-only">クロノスがおすすめする!</h2>
@@ -393,7 +341,7 @@ export default function Home() {
                   </div>
                   <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
                     <h3 className="text-center pb-4">
-                      バックアップにかける時間を"0"に
+                      バックアップにかける時間を「0」に
                     </h3>
                     <h3 className="sr-only">AOS BOX</h3>
                     <Image
