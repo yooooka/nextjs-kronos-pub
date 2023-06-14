@@ -1,5 +1,9 @@
 import Image from "next/image";
 import hero from "./assets/hero.svg";
+import aosbox from "./assets/aosbox.svg";
+import gmoLogin from "./assets/gmo-logo.svg";
+import gmoSign from "./assets/gmosign.svg";
+import samba from "./assets/mv-logo.svg";
 
 export default function Home() {
   return (
@@ -151,60 +155,6 @@ export default function Home() {
                   ITのプロフェッショナルが
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
-                <menu className="hidden sm:block m-auto w-72 sm:w-full not-prose font-bold mt-8">
-                  <ul className="not-prose list-none space-y-4 text-lg">
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                        arrow_right_alt
-                      </span>
-                      <a href="#dx-explained">
-                        <span className="border-b-4 border-kronos-200 pb-1">
-                          DXとは？
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                        arrow_right_alt
-                      </span>
-                      <a href="#steps">
-                        <span className="border-b-4 border-kronos-200 pb-1">
-                          DX導入の5つのステップ
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                        arrow_right_alt
-                      </span>
-                      <a href="#recommendations">
-                        <span className="border-b-4 border-kronos-200 pb-1">
-                          5つのDXサービス
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                        arrow_right_alt
-                      </span>
-                      <a href="#cases">
-                        <span className="border-b-4 border-kronos-200 pb-1">
-                          導入事例
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <span className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 !text-3xl">
-                        arrow_right_alt
-                      </span>
-                      <a href="#faq">
-                        <span className="border-b-4 border-kronos-200 pb-1">
-                          よくある質問
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </menu>
               </div>
             </div>
             <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full z-10 hidden sm:flex items-center place-content-center p-4 flex-wrap">
@@ -240,9 +190,9 @@ export default function Home() {
           <main className="lg:flex-[0_0_50%] lg:w-[50%]">
             <div className="bg-kronos-50">
               <Image
-                alt="work on later"
+                alt="hero image"
                 src={hero}
-                className="lg:h-[100vh] h-[58vh] m-auto pt-4"
+                className="lg:w-full lg:h-[100vh] h-[58vh] m-auto pt-4"
               />
             </div>
             <div className="mx-auto prose prose-stone prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
@@ -405,9 +355,8 @@ export default function Home() {
                     </h3>
                     <h3 className="sr-only">トラスト・ログイン</h3>
                     <Image
-                      fill={true}
-                      src="/src/assets/gmo-logo.svg"
-                      className="max-w-[300px] m-auto pb-4"
+                      src={gmoLogin}
+                      className="max-w-[200px] m-auto pb-4"
                       alt="GMO トラストログイン"
                     />
                     <p className="mt-1">
@@ -420,8 +369,7 @@ export default function Home() {
                     </h3>
                     <h3 className="sr-only">GMO サイン</h3>
                     <Image
-                      fill={true}
-                      src="/src/assets/gmosign.svg"
+                      src={gmoSign}
                       className="max-w-[200px] m-auto pb-4"
                       alt="GMO サイン"
                     />
@@ -435,8 +383,7 @@ export default function Home() {
                     </h3>
                     <h3 className="sr-only">セキュアSAMBA</h3>
                     <Image
-                      fill={true}
-                      src="/src/assets/mv-logo.svg"
+                      src={samba}
                       className="max-w-[180px] m-auto pb-4"
                       alt="セキュアSAMBA"
                     />
@@ -450,8 +397,7 @@ export default function Home() {
                     </h3>
                     <h3 className="sr-only">AOS BOX</h3>
                     <Image
-                      fill={true}
-                      src="/src/assets/aosbox.svg"
+                      src={aosbox}
                       className="max-w-[180px] m-auto pb-4"
                       alt="AOS BOX"
                     />
