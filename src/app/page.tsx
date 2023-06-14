@@ -7,6 +7,7 @@ import samba from "./assets/mv-logo.svg";
 import title00 from "./assets/title00.svg";
 import title01 from "./assets/title01.svg";
 import title02 from "./assets/title02.svg";
+import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
@@ -38,9 +39,10 @@ export default function Home() {
           <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10 relative">
             <Drawer />
             <div className="mx-auto">
-              <nav className="p-3 hidden sm:flex justify-between items-center h-12 lg:h-14">
-                <div className="bg-[url('/src/assets/kronos.svg')] bg-no-repeat w-[200px] h-[36px] absolute top-3 left-6">
+              <nav className="p-3 sm:flex justify-between items-center h-12 lg:h-14">
+                <div className="bg-no-repeat w-[200px] h-[36px] absolute top-3 left-6">
                   <span className="sr-only">Kronos</span>
+                  <Image src={kronos} alt="クロノス　ロゴ" fill />
                 </div>
               </nav>
               <div className="mx-auto prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:leading-7 max-w-xl">

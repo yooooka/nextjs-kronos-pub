@@ -14,14 +14,14 @@ const Drawer: React.FC = () => {
     <div>
       <button
         onClick={toggleDrawer}
-        className="z-30 inline-block rounded-full bg-neptune-600 p-4 text-white hover:bg-neptune-200 hover:text-neptune-600 focus:outline-none focus:ring active:text-neptune-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-md"
+        className="z-30 inline-block rounded-full bg-neptune-600 p-4 text-white hover:bg-neptune-200 hover:text-neptune-600 focus:outline-none focus:ring ring-primary-light active:text-neptune-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-md"
       >
         <FaBars className="text-2xl" />
       </button>
       <div
-        className={`${
-          isOpen ? "opacity-0 -right-[100%]" : "block right-0"
-        } fixed top-0 right-0 z-10 max-w-screen-sm h-full transition-all duration-500 bg-kronos-50/60 backdrop-blur-md`}
+        className={`fixed top-0 right-0 z-10 max-w-screen-sm h-full transition-all duration-500 ease-in-out bg-kronos-50/60 backdrop-blur-md transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button onClick={toggleDrawer}>Close</button>
         <menu className="m-8 not-prose font-bold mt-8">

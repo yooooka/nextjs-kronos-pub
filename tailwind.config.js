@@ -79,6 +79,9 @@ module.exports = {
         slidingLeft: "slidingLeft .6s ease-in",
         bounce: "bounce 1s ease 10",
       },
+      backgroundImage: {
+        kronosLogo: "url('./assets/kronos.svg')",
+      },
     },
 
     backgroundSize: {
