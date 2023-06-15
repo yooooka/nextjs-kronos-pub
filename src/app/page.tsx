@@ -227,7 +227,7 @@ export default function Home() {
                       <Image
                         src={helpDesk}
                         alt="ヒアリングイメージ"
-                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
                       />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
@@ -246,7 +246,7 @@ export default function Home() {
                       <Image
                         src={filesLaptop}
                         alt="DXプランのご提案イメージ"
-                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
                       />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
@@ -267,7 +267,7 @@ export default function Home() {
                       <Image
                         src={consultation}
                         alt="DXプランの検討イメージ"
-                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
                       />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
@@ -286,9 +286,9 @@ export default function Home() {
                     </li>
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
                       <Image
-                        src={helpDesk}
+                        src={filesLaptop}
                         alt="導入イメージ"
-                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
                       />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
@@ -307,7 +307,7 @@ export default function Home() {
                       <Image
                         src={helpDesk}
                         alt="継続支援イメージ"
-                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
                       />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">

@@ -41,11 +41,11 @@ const Drawer: React.FC = () => {
       </button>
       <div className="">
         <div
-          className={`fixed top-0 right-0 z-10 max-w-screen-md h-full transition-all duration-500 ease-in-out bg-kronos-50/60 backdrop-blur-lg transform ${
+          className={`fixed top-0 right-0 z-10 max-w-screen-md flex flex-col justify-end h-full transition-all duration-500 ease-in-out bg-kronos-50/60 backdrop-blur-lg transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <menu className="m-8 not-prose font-bold mt-8">
+          <menu className="m-8 not-prose font-bold mb-32">
             <ul className="not-prose list-none space-y-4 text-lg">
               <li className="group flex items-center place-content-end hover:cursor-pointer">
                 <FaArrowRight className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
