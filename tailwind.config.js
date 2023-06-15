@@ -63,23 +63,10 @@ module.exports = {
           950: "#23240f",
         },
       },
-      keyframes: {
-        fadeIn: {
-          from: { transform: "translateY(10px)", opacity: 0 },
-          to: { transform: "translateY(0px)", opacity: 1 },
-        },
-        slidingLeft: {
-          from: { transform: "translateX(-6px)", opacity: 0 },
-          to: { transform: "translateX(0px)", opacity: 1 },
-        },
-      },
-      animation: {
-        fadeIn: "fadeIn 1s ease-in-out",
-        slidingLeft: "slidingLeft .6s ease-in",
-        bounce: "bounce 1s ease 10",
+      backgroundImage: {
+        kshape: "url('/k.svg')",
       },
     },
-
     backgroundSize: {
       85: "85%",
       90: "90%",

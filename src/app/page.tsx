@@ -27,7 +27,6 @@ const titleVariants: Variants = {
     y: 0,
     opacity: 1,
     transition: {
-      style: "tween",
       duration: 0.4,
     },
   },
@@ -38,7 +37,7 @@ export default function Home() {
     <>
       <div
         id="anchor"
-        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
+        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll bg-kshape"
       >
         <header className="snap-start snap-always">
           <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
@@ -405,7 +404,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section id="cases" className="bg-kronos-100 text-stone-900">
+            <section id="cases" className="bg-kronos-50 text-stone-900">
               <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">導入事例</h2>
                 <span className="text-center text-primary font-semibold block text-lg pb-4">
