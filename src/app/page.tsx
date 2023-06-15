@@ -13,6 +13,7 @@ import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
+import KShape from "./kshape";
 import Drawer from "./drawer";
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -21,7 +22,7 @@ import { motion, Variants } from "framer-motion";
 
 const titleVariants: Variants = {
   offscreen: {
-    y: 40,
+    y: 70,
     opacity: 0,
   },
   onscreen: {
@@ -37,8 +38,11 @@ const titleVariants: Variants = {
 export default function Home() {
   return (
     <>
-      <div id="anchor" className="text-stone-900 h-screen overflow-y-scroll">
-        <header>
+      <div
+        id="anchor"
+        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
+      >
+        <header className="snap-start snap-always">
           <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
             <a href="#split-top" className="group no-underline">
               <h1 className="px-6">
@@ -56,9 +60,9 @@ export default function Home() {
         >
           <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10 relative">
             <Drawer />
-            <div className="mx-auto">
+            <div className="mx-auto flex justify-center items-center flex-col lg:min-h-full">
               <nav className="p-3 sm:flex justify-between items-center h-12 lg:h-14">
-                <div className="bg-no-repeat w-[200px] h-[36px] absolute top-3 left-6">
+                <div className="bg-no-repeat w-[120px] h-[36px] absolute top-3 left-6">
                   <span className="sr-only">Kronos</span>
                   <Image src={kronos} alt="クロノス　ロゴ" fill />
                 </div>
@@ -72,55 +76,55 @@ export default function Home() {
                   ITのプロフェッショナルが
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
+                <menu className="m-8 mt-0 not-prose font-bold mx-auto max-w-sm hidden sm:block">
+                  <ul className="not-prose list-none space-y-4 text-lg">
+                    <li className="group flex items-center place-content-end hover:cursor-pointer">
+                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <a href="#dx-explained">
+                        <span className="border-b-4 border-kronos-200 pb-1">
+                          DXとは？
+                        </span>
+                      </a>
+                    </li>
+                    <li className="group flex items-center place-content-end hover:cursor-pointer">
+                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
+                      <a href="#steps">
+                        <span className="border-b-4 border-kronos-200 pb-1">
+                          DX導入の5つのステップ
+                        </span>
+                      </a>
+                    </li>
+                    <li className="group flex items-center place-content-end hover:cursor-pointer">
+                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
+                      <a href="#recommendations">
+                        <span className="border-b-4 border-kronos-200 pb-1">
+                          5つのDXサービス
+                        </span>
+                      </a>
+                    </li>
+                    <li className="group flex items-center place-content-end hover:cursor-pointer">
+                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
+                      <a href="#cases">
+                        <span className="border-b-4 border-kronos-200 pb-1">
+                          導入事例
+                        </span>
+                      </a>
+                    </li>
+                    <li className="group flex items-center place-content-end hover:cursor-pointer">
+                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+
+                      <a href="#faq">
+                        <span className="border-b-4 border-kronos-200 pb-1">
+                          よくある質問
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </menu>
               </div>
-              <menu className="m-8 not-prose font-bold mx-auto max-w-sm">
-                <ul className="not-prose list-none space-y-4 text-lg">
-                  <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-                    <a href="#dx-explained">
-                      <span className="border-b-4 border-kronos-200 pb-1">
-                        DXとは？
-                      </span>
-                    </a>
-                  </li>
-                  <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
-                    <a href="#steps">
-                      <span className="border-b-4 border-kronos-200 pb-1">
-                        DX導入の5つのステップ
-                      </span>
-                    </a>
-                  </li>
-                  <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
-                    <a href="#recommendations">
-                      <span className="border-b-4 border-kronos-200 pb-1">
-                        5つのDXサービス
-                      </span>
-                    </a>
-                  </li>
-                  <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
-                    <a href="#cases">
-                      <span className="border-b-4 border-kronos-200 pb-1">
-                        導入事例
-                      </span>
-                    </a>
-                  </li>
-                  <li className="group flex items-center place-content-end hover:cursor-pointer">
-                    <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
-                    <a href="#faq">
-                      <span className="border-b-4 border-kronos-200 pb-1">
-                        よくある質問
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </menu>
             </div>
             <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full z-10 hidden sm:flex items-center place-content-center p-4 flex-wrap">
               <div className="text-sm p-2">
@@ -167,7 +171,7 @@ export default function Home() {
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0 }}
                     variants={titleVariants}
                   >
                     <Image
@@ -204,7 +208,7 @@ export default function Home() {
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0 }}
                     variants={titleVariants}
                   >
                     <Image
@@ -328,7 +332,7 @@ export default function Home() {
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0 }}
                     variants={titleVariants}
                   >
                     <Image
