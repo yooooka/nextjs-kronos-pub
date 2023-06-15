@@ -64,7 +64,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        kshape: "url('/k.svg')",
+        kshape: "url('./assets/k.svg')",
       },
     },
     backgroundSize: {
