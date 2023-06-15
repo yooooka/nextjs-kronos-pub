@@ -15,9 +15,7 @@ import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
 import KShape from "./kshape";
 import Drawer from "./drawer";
-import { FaArrowDown } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
 import { motion, Variants } from "framer-motion";
 
 const titleVariants: Variants = {
@@ -126,30 +124,18 @@ export default function Home() {
                 </menu>
               </div>
             </div>
-            <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full z-10 hidden sm:flex items-center place-content-center p-4 flex-wrap">
+            <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap">
               <div className="text-sm p-2">
                 <span>もっと詳しく知りたい／導入を検討したい</span>
                 <p>DXって何？という方も、まずはご相談を！</p>
               </div>
               <a href="#contact">
                 <button className="prose group relative inline-flex items-center rounded-lg bg-primary px-8 py-3 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
-                  <span className="absolute -end-full opacity-0 transition-all group-hover:end-4 group-hover:opacity-100">
-                    <svg
-                      className="h-5 w-5 rtl:rotate-180"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </span>
-                  <span className="font-semibold transition-all group-hover:me-4">
+                  <FaArrowRight
+                    fill="currentColor"
+                    className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100"
+                  />
+                  <span className="font-semibold transition-all group-hover:me-3">
                     お問合せはこちら
                   </span>
                 </button>
@@ -223,7 +209,7 @@ export default function Home() {
                     DX導入の5つのステップ
                   </h2>
                   <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
+                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={helpDesk}
                         alt="ヒアリングイメージ"
@@ -242,7 +228,7 @@ export default function Home() {
                         まずは、お客様の現状の課題やご要望をじっくりヒアリングします。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
+                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={filesLaptop}
                         alt="DXプランのご提案イメージ"
@@ -263,7 +249,7 @@ export default function Home() {
                         お客様の課題の解決に向けて、最適な製品・サービスをご提案します。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
+                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={consultation}
                         alt="DXプランの検討イメージ"
@@ -284,7 +270,7 @@ export default function Home() {
                         お客様と共に「効率化」「継続化」の観点で、製品・サービスを検討します。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
+                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={filesLaptop}
                         alt="導入イメージ"
@@ -303,7 +289,7 @@ export default function Home() {
                         当社がお客様に「寄り添い」ながら、製品・サービスの導入をご支援します。
                       </span>
                     </li>
-                    <li className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
+                    <li className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={helpDesk}
                         alt="継続支援イメージ"
