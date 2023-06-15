@@ -46,7 +46,7 @@ const Drawer: React.FC = () => {
           }`}
         >
           <menu className="m-8 not-prose font-bold mb-32">
-            <ul className="not-prose list-none space-y-4 text-lg">
+            <ul className="not-prose list-none space-y-8 text-lg">
               <li className="group flex items-center place-content-end hover:cursor-pointer">
                 <FaArrowRight className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                 <a href="#dx-explained" onClick={toggleDrawer}>

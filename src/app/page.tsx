@@ -77,7 +77,7 @@ export default function Home() {
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
                 <menu className="m-8 mt-0 not-prose font-bold mx-auto max-w-sm hidden sm:block">
-                  <ul className="not-prose list-none space-y-4 text-lg">
+                  <ul className="not-prose list-none space-y-6 text-lg">
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                       <a href="#dx-explained">
