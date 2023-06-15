@@ -6,6 +6,12 @@ https://www.npmjs.com/package/react-icons
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Todo
+
+Don't forget minify output.css
+SVG font not working on Safari
+Prefers contrast on Form
+
 ## Getting Started
 
 First, run the development server:

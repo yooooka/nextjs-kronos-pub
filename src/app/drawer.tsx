@@ -1,18 +1,34 @@
 "use client";
 
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+import React, { useState, useEffect, useRef } from "react";
+import { FaBars, FaArrowRight, FaTimes } from "react-icons/fa";
 
 const Drawer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const node = useRef<HTMLDivElement | null>(null);
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (e: MouseEvent) => {
+    if (node.current && !node.current.contains(e.target as Node)) {
+      // outside click
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // add when mounted
+    document.addEventListener("mousedown", handleClickOutside);
+    // return function to be called when unmounted
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div>
+    <div ref={node}>
       <button
         onClick={toggleDrawer}
         className="z-30 inline-block rounded-full bg-neptune-600 p-4 text-white hover:bg-neptune-200 hover:text-neptune-600 focus:outline-none active:text-neptune-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-lg"
@@ -29,7 +45,6 @@ const Drawer: React.FC = () => {
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <button onClick={toggleDrawer}>Close</button>
           <menu className="m-8 not-prose font-bold mt-8">
             <ul className="not-prose list-none space-y-4 text-lg">
               <li className="group flex items-center place-content-end hover:cursor-pointer">
