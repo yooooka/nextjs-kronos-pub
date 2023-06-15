@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin");
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -78,9 +77,6 @@ module.exports = {
         fadeIn: "fadeIn 1s ease-in-out",
         slidingLeft: "slidingLeft .6s ease-in",
         bounce: "bounce 1s ease 10",
-      },
-      backgroundImage: {
-        kronosLogo: "url('./assets/kronos.svg')",
       },
     },
 

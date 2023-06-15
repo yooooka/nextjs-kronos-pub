@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import hero from "./assets/hero.svg";
 import aosbox from "./assets/aosbox.svg";
@@ -15,6 +17,7 @@ import Drawer from "./drawer";
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -146,11 +149,20 @@ export default function Home() {
             <div className="mx-auto prose prose-stone prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
               <section id="dx-explained">
                 <div className="p-12">
-                  <Image
-                    alt="work on later"
-                    src={title00}
-                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
-                  />
+                  <motion.div
+                    animate={{ y: [20, 0], opacity: [0, 1] }}
+                    transition={{
+                      duration: 1,
+                      ease: "easeInOut",
+                      repeat: Infinity,
+                    }}
+                  >
+                    <Image
+                      alt="work on later"
+                      src={title00}
+                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                    />
+                  </motion.div>
                   <h2 className="sr-only">DXによる！</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
                     効率化
@@ -187,7 +199,11 @@ export default function Home() {
                   </h2>
                   <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-no-repeat bg-center bg-kronos-200"></span>
+                      <Image
+                        src={helpDesk}
+                        alt="ヒアリングイメージ"
+                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                      />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
@@ -202,7 +218,11 @@ export default function Home() {
                       </span>
                     </li>
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-[url('./assets/files-laptop.svg')] bg-no-repeat bg-center"></span>
+                      <Image
+                        src={filesLaptop}
+                        alt="DXプランのご提案イメージ"
+                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                      />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
@@ -219,7 +239,11 @@ export default function Home() {
                       </span>
                     </li>
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-[url('/src/assets/consultation.svg')] bg-no-repeat bg-center"></span>
+                      <Image
+                        src={consultation}
+                        alt="DXプランの検討イメージ"
+                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                      />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
@@ -236,7 +260,11 @@ export default function Home() {
                       </span>
                     </li>
                     <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-no-repeat bg-center bg-kronos-200"></span>
+                      <Image
+                        src={helpDesk}
+                        alt="導入イメージ"
+                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                      />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
@@ -251,7 +279,11 @@ export default function Home() {
                       </span>
                     </li>
                     <li className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start relative">
-                      <span className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto p-2 rounded-lg bg-[url('/src/assets/help-desk.svg')] bg-no-repeat bg-center"></span>
+                      <Image
+                        src={helpDesk}
+                        alt="継続支援イメージ"
+                        className="col-start-1 sm:row-span-2 w-[200px] h-[181px] mb-4 sm:mb-0 m-auto"
+                      />
                       <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
                         <span className="slide">
                           <span className="text-primary font-black">STEP</span>
