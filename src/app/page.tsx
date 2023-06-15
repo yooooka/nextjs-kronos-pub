@@ -403,7 +403,7 @@ export default function Home() {
                   </div>
                   <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
                     <h3 className="text-center pb-4">
-                      バックアップにかける時間を"0"に
+                      バックアップにかける時間を「0」に
                     </h3>
                     <h3 className="sr-only">AOS BOX</h3>
                     <Image
