@@ -17,7 +17,22 @@ import Drawer from "./drawer";
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+
+const titleVariants: Variants = {
+  offscreen: {
+    y: 40,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      style: "tween",
+      duration: 0.4,
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -58,7 +73,7 @@ export default function Home() {
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
               </div>
-              <menu className="m-8 not-prose font-bold mt-8">
+              <menu className="m-8 not-prose font-bold mx-auto max-w-sm">
                 <ul className="not-prose list-none space-y-4 text-lg">
                   <li className="group flex items-center place-content-end hover:cursor-pointer">
                     <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
@@ -150,12 +165,10 @@ export default function Home() {
               <section id="dx-explained">
                 <div className="p-12">
                   <motion.div
-                    animate={{ y: [20, 0], opacity: [0, 1] }}
-                    transition={{
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }}
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: false, amount: 0.8 }}
+                    variants={titleVariants}
                   >
                     <Image
                       alt="work on later"
@@ -188,11 +201,19 @@ export default function Home() {
               </section>
               <section id="steps">
                 <div className="p-12">
-                  <Image
-                    alt="work on later"
-                    src={title01}
-                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
-                  />
+                  <motion.div
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: false, amount: 0.8 }}
+                    variants={titleVariants}
+                  >
+                    <Image
+                      alt="work on later"
+                      src={title01}
+                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                    />
+                  </motion.div>
+
                   <h2 className="sr-only">クロノスがお手伝いする</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
                     DX導入の5つのステップ
@@ -304,11 +325,19 @@ export default function Home() {
             <section id="recommendations">
               <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
                 <div className="mx-auto prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
-                  <Image
-                    alt="work on later"
-                    src={title02}
-                    className="mx-auto mb-2 h-[60px] max-w-none animate object-contain"
-                  />
+                  <motion.div
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: false, amount: 0.8 }}
+                    variants={titleVariants}
+                  >
+                    <Image
+                      alt="work on later"
+                      src={title02}
+                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                    />
+                  </motion.div>
+
                   <h2 className="sr-only">クロノスがおすすめする!</h2>
                   <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
                     5つのDXサービス

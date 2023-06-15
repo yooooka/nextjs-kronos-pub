@@ -1,3 +1,9 @@
+## Note for Kronos LP
+
+https://www.framer.com/motion/
+https://react-icons.github.io/react-icons/
+https://www.npmjs.com/package/react-icons
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
