@@ -6,15 +6,16 @@ import aosbox from "./assets/aosbox.svg";
 import gmoLogin from "./assets/gmo-logo.svg";
 import gmoSign from "./assets/gmosign.svg";
 import samba from "./assets/mv-logo.svg";
-import title00 from "./assets/title00.svg";
 import title01 from "./assets/title01.svg";
 import title02 from "./assets/title02.svg";
+import title03 from "./assets/title03.svg";
 import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
 import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
+import Faq from "./faq";
 import Drawer from "./drawer";
 import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
 import { MdOutlineSouth } from "react-icons/md";
@@ -89,7 +90,7 @@ export default function Home() {
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                       <a href="#dx-explained">
-                        <span className="border-b-4 border-kronos-200 pb-1">
+                        <span className="border-b-4 border-kronos-400 pb-1">
                           DXとは？
                         </span>
                       </a>
@@ -98,7 +99,7 @@ export default function Home() {
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
 
                       <a href="#steps">
-                        <span className="border-b-4 border-kronos-200 pb-1">
+                        <span className="border-b-4 border-kronos-400 pb-1">
                           DX導入の5つのステップ
                         </span>
                       </a>
@@ -107,7 +108,7 @@ export default function Home() {
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
 
                       <a href="#recommendations">
-                        <span className="border-b-4 border-kronos-200 pb-1">
+                        <span className="border-b-4 border-kronos-400 pb-1">
                           5つのDXサービス
                         </span>
                       </a>
@@ -116,7 +117,7 @@ export default function Home() {
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
 
                       <a href="#cases">
-                        <span className="border-b-4 border-kronos-200 pb-1">
+                        <span className="border-b-4 border-kronos-400 pb-1">
                           導入事例
                         </span>
                       </a>
@@ -125,7 +126,7 @@ export default function Home() {
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
 
                       <a href="#faq">
-                        <span className="border-b-4 border-kronos-200 pb-1">
+                        <span className="border-b-4 border-kronos-400 pb-1">
                           よくある質問
                         </span>
                       </a>
@@ -171,18 +172,18 @@ export default function Home() {
                     variants={titleVariants}
                   >
                     <Image
-                      alt="work on later"
-                      src={title00}
-                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                      alt="DXによる"
+                      src={title01}
+                      className="mx-auto mb-4 h-[60px] max-w-none object-contain"
                     />
                   </motion.div>
-                  <h2 className="sr-only">DXによる！</h2>
-                  <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
-                    効率化
+                  <h2 className="sr-only">DXによる</h2>
+                  <h2 className="pb-2 m-auto w-fit">
+                    「効率化」
                     <span className="text-kronos text-3xl lg:text-4xl align-middle font-normal">
                       ×
                     </span>
-                    継続化で効果を最大化
+                    「継続化」で効果を最大化
                   </h2>
                   <div className="pt-12">
                     <p>
@@ -208,16 +209,14 @@ export default function Home() {
                     variants={titleVariants}
                   >
                     <Image
-                      alt="work on later"
-                      src={title01}
-                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                      alt="クロノスがお手伝いする"
+                      src={title02}
+                      className="mx-auto mb-4 h-[60px] max-w-none object-contain"
                     />
                   </motion.div>
 
                   <h2 className="sr-only">クロノスがお手伝いする</h2>
-                  <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
-                    DX導入の5つのステップ
-                  </h2>
+                  <h2 className="pb-2 m-auto w-fit">DX導入の5つのステップ</h2>
                   <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
                     <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
@@ -332,16 +331,14 @@ export default function Home() {
                     variants={titleVariants}
                   >
                     <Image
-                      alt="work on later"
-                      src={title02}
-                      className="mx-auto mb-2 h-[60px] max-w-none object-contain"
+                      alt="クロノスがおすすめする"
+                      src={title03}
+                      className="mx-auto mb-4 h-[60px] max-w-none object-contain"
                     />
                   </motion.div>
 
-                  <h2 className="sr-only">クロノスがおすすめする!</h2>
-                  <h2 className="border-b-4 border-kronos-300 pb-2 m-auto w-fit">
-                    5つのDXサービス
-                  </h2>
+                  <h2 className="sr-only">クロノスがおすすめする</h2>
+                  <h2 className="pb-2 m-auto w-fit">5つのDXサービス</h2>
                 </div>
                 <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min isolate">
                   <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
@@ -417,11 +414,11 @@ export default function Home() {
 
             <section
               id="cases"
-              className="bg-kronos-100 text-stone-900 relative"
+              className="bg-kronos-50 text-stone-900 relative"
             >
               <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
+                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   CASE STUDY
                 </span>
                 <h3>相談内容</h3>
@@ -443,13 +440,14 @@ export default function Home() {
             <section id="faq" className="isolate">
               <div className="mx-auto max-w-screen-md prose prose-stone p-12 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">よくある質問</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
+                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   FAQ
                 </span>
-                <div className="not-prose bg-white overflow-hidden mx-auto mb-12">
+                <Faq />
+                <div className="not-prose overflow-hidden mx-auto mb-12">
                   <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-kronos-200 cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:first-letter:text-kronos-300 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-primary">
+                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
+                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
                         Q. DXやクラウドの知識がなくても相談できますか︖
                       </span>
                       <div className="ml-auto">
@@ -464,8 +462,8 @@ export default function Home() {
                     </div>
                   </details>
                   <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-kronos-200 cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:first-letter:text-kronos-300 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-primary">
+                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
+                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
                         Q. パンフレットやカタログなどはありますか？
                       </span>
                       <div className="ml-auto">
@@ -480,8 +478,8 @@ export default function Home() {
                     </div>
                   </details>
                   <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-kronos-200 cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:first-letter:text-kronos-300 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-primary">
+                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
+                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
                         Q. 契約前にサービスを試すことはできますか？
                       </span>
                       <div className="ml-auto">
@@ -496,8 +494,8 @@ export default function Home() {
                     </div>
                   </details>
                   <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-kronos-200 cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:first-letter:text-kronos-300 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-primary">
+                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
+                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
                         Q. 遠方でも相談や打ち合わせは可能ですか？
                       </span>
                       <div className="ml-auto">
@@ -512,8 +510,8 @@ export default function Home() {
                     </div>
                   </details>
                   <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-kronos-200 cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:first-letter:text-kronos-300 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-primary">
+                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
+                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
                         Q. 導入後はどのようなサポートを受けられますか？
                       </span>
                       <div className="ml-auto">
@@ -530,10 +528,10 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section id="contact" className="bg-kronos-100">
+            <section id="contact" className="bg-kronos-50">
               <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">お問合せフォーム</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
+                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   CONTACT
                 </span>
                 <p>
@@ -683,7 +681,7 @@ export default function Home() {
                       </span>
 
                       <div className="peer-checked:[&_button]:bg-primary peer-checked:[&_button:hover]:bg-primary-dark">
-                        <button className="bg-stone-300 inline-flex rounded-lg px-8 py-3 text-white">
+                        <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
                           <span className="font-semibold">確認する</span>
                         </button>
                       </div>
@@ -692,7 +690,7 @@ export default function Home() {
                 </form>
               </div>
             </section>
-            <footer className="px-8 pb-8 bg-kronos-100 w-full">
+            <footer className="px-8 pb-8 bg-kronos-50 w-full">
               <div className="prose prose-stone mx-auto text-center text-sm">
                 © 2023 株式会社クロノス
               </div>

@@ -53,6 +53,7 @@ module.exports = {
           950: "#102321",
         },
         kronos: {
+          light: "#cfcb87",
           DEFAULT: "#AD9D19",
           dark: "#7e7d32",
           50: "#f8f6ed",

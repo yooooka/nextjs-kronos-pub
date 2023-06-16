@@ -18,19 +18,27 @@ const faqData: FAQ[] = [
 ];
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndices, setOpenIndices] = useState<number[]>([]);
+
+  const handleClick = (index: number) => {
+    if (openIndices.includes(index)) {
+      setOpenIndices(openIndices.filter((i) => i !== index));
+    } else {
+      setOpenIndices([...openIndices, index]);
+    }
+  };
 
   return (
     <div className="w-full max-w-md mx-auto">
       {faqData.map((faq, index) => (
         <div key={index} className="border-b border-gray-200">
-          <h2
-            className="text-xl bg-gray-200 cursor-pointer p-3"
-            onClick={() => setOpenIndex(index)}
+          <div
+            className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300 hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white"
+            onClick={() => handleClick(index)}
           >
             {faq.question}
-          </h2>
-          {openIndex === index && <p className="p-4">{faq.answer}</p>}
+          </div>
+          {openIndices.includes(index) && <p className="p-4">{faq.answer}</p>}
         </div>
       ))}
     </div>

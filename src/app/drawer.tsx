@@ -31,7 +31,7 @@ const Drawer: React.FC = () => {
     <div ref={node}>
       <button
         onClick={toggleDrawer}
-        className="z-30 inline-block rounded-full bg-neptune-600 p-4 text-white hover:bg-neptune-200 hover:text-neptune-600 focus:outline-none active:text-neptune-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-lg"
+        className="z-30 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-lg"
       >
         {isOpen ? (
           <FaTimes className="text-2xl" />
