@@ -13,6 +13,7 @@ import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
+import kSvg from "./assets/k.svg";
 import KShape from "./kshape";
 import Drawer from "./drawer";
 import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
@@ -37,7 +38,7 @@ export default function Home() {
     <>
       <div
         id="anchor"
-        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll bg-kshape"
+        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
       >
         <header className="snap-start snap-always">
           <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
@@ -123,7 +124,7 @@ export default function Home() {
                 </menu>
               </div>
             </div>
-            <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap">
+            <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap z-10">
               <div className="text-sm p-2">
                 <span>もっと詳しく知りたい／導入を検討したい</span>
                 <p>DXって何？という方も、まずはご相談を！</p>
@@ -332,7 +333,7 @@ export default function Home() {
                     5つのDXサービス
                   </h2>
                 </div>
-                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min prose-headings:text-stone-700">
+                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min prose-headings:text-stone-700 isolate">
                   <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
                     <h3 className="text-center">
                       導入～運用まで伴走し続けます
@@ -404,8 +405,12 @@ export default function Home() {
               </div>
             </section>
 
-            <section id="cases" className="bg-kronos-50 text-stone-900">
-              <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl">
+            <section
+              id="cases"
+              className="bg-kronos-100 text-stone-900 relative"
+            >
+              <KShape className="absolute opacity-30 fill-white scale-[4.8] -rotate-12 mix-blend-luminosity left-[13rem] bottom-56" />
+              <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
                 <span className="text-center text-primary font-semibold block text-lg pb-4">
                   CASE STUDY
@@ -426,7 +431,7 @@ export default function Home() {
                 </p>
               </div>
             </section>
-            <section id="faq">
+            <section id="faq" className="isolate">
               <div className="mx-auto max-w-screen-md prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">よくある質問</h2>
                 <span className="text-center text-primary font-semibold block text-lg pb-4">
@@ -678,8 +683,10 @@ export default function Home() {
                 </form>
               </div>
             </section>
-            <footer className="px-8 p-2 prose prose-stone mx-auto text-center text-sm">
-              © 2023 株式会社クロノス
+            <footer className="px-8 pb-8 bg-kronos-100 w-full">
+              <div className="prose prose-stone mx-auto text-center text-sm">
+                © 2023 株式会社クロノス
+              </div>
             </footer>
           </main>
         </div>

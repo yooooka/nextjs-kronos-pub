@@ -63,9 +63,6 @@ module.exports = {
           950: "#23240f",
         },
       },
-      backgroundImage: {
-        kshape: "url('./assets/k.svg')",
-      },
     },
     backgroundSize: {
       85: "85%",
