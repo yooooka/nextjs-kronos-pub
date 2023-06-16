@@ -209,7 +209,7 @@ export default function Home() {
                     DX導入の5つのステップ
                   </h2>
                   <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
+                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={helpDesk}
                         alt="ヒアリングイメージ"
@@ -228,7 +228,7 @@ export default function Home() {
                         まずは、お客様の現状の課題やご要望をじっくりヒアリングします。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
+                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={filesLaptop}
                         alt="DXプランのご提案イメージ"
@@ -249,7 +249,7 @@ export default function Home() {
                         お客様の課題の解決に向けて、最適な製品・サービスをご提案します。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
+                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={consultation}
                         alt="DXプランの検討イメージ"
@@ -270,7 +270,7 @@ export default function Home() {
                         お客様と共に「効率化」「継続化」の観点で、製品・サービスを検討します。
                       </span>
                     </li>
-                    <li className="sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
+                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
                       <Image
                         src={filesLaptop}
                         alt="導入イメージ"
@@ -409,7 +409,6 @@ export default function Home() {
               id="cases"
               className="bg-kronos-100 text-stone-900 relative"
             >
-              <KShape className="absolute opacity-30 fill-white scale-[4.8] -rotate-12 mix-blend-luminosity left-[13rem] bottom-56" />
               <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
                 <span className="text-center text-primary font-semibold block text-lg pb-4">
