@@ -1,18 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;700&family=M+PLUS+1p:wght@400;500;700&family=Outfit:wght@400;600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  font-family: "M PLUS 1p", "M PLUS 1", "Outfit" sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "M PLUS 1p", "M PLUS 1", "Outfit" sans-serif;
-  }
-}
 
 @layer components {
   #anchor {
