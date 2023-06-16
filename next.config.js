@@ -6,7 +6,9 @@ const nextConfig = {
   // trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
   //   distDir: "dist",
-  assetPrefix: isProd ? "https://kronos-dx-support.graspstg.com/" : undefined,
+  assetPrefix: isProd
+    ? "https://kronos-dx-support.graspstg.com/nextjs/"
+    : undefined,
 };
 
 module.exports = nextConfig;
