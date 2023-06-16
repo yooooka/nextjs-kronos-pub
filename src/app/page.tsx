@@ -437,95 +437,13 @@ export default function Home() {
                 </p>
               </div>
             </section>
-            <section id="faq" className="isolate">
-              <div className="mx-auto max-w-screen-md prose prose-stone p-12 prose-h2:text-center prose-h2:text-2xl">
+            <section id="faq">
+              <div className="mx-auto max-w-screen-md prose prose-stone lg:p-12 p-6 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">よくある質問</h2>
                 <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   FAQ
                 </span>
                 <Faq />
-                <div className="not-prose overflow-hidden mx-auto mb-12">
-                  <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                        Q. DXやクラウドの知識がなくても相談できますか︖
-                      </span>
-                      <div className="ml-auto">
-                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
-                      </div>
-                    </summary>
-                    <div className="transition-all p-6 bg-kronos-50">
-                      <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1">
-                        A.
-                        私たちは、DXやクラウド活用をデジタル技術を駆使した課題解決と捉えておりますので、お客様のビジネスにおける課題をお伺いすることで、適切な提案を行うことが可能です。提案内容についても、ご理解いただけるまで丁寧に説明いたしますので、どんな課題があるのかお教えください。
-                      </span>
-                    </div>
-                  </details>
-                  <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                        Q. パンフレットやカタログなどはありますか？
-                      </span>
-                      <div className="ml-auto">
-                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
-                      </div>
-                    </summary>
-                    <div className="transition-all p-6 bg-kronos-50">
-                      <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1">
-                        A.
-                        ございます。それぞれのサービスの特長や導入についてなど記載しております。もし必要であれば、お問い合わせ時にお伝えください。
-                      </span>
-                    </div>
-                  </details>
-                  <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                        Q. 契約前にサービスを試すことはできますか？
-                      </span>
-                      <div className="ml-auto">
-                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
-                      </div>
-                    </summary>
-                    <div className="transition-all p-6 bg-kronos-50">
-                      <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1">
-                        A.
-                        ユーザーと管理者の両方の視点から操作感や機能を評価したいお客様には、1ヶ月の無料トライアルをご提供しています。ご予定の導入形態に基づいたトライアルをお試しください。
-                      </span>
-                    </div>
-                  </details>
-                  <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                        Q. 遠方でも相談や打ち合わせは可能ですか？
-                      </span>
-                      <div className="ml-auto">
-                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
-                      </div>
-                    </summary>
-                    <div className="transition-all p-6 bg-kronos-50">
-                      <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1">
-                        A.
-                        Webミーティングを通じて、スムーズな相談や打ち合わせが可能です。遠方にお住まいの場合でも、現地作業が必要な場合には、お伺いいたしますので安心してご依頼いただけます。
-                      </span>
-                    </div>
-                  </details>
-                  <details className="group">
-                    <summary className="flex items-center px-5 py-3 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer group-open:pb-4 transition-all ease-out duration-300">
-                      <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                        Q. 導入後はどのようなサポートを受けられますか？
-                      </span>
-                      <div className="ml-auto">
-                        <FaChevronRight className="opacity-40 transition-all group-open:rotate-90 align-middle -mr-1 text-xl pt-1" />
-                      </div>
-                    </summary>
-                    <div className="transition-all p-6 bg-kronos-50">
-                      <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1">
-                        A.
-                        ヘルプデスクサービスにて、お客様のご要件に合わせて伴走支援の相談を承っております。設定支援や質問対応など、どのような支援が必要かお知らせいただければ、具体的なご提案をさせていただきます。
-                      </span>
-                    </div>
-                  </details>
-                </div>
               </div>
             </section>
             <section id="contact" className="bg-kronos-50">
