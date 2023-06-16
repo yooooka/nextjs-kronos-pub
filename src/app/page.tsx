@@ -13,10 +13,10 @@ import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
-import kSvg from "./assets/k.svg";
-import KShape from "./kshape";
+import bg from "./assets/xd-pattern.png";
 import Drawer from "./drawer";
 import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
+import { MdOutlineSouth } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
 
 const titleVariants: Variants = {
@@ -39,6 +39,10 @@ export default function Home() {
       <div
         id="anchor"
         className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
+        style={{
+          backgroundImage: `url(${bg.src})`,
+          backgroundPosition: "center",
+        }}
       >
         <header className="snap-start snap-always">
           <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
@@ -46,7 +50,7 @@ export default function Home() {
               <h1 className="px-6">
                 話題のDX導入って、 何から始めればいいの？
               </h1>
-              <FaArrowDown className="font-light animate-bounce text-3xl text-kronos-300 group-hover:text-primary-light animation-delay-[2.5s] mx-auto" />
+              <MdOutlineSouth className="font-light animate-bounce text-3xl text-kronos-300 group-hover:text-primary-light animation-delay-[2.5s] mx-auto" />
               <div className="text-stone-500">Scroll</div>
             </a>
           </section>
@@ -56,7 +60,7 @@ export default function Home() {
           id="split-top"
           className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
         >
-          <aside className="lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full bg-kronos-50 lg:z-10 relative">
+          <aside className="lg:shadow-2xl lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative">
             <Drawer />
             <div className="mx-auto flex justify-center items-center flex-col lg:min-h-full">
               <nav className="p-3 sm:flex justify-between items-center h-12 lg:h-14">
@@ -144,7 +148,7 @@ export default function Home() {
           </aside>
 
           <main className="lg:flex-[0_0_50%] lg:w-[50%]">
-            <div className="bg-kronos-50">
+            <div className="">
               <Image
                 alt="hero image"
                 src={hero}
