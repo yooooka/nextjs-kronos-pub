@@ -1,10 +1,5 @@
-import { Inter } from "next/font/google";
+import { m_plus_1p, outfit } from "./font";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata = {
   title: "DX導入ならクロノス株式会社",
@@ -18,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={inter.className}>
+    <html lang="ja" className={`${m_plus_1p.variable} ${outfit.variable}`}>
       <body>{children}</body>
     </html>
   );

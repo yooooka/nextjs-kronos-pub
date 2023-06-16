@@ -13,6 +13,7 @@ import kronos from "./assets/kronos.svg";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import filesLaptop from "./assets/files-laptop.svg";
+import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
 import Drawer from "./drawer";
 import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
@@ -38,14 +39,14 @@ export default function Home() {
     <>
       <div
         id="anchor"
-        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll"
+        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll font-mplus"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundPosition: "center",
         }}
       >
         <header className="snap-start snap-always">
-          <section className="prose prose-stone prose-headings:text-stone-700 flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
+          <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
             <a href="#split-top" className="group no-underline">
               <h1 className="px-6">
                 話題のDX導入って、 何から始めればいいの？
@@ -60,25 +61,30 @@ export default function Home() {
           id="split-top"
           className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
         >
-          <aside className="lg:shadow-2xl lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative">
+          <aside className="lg:shadow-2xl lg:shadow-kronos-700/30 lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative">
             <Drawer />
+            <nav className="p-3 sm:flex justify-between items-center">
+              <div className="bg-no-repeat w-[120px] h-[36px] absolute top-3 left-6">
+                <span className="sr-only">Kronos</span>
+                <Image src={kronos} alt="クロノス　ロゴ" fill />
+              </div>
+            </nav>
             <div className="mx-auto flex justify-center items-center flex-col lg:min-h-full">
-              <nav className="p-3 sm:flex justify-between items-center h-12 lg:h-14">
-                <div className="bg-no-repeat w-[120px] h-[36px] absolute top-3 left-6">
-                  <span className="sr-only">Kronos</span>
-                  <Image src={kronos} alt="クロノス　ロゴ" fill />
-                </div>
-              </nav>
-              <div className="mx-auto prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:leading-7 max-w-xl">
-                <h1 className="text-4xl text-center">寄り添い力</h1>
-                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
+              <div className="mx-auto prose prose-stone prose-h2:text-stone-700 prose-h2:font-normal max-w-xl space-y-4 lg:mb-24">
+                <Image
+                  src={yorisoi}
+                  alt="寄り添い力"
+                  className="w-7/12 mx-auto"
+                />
+                <h1 className="text-4xl sr-only">寄り添い力</h1>
+                <h2 className="m-auto w-72 sm:w-4/6 text-base">
                   株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い。
                 </h2>
-                <h2 className="m-auto w-72 sm:w-5/6 text-base font-medium lg:transition-all">
+                <h2 className="m-auto w-72 sm:w-4/6 text-base">
                   ITのプロフェッショナルが
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
-                <menu className="m-8 mt-0 not-prose font-bold mx-auto max-w-sm hidden sm:block">
+                <menu className="m-8 mt-0 not-prose font-bold mx-auto hidden sm:block sm:w-4/6">
                   <ul className="not-prose list-none space-y-6 text-lg">
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
                       <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
@@ -128,19 +134,19 @@ export default function Home() {
                 </menu>
               </div>
             </div>
-            <section className="bg-kronos-50/90 fixed bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap z-10">
+            <section className="bg-kronos-50/90 bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap z-10">
               <div className="text-sm p-2">
                 <span>もっと詳しく知りたい／導入を検討したい</span>
                 <p>DXって何？という方も、まずはご相談を！</p>
               </div>
               <a href="#contact">
-                <button className="prose group relative inline-flex items-center rounded-lg bg-primary px-8 py-3 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
+                <button className="prose group relative inline-flex items-center rounded-full bg-primary px-8 py-2 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
                   <FaArrowRight
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100"
                   />
                   <span className="font-semibold transition-all group-hover:me-3">
-                    お問合せはこちら
+                    お問い合せ
                   </span>
                 </button>
               </a>
@@ -155,7 +161,7 @@ export default function Home() {
                 className="lg:w-full lg:h-[100vh] h-[58vh] m-auto pt-4"
               />
             </div>
-            <div className="mx-auto prose prose-stone prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
+            <div className="mx-auto prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
               <section id="dx-explained">
                 <div className="p-12">
                   <motion.div
@@ -194,7 +200,7 @@ export default function Home() {
                 </div>
               </section>
               <section id="steps">
-                <div className="p-12">
+                <div className="p-12 font-outfit">
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
@@ -318,7 +324,7 @@ export default function Home() {
             </div>
             <section id="recommendations">
               <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
-                <div className="mx-auto prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
+                <div className="mx-auto prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
@@ -337,8 +343,8 @@ export default function Home() {
                     5つのDXサービス
                   </h2>
                 </div>
-                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min prose-headings:text-stone-700 isolate">
-                  <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
+                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min isolate">
+                  <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center">
                       導入～運用まで伴走し続けます
                     </h3>
@@ -349,7 +355,7 @@ export default function Home() {
                       社内の情報システム担当の負担軽減や、障害対応・問題解決にかかるスピード向上を実現する、ヘルプデスクのアウトソーシングサービスです。ヘルプデスクの豊富な経験とノウハウのある当社にお任せください。
                     </p>
                   </div>
-                  <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
+                  <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center pb-4">
                       増え続けるID・パスワードを１つに！
                     </h3>
@@ -363,7 +369,7 @@ export default function Home() {
                       社内システムや業務アプリケーションなど、複数のIDを一元管理するクラウド型のID管理です。「ID・パスワード管理」「シングルサインオン」「認証強化」「ID連携」を備え、セキュアな業務環境を実現します。
                     </p>
                   </div>
-                  <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
+                  <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center pb-4">
                       契約業務を安心安全に効率化
                     </h3>
@@ -377,7 +383,7 @@ export default function Home() {
                       紙による書面の取り交わしを電子化し、契約業務のスピード化、ペーパーレス化、印紙税などのコスト削減を実現する、電子契約サービスです。業界トップクラスの高いセキュリティ技術により、安心安全に、効率的な契約業務を行えます。
                     </p>
                   </div>
-                  <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
+                  <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center pb-4">
                       ファイル共有のわずらわしさを解消
                     </h3>
@@ -391,7 +397,7 @@ export default function Home() {
                       簡単な操作でファイルの共有や編集ができるオンラインストレージです。データの暗号化、アクセス制限、二段階認証など、法人に必要なセキュリティ機能が標準搭載。安全性・信頼性の高いデータバックアップ機能で、万が一の場合も安心です。
                     </p>
                   </div>
-                  <div className="block rounded-lg bg-kronos-50 p-8 transition hover:bg-white/80">
+                  <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center pb-4">
                       バックアップにかける時間を「0」に
                     </h3>
@@ -413,9 +419,9 @@ export default function Home() {
               id="cases"
               className="bg-kronos-100 text-stone-900 relative"
             >
-              <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl isolate">
+              <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4">
+                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
                   CASE STUDY
                 </span>
                 <h3>相談内容</h3>
@@ -435,9 +441,9 @@ export default function Home() {
               </div>
             </section>
             <section id="faq" className="isolate">
-              <div className="mx-auto max-w-screen-md prose prose-stone p-12 prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl">
+              <div className="mx-auto max-w-screen-md prose prose-stone p-12 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">よくある質問</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4">
+                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
                   FAQ
                 </span>
                 <div className="not-prose bg-white overflow-hidden mx-auto mb-12">
@@ -525,9 +531,9 @@ export default function Home() {
               </div>
             </section>
             <section id="contact" className="bg-kronos-100">
-              <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-headings:text-stone-700 prose-h2:text-center prose-h2:text-2xl">
+              <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">お問合せフォーム</h2>
-                <span className="text-center text-primary font-semibold block text-lg pb-4">
+                <span className="text-center text-primary font-semibold block text-lg pb-4 font-outfit">
                   CONTACT
                 </span>
                 <p>

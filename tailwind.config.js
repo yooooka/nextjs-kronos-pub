@@ -9,6 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mplus: ["var(--font-m-plus-1p)"],
+        outfit: ["var(--font-outfit)", "var(--font-m-plus-1p)"],
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -49,13 +53,14 @@ module.exports = {
           950: "#102321",
         },
         kronos: {
-          DEFAULT: "#adab49",
+          DEFAULT: "#AD9D19",
+          dark: "#7e7d32",
           50: "#f8f6ed",
           100: "#f0eed7",
           200: "#e2dfb4",
           300: "#cfcb87",
           400: "#bab761",
-          500: "#adab49",
+          500: "#AD9D19",
           600: "#7e7d32",
           700: "#60612a",
           800: "#4e4e26",
