@@ -17,9 +17,10 @@ import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
 import Faq from "./faq";
 import Drawer from "./drawer";
-import { FaArrowRight, FaChevronRight, FaArrowDown } from "react-icons/fa";
-import { MdOutlineSouth } from "react-icons/md";
+import Steps from "./steps";
+import { MdOutlineSouth, MdArrowForward } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
+import { imageOptimizer } from "next/dist/server/image-optimizer";
 
 const titleVariants: Variants = {
   offscreen: {
@@ -88,7 +89,7 @@ export default function Home() {
                 <menu className="m-8 mt-0 not-prose font-bold mx-auto hidden sm:block sm:w-4/6">
                   <ul className="not-prose list-none space-y-6 text-lg">
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
                       <a href="#dx-explained">
                         <span className="border-b-4 border-kronos-400 pb-1">
                           DXとは？
@@ -96,7 +97,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
 
                       <a href="#steps">
                         <span className="border-b-4 border-kronos-400 pb-1">
@@ -105,7 +106,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
 
                       <a href="#recommendations">
                         <span className="border-b-4 border-kronos-400 pb-1">
@@ -114,7 +115,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
 
                       <a href="#cases">
                         <span className="border-b-4 border-kronos-400 pb-1">
@@ -123,7 +124,7 @@ export default function Home() {
                       </a>
                     </li>
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <FaArrowRight className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
+                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
 
                       <a href="#faq">
                         <span className="border-b-4 border-kronos-400 pb-1">
@@ -142,9 +143,9 @@ export default function Home() {
               </div>
               <a href="#contact">
                 <button className="prose group relative inline-flex items-center rounded-full bg-primary px-8 py-2 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
-                  <FaArrowRight
+                  <MdArrowForward
                     fill="currentColor"
-                    className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100"
+                    className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
                   />
                   <span className="font-semibold transition-all group-hover:me-3">
                     お問い合せ
@@ -185,7 +186,7 @@ export default function Home() {
                     </span>
                     「継続化」で効果を最大化
                   </h2>
-                  <div className="pt-12">
+                  <div className="sm:prose-p:px-8">
                     <p>
                       DXとは、ITを活用して業務の効率化を図ること。今までより少ない人数で、同じことができたり。同じ人数で、より大きな成果を手にすることができたり。
                     </p>
@@ -201,124 +202,7 @@ export default function Home() {
                 </div>
               </section>
               <section id="steps">
-                <div className="p-12 font-outfit">
-                  <motion.div
-                    initial="offscreen"
-                    whileInView="onscreen"
-                    viewport={{ once: true, amount: 0 }}
-                    variants={titleVariants}
-                  >
-                    <Image
-                      alt="クロノスがお手伝いする"
-                      src={title02}
-                      className="mx-auto mb-4 h-[60px] max-w-none object-contain"
-                    />
-                  </motion.div>
-
-                  <h2 className="sr-only">クロノスがお手伝いする</h2>
-                  <h2 className="pb-2 m-auto w-fit">DX導入の5つのステップ</h2>
-                  <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
-                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
-                      <Image
-                        src={helpDesk}
-                        alt="ヒアリングイメージ"
-                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
-                      />
-                      <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
-                        <span className="slide">
-                          <span className="text-primary font-black">STEP</span>
-                          <span className="text-primary font-black text-3xl pl-1">
-                            1
-                          </span>
-                        </span>
-                        <span className="w-1/2 flex-1 pl-3">ヒアリング</span>
-                      </h4>
-                      <span className="text-start block">
-                        まずは、お客様の現状の課題やご要望をじっくりヒアリングします。
-                      </span>
-                    </li>
-                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
-                      <Image
-                        src={filesLaptop}
-                        alt="DXプランのご提案イメージ"
-                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
-                      />
-                      <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
-                        <span className="slide">
-                          <span className="text-primary font-black">STEP</span>
-                          <span className="text-primary font-black text-3xl pl-1">
-                            2
-                          </span>
-                        </span>
-                        <span className="w-1/2 flex-1 pl-3">
-                          DXプランのご提案
-                        </span>
-                      </h4>
-                      <span className="text-start block">
-                        お客様の課題の解決に向けて、最適な製品・サービスをご提案します。
-                      </span>
-                    </li>
-                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
-                      <Image
-                        src={consultation}
-                        alt="DXプランの検討イメージ"
-                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
-                      />
-                      <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
-                        <span className="slide">
-                          <span className="text-primary font-black">STEP</span>
-                          <span className="text-primary font-black text-3xl pl-1">
-                            3
-                          </span>
-                        </span>
-                        <span className="w-1/2 flex-1 pl-3">
-                          DXプランの検討
-                        </span>
-                      </h4>
-                      <span className="text-start block">
-                        お客様と共に「効率化」「継続化」の観点で、製品・サービスを検討します。
-                      </span>
-                    </li>
-                    <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
-                      <Image
-                        src={filesLaptop}
-                        alt="導入イメージ"
-                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
-                      />
-                      <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
-                        <span className="slide">
-                          <span className="text-primary font-black">STEP</span>
-                          <span className="text-primary font-black text-3xl pl-1">
-                            4
-                          </span>
-                        </span>
-                        <span className="w-1/2 flex-1 pl-3">導入</span>
-                      </h4>
-                      <span className="text-start block">
-                        当社がお客様に「寄り添い」ながら、製品・サービスの導入をご支援します。
-                      </span>
-                    </li>
-                    <li className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
-                      <Image
-                        src={helpDesk}
-                        alt="継続支援イメージ"
-                        className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
-                      />
-                      <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
-                        <span className="slide">
-                          <span className="text-primary font-black">STEP</span>
-                          <span className="text-primary font-black text-3xl pl-1">
-                            5
-                          </span>
-                        </span>
-                        <span className="w-1/2 flex-1 pl-3">継続支援</span>
-                      </h4>
-                      <span className="text-start block">
-                        導入後も、お客様に安心して運用いただけるようアフターサポートを行います。
-                      </span>
-                    </li>
-                  </ol>
-                </div>
+                <Steps />
               </section>
             </div>
             <section id="recommendations">
@@ -452,7 +336,7 @@ export default function Home() {
                 <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   CONTACT
                 </span>
-                <p>
+                <p className="sm:px-8">
                   こちらのメールフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
                 </p>
                 <form
@@ -469,7 +353,7 @@ export default function Home() {
                         <label className="flex items-center">
                           <input
                             type="checkbox"
-                            className="form-checkbox accent-secondary"
+                            className="form-checkbox accent-kronos-light"
                           />
                           <span className="ml-2">セキュアSAMBA</span>
                         </label>
@@ -478,7 +362,7 @@ export default function Home() {
                         <label className="flex items-center">
                           <input
                             type="checkbox"
-                            className="form-checkbox accent-secondary"
+                            className="form-checkbox accent-kronos-light"
                           />
                           <span className="ml-2">AOS BOX</span>
                         </label>
@@ -487,7 +371,7 @@ export default function Home() {
                         <label className="flex items-center">
                           <input
                             type="checkbox"
-                            className="form-checkbox accent-secondary"
+                            className="form-checkbox accent-kronos-light"
                           />
                           <span className="ml-2">トラスト・ログイン</span>
                         </label>
@@ -496,7 +380,7 @@ export default function Home() {
                         <label className="flex items-center">
                           <input
                             type="checkbox"
-                            className="form-checkbox accent-secondary"
+                            className="form-checkbox accent-kronos-light"
                           />
                           <span className="ml-2">ヘルプデスクサービス</span>
                         </label>
@@ -592,7 +476,7 @@ export default function Home() {
                     <label className="flex items-center flex-wrap">
                       <input
                         type="checkbox"
-                        className="peer form-checkbox accent-secondary"
+                        className="peer form-checkbox accent-kronos-light"
                       />
                       <span className="text-sm grow m-2">
                         <a href="#">個人情報の取り扱い</a>について同意する

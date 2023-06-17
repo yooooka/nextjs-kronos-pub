@@ -10,7 +10,7 @@ interface SvgProps {
   className?: string;
 }
 
-export const kShape: FC<SvgProps> = ({
+const kShape: FC<SvgProps> = ({
   width = "160px",
   height = "161Px",
   fill = "currentColor",

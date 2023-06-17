@@ -32,7 +32,7 @@ const faqData: FAQ[] = [
     answer:
       "ヘルプデスクサービスにて、お客様のご要件に合わせて伴走支援の相談を承っております。設定支援や質問対応など、どのような支援が必要かお知らせいただければ、具体的なご提案をさせていただきます。",
   },
-  // Add as many questions as you want...
+  // FAQ追加・修正はこちらから
 ];
 
 const FAQ: React.FC = () => {
@@ -55,7 +55,7 @@ const FAQ: React.FC = () => {
                 Q. {faq.question}
               </span>
               <div className="ml-auto">
-                <MdKeyboardArrowRight className="opacity-40 transition-all group-open:rotate-90 align-middle text-4xl group-open:mt-1" />
+                <MdKeyboardArrowRight className="opacity-80 transition-all group-open:rotate-90 align-middle text-3xl group-open:mt-1 text-white" />
               </div>
             </summary>
             {openIndices.includes(index) && (
