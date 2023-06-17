@@ -50,14 +50,14 @@ export default function Steps() {
             alt="ヒアリングイメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
-          <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
+          <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
             <Image
               src={step1}
               alt="STEP 1"
               className="mb-2 sm:mb-0 m-auto flex-auto"
             />
-            <span className="pl-2">ヒアリング</span>
-          </h4>
+            <span className="pl-3">ヒアリング</span>
+          </h3>
           <span className="text-start block">
             まずは、お客様の現状の課題やご要望をじっくりヒアリングします。
           </span>
@@ -68,14 +68,14 @@ export default function Steps() {
             alt="DXプランのご提案イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
-          <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
+          <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
             <Image
               src={step2}
               alt="STEP 2"
               className="mb-2 sm:mb-0 m-auto flex-auto"
             />
-            <span className="pl-2">DXプランのご提案</span>
-          </h4>
+            <span className="pl-3">DXプランのご提案</span>
+          </h3>
           <span className="text-start block">
             お客様の課題の解決に向けて、最適な製品・サービスをご提案します。
           </span>
@@ -86,14 +86,14 @@ export default function Steps() {
             alt="DXプランの検討イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
-          <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
+          <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
             <Image
               src={step3}
               alt="STEP 3"
               className="mb-2 sm:mb-0 m-auto flex-auto"
             />
-            <span className="pl-2">DXプランの検討</span>
-          </h4>
+            <span className="pl-3">DXプランの検討</span>
+          </h3>
           <span className="text-start block">
             お客様と共に「効率化」「継続化」の観点で、製品・サービスを検討します。
           </span>
@@ -104,14 +104,14 @@ export default function Steps() {
             alt="導入イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
-          <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
+          <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
             <Image
               src={step4}
               alt="STEP 1"
               className="mb-2 sm:mb-0 m-auto flex-auto"
             />
-            <span className="pl-2">導入</span>
-          </h4>
+            <span className="pl-3">導入</span>
+          </h3>
           <span className="text-start block">
             当社がお客様に「寄り添い」ながら、製品・サービスの導入をご支援します。
           </span>
@@ -122,14 +122,14 @@ export default function Steps() {
             alt="継続支援イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
-          <h4 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
+          <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
             <Image
               src={step5}
               alt="STEP 1"
               className="mb-2 sm:mb-0 m-auto flex-auto"
             />
-            <span className="pl-2">継続支援</span>
-          </h4>
+            <span className="pl-3">継続支援</span>
+          </h3>
           <span className="text-start block">
             導入後も、お客様に安心して運用いただけるようアフターサポートを行います。
           </span>

@@ -210,7 +210,7 @@ export default function Home() {
               </section>
               <section
                 id="steps"
-                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose-h3:text-stone-700"
               >
                 <Steps />
               </section>
@@ -240,7 +240,7 @@ export default function Home() {
                     DX SERVICES
                   </span>
                 </div>
-                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min isolate">
+                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 auto-cols-min">
                   <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center">
                       導入～運用まで伴走し続けます
@@ -337,7 +337,10 @@ export default function Home() {
                 </p>
               </div>
             </section>
-            <section id="faq">
+            <section
+              id="faq"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+            >
               <div className="mx-auto max-w-screen-md prose prose-stone lg:p-12 p-6 prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">よくある質問</h2>
                 <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
