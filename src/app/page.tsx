@@ -157,11 +157,11 @@ export default function Home() {
           </aside>
 
           <main className="lg:flex-[0_0_50%] lg:w-[50%]">
-            <div>
+            <div className="flex flex-col items-end justify-end lg:h-full">
               <Image
                 alt="hero image"
                 src={hero}
-                className="lg:w-full lg:h-[100vh] h-[58vh] m-auto pt-4"
+                className="lg:w-full lg:h-[100vh] h-[58vh] m-auto lg:pt-8 flex-auto"
               />
             </div>
             <div className="mx-auto prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
@@ -190,6 +190,9 @@ export default function Home() {
                     </span>
                     「継続化」で効果を最大化
                   </h2>
+                  <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+                    WHAT IS DX?
+                  </span>
                   <div className="sm:prose-p:px-8">
                     <p>
                       DXとは、ITを活用して業務の効率化を図ること。今までより少ない人数で、同じことができたり。同じ人数で、より大きな成果を手にすることができたり。
@@ -233,6 +236,9 @@ export default function Home() {
 
                   <h2 className="sr-only">クロノスがおすすめする</h2>
                   <h2 className="pb-2 m-auto w-fit">5つのDXサービス</h2>
+                  <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+                    DX SERVICES
+                  </span>
                 </div>
                 <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-min isolate">
                   <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">

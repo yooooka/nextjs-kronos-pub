@@ -46,29 +46,31 @@ const FAQ: React.FC = () => {
     }
   };
   return (
-    <>
+    <div className="not-prose mx-auto space-y-3">
       {faqData.map((faq, index) => (
-        <div key={index} className="not-prose mx-auto">
-          <details className="group" onClick={() => handleClick(index)}>
-            <summary className="flex items-center px-5 py-2.5 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer transition-all ease-out duration-300 ps-8">
-              <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
-                Q. {faq.question}
+        <details
+          key={index}
+          className="group"
+          onClick={() => handleClick(index)}
+        >
+          <summary className="flex items-center px-5 py-2.5 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer transition-all ease-out duration-300 ps-8">
+            <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
+              Q. {faq.question}
+            </span>
+            <div className="ml-auto">
+              <MdKeyboardArrowRight className="opacity-80 transition-all group-open:rotate-90 align-middle text-3xl group-open:mt-1 text-white" />
+            </div>
+          </summary>
+          {openIndices.includes(index) && (
+            <div className="transition-all p-6 bg-kronos-50 rounded-tl-none rounded-2xl">
+              <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1 ps-3">
+                A. {faq.answer}
               </span>
-              <div className="ml-auto">
-                <MdKeyboardArrowRight className="opacity-80 transition-all group-open:rotate-90 align-middle text-3xl group-open:mt-1 text-white" />
-              </div>
-            </summary>
-            {openIndices.includes(index) && (
-              <div className="transition-all p-6 bg-kronos-50 rounded-tl-none rounded-2xl">
-                <span className="inline-block first-letter:text-kronos first-letter:font-black first-letter:text-2xl first-letter:pr-1 ps-3">
-                  A. {faq.answer}
-                </span>
-              </div>
-            )}
-          </details>
-        </div>
+            </div>
+          )}
+        </details>
       ))}
-    </>
+    </div>
   );
 };
 
