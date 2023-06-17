@@ -73,21 +73,21 @@ export default function Home() {
               </div>
             </nav>
             <div className="mx-auto flex justify-center items-center flex-col lg:min-h-full">
-              <div className="mx-auto prose prose-stone prose-h2:text-stone-700 prose-h2:font-normal max-w-xl space-y-4 lg:mb-24">
+              <div className="mx-auto prose prose-stone prose-h2:text-stone-700 prose-h2:font-normal w-8/12 space-y-4 lg:mb-24 max-w-none">
                 <Image
                   src={yorisoi}
                   alt="寄り添い力"
                   className="w-7/12 mx-auto"
                 />
                 <h1 className="text-4xl sr-only">寄り添い力</h1>
-                <h2 className="m-auto w-72 sm:w-4/6 text-base">
+                <h2 className="m-auto w-72 sm:w-11/12 text-base">
                   株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い。
                 </h2>
-                <h2 className="m-auto w-72 sm:w-4/6 text-base">
+                <h2 className="m-auto w-72 sm:w-11/12 text-base">
                   ITのプロフェッショナルが
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
-                <menu className="m-8 mt-0 not-prose font-bold mx-auto hidden sm:block sm:w-4/6">
+                <menu className="mt-8 not-prose font-bold mx-auto hidden sm:block sm:w-10/12">
                   <ul className="not-prose list-none space-y-6 text-lg">
                     <li className="group flex items-center place-content-end hover:cursor-pointer">
                       <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
@@ -143,13 +143,13 @@ export default function Home() {
                 <p>DXって何？という方も、まずはご相談を！</p>
               </div>
               <a href="#contact">
-                <button className="prose group relative inline-flex items-center rounded-full bg-kronos-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-primary lg:text-center w-fit">
+                <button className="prose group relative inline-flex items-center rounded-full bg-primary px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos-dark lg:text-center w-fit">
                   <MdArrowForward
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
                   />
                   <span className="font-semibold transition-all group-hover:me-3">
-                    お問い合せ
+                    お問い合わせ
                   </span>
                 </button>
               </a>
@@ -164,12 +164,12 @@ export default function Home() {
                 className="lg:w-full lg:h-[100vh] h-[58vh] m-auto lg:pt-8 flex-auto"
               />
             </div>
-            <div className="mx-auto prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
+            <div>
               <section
                 id="dx-explained"
-                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
               >
-                <div className="p-12">
+                <div className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md m-auto p-12">
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
@@ -210,7 +210,7 @@ export default function Home() {
               </section>
               <section
                 id="steps"
-                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose-h3:text-stone-700"
+                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
               >
                 <Steps />
               </section>
@@ -240,7 +240,7 @@ export default function Home() {
                     DX SERVICES
                   </span>
                 </div>
-                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1 auto-cols-min">
+                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min mx-12">
                   <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center">
                       導入～運用まで伴走し続けます
@@ -354,7 +354,7 @@ export default function Home() {
               className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
               <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
-                <h2 className="mb-2">お問合せフォーム</h2>
+                <h2 className="mb-2">お問い合わせフォーム</h2>
                 <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
                   CONTACT
                 </span>
@@ -490,7 +490,7 @@ export default function Home() {
                         htmlFor="message"
                         className="absolute left-2.5 -top-6 text-stone-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-400 peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-600 peer-focus:text-xs text-xs"
                       >
-                        お問合せ内容
+                        お問い合わせ内容
                       </label>
                     </div>
                   </div>

@@ -54,7 +54,7 @@ const FAQ: React.FC = () => {
           onClick={() => handleClick(index)}
         >
           <summary className="flex items-center px-5 py-2.5 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer transition-all ease-out duration-300 ps-8">
-            <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white">
+            <span className="inline-block hover:text-kronos-50 font-bold first-letter:text-2xl first-letter:font-black first-letter:pr-1 first-letter:text-white text-stone-900">
               Q. {faq.question}
             </span>
             <div className="ml-auto">
