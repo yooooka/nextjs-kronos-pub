@@ -7,12 +7,8 @@ import gmoLogin from "./assets/gmo-logo.svg";
 import gmoSign from "./assets/gmosign.svg";
 import samba from "./assets/mv-logo.svg";
 import title01 from "./assets/title01.svg";
-import title02 from "./assets/title02.svg";
 import title03 from "./assets/title03.svg";
 import kronos from "./assets/kronos.svg";
-import helpDesk from "./assets/help-desk.svg";
-import consultation from "./assets/consultation.svg";
-import filesLaptop from "./assets/files-laptop.svg";
 import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
 import Faq from "./faq";
@@ -20,7 +16,6 @@ import Drawer from "./drawer";
 import Steps from "./steps";
 import { MdOutlineSouth, MdArrowForward } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
-import { imageOptimizer } from "next/dist/server/image-optimizer";
 
 const titleVariants: Variants = {
   offscreen: {
@@ -42,18 +37,20 @@ export default function Home() {
       <div
         id="anchor"
         className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll font-mplus"
-        style={{
-          backgroundImage: `url(${bg.src})`,
-          backgroundPosition: "center",
-        }}
       >
-        <header className="snap-start snap-always">
+        <header
+          className="snap-start snap-always bg-kronos-400"
+          style={{
+            backgroundImage: `url(${bg.src})`,
+            backgroundPosition: "center",
+          }}
+        >
           <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
             <a href="#split-top" className="group no-underline">
               <h1 className="px-6">
                 話題のDX導入って、 何から始めればいいの？
               </h1>
-              <MdOutlineSouth className="font-light animate-bounce text-3xl text-kronos-300 group-hover:text-primary-light animation-delay-[2.5s] mx-auto" />
+              <MdOutlineSouth className="font-light animate-bounce text-3xl text-white group-hover:text-primary animation-delay-[2.5s] mx-auto" />
               <div className="text-stone-500">Scroll</div>
             </a>
           </section>
@@ -62,6 +59,10 @@ export default function Home() {
         <div
           id="split-top"
           className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
+          style={{
+            backgroundImage: `url(${bg.src})`,
+            backgroundPosition: "center",
+          }}
         >
           <aside className="lg:shadow-2xl lg:shadow-kronos-700/30 lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative">
             <Drawer />
@@ -142,7 +143,7 @@ export default function Home() {
                 <p>DXって何？という方も、まずはご相談を！</p>
               </div>
               <a href="#contact">
-                <button className="prose group relative inline-flex items-center rounded-full bg-primary px-8 py-2 text-white focus:outline-none focus:ring hover:bg-primary-dark lg:text-center w-fit">
+                <button className="prose group relative inline-flex items-center rounded-full bg-kronos-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-primary lg:text-center w-fit">
                   <MdArrowForward
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
@@ -156,7 +157,7 @@ export default function Home() {
           </aside>
 
           <main className="lg:flex-[0_0_50%] lg:w-[50%]">
-            <div className="">
+            <div>
               <Image
                 alt="hero image"
                 src={hero}
@@ -164,7 +165,10 @@ export default function Home() {
               />
             </div>
             <div className="mx-auto prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md">
-              <section id="dx-explained">
+              <section
+                id="dx-explained"
+                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+              >
                 <div className="p-12">
                   <motion.div
                     initial="offscreen"
@@ -201,11 +205,17 @@ export default function Home() {
                   </div>
                 </div>
               </section>
-              <section id="steps">
+              <section
+                id="steps"
+                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+              >
                 <Steps />
               </section>
             </div>
-            <section id="recommendations">
+            <section
+              id="recommendations"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+            >
               <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
                 <div className="mx-auto prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
                   <motion.div
@@ -298,7 +308,7 @@ export default function Home() {
 
             <section
               id="cases"
-              className="bg-kronos-50 text-stone-900 relative"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
             >
               <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
@@ -330,7 +340,10 @@ export default function Home() {
                 <Faq />
               </div>
             </section>
-            <section id="contact" className="bg-kronos-50">
+            <section
+              id="contact"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
+            >
               <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">お問合せフォーム</h2>
                 <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
@@ -492,7 +505,7 @@ export default function Home() {
                 </form>
               </div>
             </section>
-            <footer className="px-8 pb-8 bg-kronos-50 w-full">
+            <footer className="px-8 pb-8 w-full">
               <div className="prose prose-stone mx-auto text-center text-sm">
                 © 2023 株式会社クロノス
               </div>

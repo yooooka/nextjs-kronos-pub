@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="296" height="65" viewBox="0 0 296 65">
   <g id="Component_10_1" data-name="Component 10 – 1" transform="translate(1.5 1.5)">
-    <path id="Union_12" data-name="Union 12" d="M6517.9,5893.491l-5.995-10.464H6399a25,25,0,0,1-25-25V5858a25,25,0,0,1,25-25h243a25,25,0,0,1,25,25v.027a25,25,0,0,1-25,25H6529.1l-5.995,10.464a3,3,0,0,1-5.207,0Z" transform="translate(-6374 -5833)" fill="#f8f6ed" stroke="#ad9d20" stroke-width="3" opacity="0.5"/>
+    <path id="Union_12" data-name="Union 12" d="M6517.9,5893.491l-5.995-10.464H6399a25,25,0,0,1-25-25V5858a25,25,0,0,1,25-25h243a25,25,0,0,1,25,25v.027a25,25,0,0,1-25,25H6529.1l-5.995,10.464a3,3,0,0,1-5.207,0Z" transform="translate(-6374 -5833)" fill="#fff" stroke="#ad9d20" stroke-width="3"/>
     <text id="クロノスがお手伝いする" transform="translate(146 33)" fill="#1c1917" font-size="20" font-family="MPLUS1p-Medium, 'M PLUS \31 p'" font-weight="500"><tspan x="-110" y="0">クロノスがお</tspan><tspan y="0">手伝</tspan><tspan y="0">いする</tspan></text>
   </g>
 </svg>

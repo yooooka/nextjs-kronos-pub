@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="162" height="64.999" viewBox="0 0 162 64.999">
   <g id="Component_10_2" data-name="Component 10 – 2" transform="translate(1.5 1.5)">
-    <path id="Union_12" data-name="Union 12" d="M6450.9,5893.49l-6-10.463H6399a25,25,0,0,1-25-25V5858a25,25,0,0,1,25-25h109a25,25,0,0,1,25,25v.026a25,25,0,0,1-25,25h-45.9l-5.995,10.463a3,3,0,0,1-5.206,0Z" transform="translate(-6374 -5833)" fill="#f8f6ed" stroke="#adab49" stroke-width="3" opacity="0.5"/>
+    <path id="Union_12" data-name="Union 12" d="M6450.9,5893.49l-6-10.463H6399a25,25,0,0,1-25-25V5858a25,25,0,0,1,25-25h109a25,25,0,0,1,25,25v.026a25,25,0,0,1-25,25h-45.9l-5.995,10.463a3,3,0,0,1-5.206,0Z" transform="translate(-6374 -5833)" fill="#fff" stroke="#ad9d20" stroke-width="3"/>
     <text id="DXによる" transform="translate(79 33)" fill="#1c1917" font-size="20" font-family="MPLUS1p-Medium, 'M PLUS \31 p'" font-weight="500"><tspan x="-43.08" y="0">DX</tspan><tspan y="0">による</tspan></text>
   </g>
 </svg>
