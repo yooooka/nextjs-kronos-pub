@@ -1,6 +1,8 @@
 import Image from "next/image";
 import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
+import hearing from "./assets/hearing.svg";
+import implement from "./assets/implement.svg";
 import filesLaptop from "./assets/files-laptop.svg";
 import { motion, Variants } from "framer-motion";
 import title02 from "./assets/title02.svg";
@@ -46,7 +48,7 @@ export default function Steps() {
       <ol className="step-ol pl-0 mt-8 max-w-xl m-auto sm:space-y-12">
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
-            src={helpDesk}
+            src={hearing}
             alt="ヒアリングイメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
@@ -100,7 +102,7 @@ export default function Steps() {
         </li>
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
-            src={filesLaptop}
+            src={implement}
             alt="導入イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
