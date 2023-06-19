@@ -3,7 +3,7 @@ import helpDesk from "./assets/help-desk.svg";
 import consultation from "./assets/consultation.svg";
 import hearing from "./assets/hearing.svg";
 import implement from "./assets/implement.svg";
-import filesLaptop from "./assets/files-laptop.svg";
+import presentation from "./assets/presentation.svg";
 import { motion, Variants } from "framer-motion";
 import title02 from "./assets/title02.svg";
 import step1 from "./assets/step1.svg";
@@ -66,7 +66,7 @@ export default function Steps() {
         </li>
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
-            src={filesLaptop}
+            src={presentation}
             alt="DXプランのご提案イメージ"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />

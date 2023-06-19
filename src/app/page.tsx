@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </nav>
             <div className="mx-auto flex justify-center items-center flex-col lg:min-h-full">
-              <div className="mx-auto prose prose-stone prose-h2:text-stone-700 prose-h2:font-normal w-8/12 space-y-4 lg:mb-24 max-w-none">
+              <div className="mx-auto prose prose-stone prose-h2:text-stone-700 prose-h2:font-normal w-8/12 space-y-4 lg:mb-24 max-w-none py-8 lg:p-3">
                 <Image
                   src={yorisoi}
                   alt="寄り添い力"
@@ -240,7 +240,7 @@ export default function Home() {
                     DX SERVICES
                   </span>
                 </div>
-                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min mx-12">
+                <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min sm:mx-12">
                   <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 transition hover:bg-kronos-50">
                     <h3 className="text-center">
                       導入～運用まで伴走し続けます
