@@ -15,7 +15,7 @@ import Faq from "./faq";
 import Drawer from "./drawer";
 import Steps from "./steps";
 import { MdOutlineSouth, MdArrowForward } from "react-icons/md";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, MotionConfig } from "framer-motion";
 
 const titleVariants: Variants = {
   offscreen: {
@@ -33,7 +33,7 @@ const titleVariants: Variants = {
 
 export default function Home() {
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <div
         id="anchor"
         className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll font-mplus"
@@ -377,6 +377,33 @@ export default function Home() {
                             type="checkbox"
                             className="form-checkbox accent-kronos-light"
                           />
+                          <span className="ml-2">ヘルプデスクサービス</span>
+                        </label>
+                      </div>
+                      <div className="w-full sm:w-1/2">
+                        <label className="flex items-center">
+                          <input
+                            type="checkbox"
+                            className="form-checkbox accent-kronos-light"
+                          />
+                          <span className="ml-2">GMOトラスト・ログイン</span>
+                        </label>
+                      </div>
+                      <div className="w-full sm:w-1/2">
+                        <label className="flex items-center">
+                          <input
+                            type="checkbox"
+                            className="form-checkbox accent-kronos-light"
+                          />
+                          <span className="ml-2">GMOサイン</span>
+                        </label>
+                      </div>
+                      <div className="w-full sm:w-1/2">
+                        <label className="flex items-center">
+                          <input
+                            type="checkbox"
+                            className="form-checkbox accent-kronos-light"
+                          />
                           <span className="ml-2">セキュアSAMBA</span>
                         </label>
                       </div>
@@ -387,24 +414,6 @@ export default function Home() {
                             className="form-checkbox accent-kronos-light"
                           />
                           <span className="ml-2">AOS BOX</span>
-                        </label>
-                      </div>
-                      <div className="w-full sm:w-1/2">
-                        <label className="flex items-center">
-                          <input
-                            type="checkbox"
-                            className="form-checkbox accent-kronos-light"
-                          />
-                          <span className="ml-2">トラスト・ログイン</span>
-                        </label>
-                      </div>
-                      <div className="w-full sm:w-1/2">
-                        <label className="flex items-center">
-                          <input
-                            type="checkbox"
-                            className="form-checkbox accent-kronos-light"
-                          />
-                          <span className="ml-2">ヘルプデスクサービス</span>
                         </label>
                       </div>
                     </div>
@@ -437,7 +446,7 @@ export default function Home() {
                         htmlFor="company"
                         className="absolute left-2.5 -top-6 text-stone-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-400 peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-600 peer-focus:text-xs text-xs"
                       >
-                        <span className="block font-medium"> 会社名 </span>
+                        <span className="block font-medium">会社名</span>
                       </label>
                     </div>
                   </div>
@@ -522,6 +531,6 @@ export default function Home() {
           </main>
         </div>
       </div>
-    </>
+    </MotionConfig>
   );
 }

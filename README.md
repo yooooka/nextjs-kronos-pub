@@ -18,6 +18,8 @@ Prefers contrast on Form
 
 Sharp Missing In Production
 
+Reduced motion for Framer Motion
+
 ## Getting Started
 
 First, run the development server:
