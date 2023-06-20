@@ -56,7 +56,7 @@ export default function Steps() {
             <Image
               src={step1}
               alt="STEP 1"
-              className="mb-2 sm:mb-0 m-auto flex-auto"
+              className="mb-2 sm:mb-0 m-auto max-width-none flex-auto"
             />
             <span className="pl-3">ヒアリング</span>
           </h3>
@@ -74,7 +74,7 @@ export default function Steps() {
             <Image
               src={step2}
               alt="STEP 2"
-              className="mb-2 sm:mb-0 m-auto flex-auto"
+              className="mb-2 sm:mb-0 m-auto max-width-none flex-auto"
             />
             <span className="pl-3">DXプランのご提案</span>
           </h3>
@@ -92,7 +92,7 @@ export default function Steps() {
             <Image
               src={step3}
               alt="STEP 3"
-              className="mb-2 sm:mb-0 m-auto flex-auto"
+              className="mb-2 sm:mb-0 m-auto max-width-none flex-auto"
             />
             <span className="pl-3">DXプランの検討</span>
           </h3>
@@ -110,7 +110,7 @@ export default function Steps() {
             <Image
               src={step4}
               alt="STEP 1"
-              className="mb-2 sm:mb-0 m-auto flex-auto"
+              className="mb-2 sm:mb-0 m-auto max-width-none flex-auto"
             />
             <span className="pl-3">導入</span>
           </h3>
@@ -128,7 +128,7 @@ export default function Steps() {
             <Image
               src={step5}
               alt="STEP 1"
-              className="mb-2 sm:mb-0 m-auto flex-auto"
+              className="mb-2 sm:mb-0 m-auto max-width-none flex-auto"
             />
             <span className="pl-3">継続支援</span>
           </h3>
