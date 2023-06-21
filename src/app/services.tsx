@@ -5,6 +5,8 @@ import gmoSign from "./assets/gmosign.svg";
 import samba from "./assets/mv-logo.svg";
 import sHelpDesk from "./assets/s-helpdesk.svg";
 import sTrustLogin from "./assets/s-trustlogin.svg";
+import sSign from "./assets/s-gmosign.svg";
+import sAosbox from "./assets/s-aosbox.svg";
 import { motion, Variants } from "framer-motion";
 import title03 from "./assets/title03.svg";
 
@@ -81,8 +83,13 @@ export default function Steps() {
           <h3 className="sr-only">GMO サイン</h3>
           <Image
             src={gmoSign}
-            className="max-w-[200px] m-auto pb-4"
+            className="max-w-[280px] m-auto"
             alt="GMO サイン"
+          />
+          <Image
+            src={sSign}
+            alt="GMO サイン"
+            className="max-width-none mx-auto"
           />
           <p className="mt-1">
             紙による書面の取り交わしを電子化し、契約業務のスピード化、ペーパーレス化、印紙税などのコスト削減を実現する、電子契約サービスです。業界トップクラスの高いセキュリティ技術により、安心安全に、効率的な契約業務を行えます。
@@ -93,7 +100,7 @@ export default function Steps() {
           <h3 className="sr-only">セキュアSAMBA</h3>
           <Image
             src={samba}
-            className="max-w-[180px] m-auto pb-4"
+            className="max-w-[180px] m-auto"
             alt="セキュアSAMBA"
           />
           <p className="mt-1">
@@ -103,10 +110,11 @@ export default function Steps() {
         <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 pb-4 transition hover:bg-kronos-50">
           <h3 className="text-center">バックアップにかける時間を「0」に</h3>
           <h3 className="sr-only">AOS BOX</h3>
+          <Image src={aosbox} className="max-w-[180px] m-auto" alt="AOS BOX" />
           <Image
-            src={aosbox}
-            className="max-w-[180px] m-auto pb-4"
+            src={sAosbox}
             alt="AOS BOX"
+            className="max-width-none mx-auto"
           />
           <p className="mt-1">
             「堅牢性」「利便性」「経済的」を実現し、操作性と高セキュリティを兼ね備えたクラウドバックアップサービスです。データの漏洩・紛失、災害などの予期せぬ事態から、企業の大切なデータを守ります。
