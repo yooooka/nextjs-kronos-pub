@@ -6,6 +6,7 @@ import samba from "./assets/mv-logo.svg";
 import sHelpDesk from "./assets/s-helpdesk.svg";
 import sTrustLogin from "./assets/s-trustlogin.svg";
 import sSign from "./assets/s-gmosign.svg";
+import sSamba from "./assets/s-samba.svg";
 import sAosbox from "./assets/s-aosbox.svg";
 import { motion, Variants } from "framer-motion";
 import title03 from "./assets/title03.svg";
@@ -102,6 +103,11 @@ export default function Steps() {
             src={samba}
             className="max-w-[180px] m-auto"
             alt="セキュアSAMBA"
+          />
+          <Image
+            src={sSamba}
+            alt="セキュアSAMBA"
+            className="max-width-none mx-auto"
           />
           <p className="mt-1">
             簡単な操作でファイルの共有や編集ができるオンラインストレージです。データの暗号化、アクセス制限、二段階認証など、法人に必要なセキュリティ機能が標準搭載。安全性・信頼性の高いデータバックアップ機能で、万が一の場合も安心です。
