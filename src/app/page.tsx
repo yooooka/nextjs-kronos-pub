@@ -6,6 +6,7 @@ import title01 from "./assets/title01.svg";
 import kronos from "./assets/kronos.svg";
 import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
+import Opening from "./opening";
 import Faq from "./faq";
 import Drawer from "./drawer";
 import Steps from "./steps";
@@ -34,27 +35,13 @@ export default function Home() {
         id="anchor"
         className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll font-mplus"
       >
-        <header
-          className="snap-start snap-always bg-kronos-400"
-          style={{
-            backgroundImage: `url(${bg.src})`,
-            backgroundPosition: "center",
-          }}
-        >
-          <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
-            <a href="#split-top" className="group no-underline">
-              <h1 className="px-6">
-                話題のDX導入って、 何から始めればいいの？
-              </h1>
-              <MdOutlineSouth className="font-light animate-bounce text-3xl text-white group-hover:text-primary animation-delay-[2.5s] mx-auto" />
-              <div className="text-stone-500">Scroll</div>
-            </a>
-          </section>
+        <header>
+          <h1 className="sr-only">話題のDX導入って、 何から始めればいいの？</h1>
+          <Opening />
         </header>
-
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
+          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always transition-all"
           style={{
             backgroundImage: `url(${bg.src})`,
             backgroundPosition: "center",

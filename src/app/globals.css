@@ -9,6 +9,7 @@
   #split-top {
     @apply scroll-smooth;
   }
+
   .step-ol > li.arrow:after {
     position: absolute;
     content: "";
