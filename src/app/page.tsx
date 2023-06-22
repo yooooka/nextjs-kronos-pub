@@ -11,7 +11,7 @@ import Faq from "./faq";
 import Drawer from "./drawer";
 import Steps from "./steps";
 import Services from "./services";
-import { MdOutlineSouth, MdArrowForward } from "react-icons/md";
+import { MdArrowForward } from "react-icons/md";
 import { motion, Variants, MotionConfig } from "framer-motion";
 
 const titleVariants: Variants = {
