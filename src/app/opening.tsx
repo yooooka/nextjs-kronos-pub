@@ -42,6 +42,8 @@ export default function Opening() {
           >
             <Image
               src={bg}
+              width={600}
+              height={300}
               alt="fpo"
               unoptimized={true}
               className="fixed bottom"

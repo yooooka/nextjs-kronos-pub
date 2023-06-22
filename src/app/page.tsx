@@ -11,7 +11,7 @@ import Faq from "./faq";
 import Drawer from "./drawer";
 import Steps from "./steps";
 import Services from "./services";
-import { MdArrowForward } from "react-icons/md";
+import { MdOutlineSouth, MdArrowForward } from "react-icons/md";
 import { motion, Variants, MotionConfig } from "framer-motion";
 
 const titleVariants: Variants = {
@@ -41,7 +41,7 @@ export default function Home() {
         </header>
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
+          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always transition-all"
           style={{
             backgroundImage: `url(${bg.src})`,
             backgroundPosition: "center",

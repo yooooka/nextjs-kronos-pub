@@ -7,7 +7,7 @@ const nextConfig = {
   // Optional: Change the output directory `out` -> `dist`
   //   distDir: "dist",
   assetPrefix: isProd
-    ? "https://kronos-dx-support.graspstg.com/nextjs/"
+    ? "https://kronos-dx-support.graspstg.com/230622/"
     : undefined,
 };
 
