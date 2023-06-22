@@ -24,6 +24,7 @@ const titleVariants: Variants = {
     },
   },
 };
+
 export default function Steps() {
   return (
     <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">

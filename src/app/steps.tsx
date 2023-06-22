@@ -25,6 +25,7 @@ const titleVariants: Variants = {
     },
   },
 };
+
 export default function Steps() {
   return (
     <div className="font-outfit bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md m-auto p-12">
