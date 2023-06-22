@@ -30,7 +30,7 @@ export default function Opening() {
             backgroundPosition: "center",
           }}
         >
-          <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
+          <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl prose-h1:font-bold lg:prose-h1:text-4xl lg:typewriter">
             <h1 className="px-6">DX導入って、 何から始めればいいの？</h1>
             <a href="#split-top" className="group no-underline">
               <div className="text-stone-900">Scroll</div>

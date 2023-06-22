@@ -3,7 +3,8 @@ import "./globals.css";
 
 const m_plus_1p = M_PLUS_1p({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "800"],
+  //delete "800", when you hand off
   display: "swap",
   variable: "--font-m-plus-1p",
 });

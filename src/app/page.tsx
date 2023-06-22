@@ -131,7 +131,7 @@ export default function Home() {
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
                   />
-                  <span className="font-semibold transition-all group-hover:me-3">
+                  <span className="font-bold transition-all group-hover:me-3">
                     お問い合わせ
                   </span>
                 </button>
@@ -152,7 +152,7 @@ export default function Home() {
                 id="dx-explained"
                 className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
               >
-                <div className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-semibold prose-li:mt-0 max-w-screen-md m-auto p-12">
+                <div className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-bold prose-li:mt-0 max-w-screen-md m-auto p-12">
                   <motion.div
                     initial="offscreen"
                     whileInView="onscreen"
@@ -211,7 +211,7 @@ export default function Home() {
             >
               <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-h2:text-center prose-h2:text-2xl isolate">
                 <h2 className="mb-2">導入事例</h2>
-                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+                <span className="text-center text-kronos block text-lg pb-4 font-outfit">
                   CASE STUDY
                 </span>
                 <h3>相談内容</h3>
@@ -248,7 +248,7 @@ export default function Home() {
             >
               <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
                 <h2 className="mb-2">お問い合わせフォーム</h2>
-                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+                <span className="text-center text-kronos font-bold block text-lg pb-4 font-outfit">
                   CONTACT
                 </span>
                 <p className="sm:px-8">
@@ -408,7 +408,7 @@ export default function Home() {
 
                       <div className="peer-checked:[&_button]:bg-primary peer-checked:[&_button:hover]:bg-primary-dark">
                         <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
-                          <span className="font-semibold">確認する</span>
+                          <span className="font-bold">確認する</span>
                         </button>
                       </div>
                     </label>
