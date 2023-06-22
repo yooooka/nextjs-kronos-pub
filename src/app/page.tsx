@@ -41,7 +41,7 @@ export default function Home() {
         </header>
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always transition-all"
+          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
           style={{
             backgroundImage: `url(${bg.src})`,
             backgroundPosition: "center",
