@@ -8,8 +8,8 @@ export default function Opening() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false);
-    }, 1400); // 1 second duration * 6 repeats = 6 seconds
+      setIsVisible(true);
+    }, 1600); // 1 second duration * 6 repeats = 6 seconds
 
     return () => clearTimeout(timer);
   }, []);

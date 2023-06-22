@@ -28,10 +28,10 @@ const Drawer: React.FC = () => {
   }, []);
 
   return (
-    <div ref={node}>
+    <div ref={node} className="lg:hidden">
       <button
         onClick={toggleDrawer}
-        className="z-30 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-lg"
+        className="z-20 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed bottom-5 right-5 peer-checked:rotate-0 shadow-lg"
       >
         {isOpen ? (
           <FaTimes className="text-2xl" />
