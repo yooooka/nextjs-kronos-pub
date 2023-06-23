@@ -19,7 +19,7 @@ export default function Opening() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="snap-start snap-always bg-kronos-400 relative transition-opacity duration-500"
+          className="snap-start sm:snap-always bg-kronos-400 relative transition-opacity duration-500"
           initial={{ opacity: 1, y: 0 }}
           exit={{
             opacity: 0,

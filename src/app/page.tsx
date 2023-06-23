@@ -12,6 +12,7 @@ import Drawer from "./drawer";
 import Steps from "./steps";
 import Services from "./services";
 import Contact from "./contact";
+import Menu from "./menu";
 import { MdArrowForward } from "react-icons/md";
 import { motion, Variants, MotionConfig } from "framer-motion";
 
@@ -42,7 +43,7 @@ export default function Home() {
         </header>
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always"
+          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start sm:snap-always"
           style={{
             backgroundImage: `url(${bgWhite.src})`,
             backgroundPosition: "center",
@@ -71,54 +72,7 @@ export default function Home() {
                   ITのプロフェッショナルが
                   継続した業務効率化でビジネスを成功に導きます。
                 </h2>
-                <menu className="mt-8 not-prose font-bold mx-auto hidden sm:block sm:w-10/12">
-                  <ul className="not-prose list-none space-y-6 text-lg">
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
-                      <a href="#dx-explained">
-                        <span className="border-b-4 border-kronos-400 pb-1">
-                          DXとは？
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
-
-                      <a href="#steps">
-                        <span className="border-b-4 border-kronos-400 pb-1">
-                          DX導入の5つのステップ
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
-
-                      <a href="#recommendations">
-                        <span className="border-b-4 border-kronos-400 pb-1">
-                          5つのDXサービス
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
-
-                      <a href="#cases">
-                        <span className="border-b-4 border-kronos-400 pb-1">
-                          導入事例
-                        </span>
-                      </a>
-                    </li>
-                    <li className="group flex items-center place-content-end hover:cursor-pointer">
-                      <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
-
-                      <a href="#faq">
-                        <span className="border-b-4 border-kronos-400 pb-1">
-                          よくある質問
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </menu>
+                <Menu />
               </div>
             </div>
             <section className="bg-kronos-50/90 bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap z-10">
