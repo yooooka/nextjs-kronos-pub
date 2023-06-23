@@ -45,7 +45,7 @@ export default function Opening() {
                 type: "spring",
               },
             }}
-            className="relative bg-gradient-to-r from-kronos-500 via-kronos-400 to-kronos-600 snap-start snap-always background-animate w-full h-full animation-delay-[2s]"
+            className="relative bg-gradient-to-r from-kronos-500 via-kronos-400 to-kronos-600 snap-start snap-always background-animate w-full h-full animation-delay-[1s]"
           >
             <motion.div
               layout
