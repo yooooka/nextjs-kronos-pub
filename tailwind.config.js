@@ -69,6 +69,9 @@ module.exports = {
           950: "#23240f",
         },
       },
+      animation: {
+        bounce: "bounce 1s ease 10",
+      },
     },
     backgroundSize: {
       85: "85%",
