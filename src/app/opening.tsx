@@ -86,7 +86,7 @@ export default function Opening() {
                   }}
                   viewport={{ once: true, amount: 0 }}
                   variants={titleVariants}
-                  className=" absolute bottom-12 left-[48%]"
+                  className=" absolute bottom-12"
                 >
                   <a href="#split-top" className="group no-underline">
                     <div className="text-kronos-50 -rotate-90">Scroll</div>
