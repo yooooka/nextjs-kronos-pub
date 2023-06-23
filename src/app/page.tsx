@@ -6,6 +6,7 @@ import title01 from "./assets/title01.svg";
 import kronos from "./assets/kronos.svg";
 import yorisoi from "./assets/yorisoi.svg";
 import bg from "./assets/xd-pattern.png";
+import bgWhite from "./assets/xd-pattern-white.png";
 import Opening from "./opening";
 import Faq from "./faq";
 import Drawer from "./drawer";
@@ -43,7 +44,7 @@ export default function Home() {
           id="split-top"
           className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start snap-always transition-all"
           style={{
-            backgroundImage: `url(${bg.src})`,
+            backgroundImage: `url(${bgWhite.src})`,
             backgroundPosition: "center",
           }}
         >
