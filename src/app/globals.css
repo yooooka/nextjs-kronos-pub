@@ -28,9 +28,10 @@
   }
   .typewriter {
     @apply w-0;
-    border-right: 0.08em solid #cfcb87;
+    border-right: 0.08em solid #f8f6ed;
     overflow: hidden;
     white-space: nowrap;
+    animation-delay: 2s;
     animation: typing 2s steps(19, end) forwards, caret 1s step-end 10;
   }
   @keyframes typing {
