@@ -19,7 +19,7 @@ module.exports = {
         primary: {
           light: "#fdb378",
           DEFAULT: "#f96416",
-          dark: "#ea490c",
+          dark: "#D5410B", // adjusted for WCAG
         },
         secondary: {
           light: "#b2ddd0",

@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import { MdArrowForward } from "react-icons/md";
 
 interface FormState {
   name: string;
@@ -248,12 +249,28 @@ export default function ContactForm() {
             <span className="text-sm grow m-2">
               <a href="#">個人情報の取り扱い</a>について同意する
             </span>
-
-            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos-dark">
-              <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
-                <span className="font-bold">確認する</span>
-              </button>
-            </div>
+            <button
+              className={`inline-flex items-center w-fit rounded-full px-8 py-2 text-white relative group ${
+                formState.agree
+                  ? "bg-primary-dark hover:bg-kronos"
+                  : "bg-gray-300  contrast-more:bg-stone-500 cursor-not-allowed"
+              }`}
+              disabled={!formState.agree}
+            >
+              {formState.agree ? (
+                <MdArrowForward
+                  fill="currentColor"
+                  className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
+                />
+              ) : null}
+              <span
+                className={`font-bold ${
+                  formState.agree ? "group-hover:me-3 transition-all" : null
+                }`}
+              >
+                確認する
+              </span>
+            </button>
           </label>
         </div>
       </form>

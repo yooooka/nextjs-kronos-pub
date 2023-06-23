@@ -127,7 +127,7 @@ export default function Home() {
                 <p>DXって何？という方も、まずはご相談を！</p>
               </div>
               <a href="#contact">
-                <button className="prose group relative inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos-dark lg:text-center w-fit">
+                <button className="prose group relative inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center w-fit">
                   <MdArrowForward
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
