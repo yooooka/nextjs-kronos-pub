@@ -49,7 +49,10 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <aside className="lg:shadow-2xl lg:shadow-kronos-700/30 lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative">
+          <aside
+            id="page-top"
+            className="lg:shadow-2xl lg:shadow-kronos-700/30 lg:transition-all lg:duration-500 transition-all duration-500 lg:flex-1 lg:w-[50%] w-full lg:sticky lg:top-0 lg:left-0 lg:h-full lg:z-10 relative"
+          >
             <Drawer />
             <nav className="p-3 sm:flex justify-between items-center">
               <div className="bg-no-repeat w-[120px] h-[36px] absolute top-3 left-6">
@@ -77,7 +80,7 @@ export default function Home() {
                 <Menu />
               </div>
             </div>
-            <section className="bg-kronos-50/90 bottom-0 lg:absolute w-full hidden sm:flex items-center place-content-center p-4 flex-wrap z-10">
+            <section className="bg-kronos-50/90 bottom-0 absolute w-full lg:flex hidden items-center place-content-center p-4 flex-wrap z-10">
               <div className="text-sm p-2">
                 <span>もっと詳しく知りたい／導入を検討したい</span>
                 <p>DXって何？という方も、まずはご相談を！</p>

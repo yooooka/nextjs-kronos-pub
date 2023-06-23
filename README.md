@@ -12,13 +12,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Don't forget minify output.css
 
-SVG font not working on Safari
-
-Prefers contrast on Form
-
 Sharp Missing In Production
 
-Reduced motion for Framer Motion
+iPhone tap to top scroll not working
+(snap, animation, conflicts)
 
 ## Getting Started
 

@@ -2,7 +2,7 @@ import { MdArrowForward } from "react-icons/md";
 
 export default function Menu() {
   return (
-    <menu className="mt-8 not-prose font-bold mx-auto hidden sm:block sm:w-10/12">
+    <menu className="mt-8 not-prose font-bold mx-auto hidden lg:block lg:w-10/12">
       <ul className="not-prose list-none space-y-6 text-lg">
         <li className="group flex items-center place-content-end hover:cursor-pointer">
           <MdArrowForward className="opacity-0 group-hover:opacity-100 text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-2xl me-1" />
