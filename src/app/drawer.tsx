@@ -42,7 +42,7 @@ const Drawer: React.FC = () => {
       </button>
       <div>
         <div
-          className={`fixed top-0 right-0 z-10 w-fill flex flex-col justify-end h-full transition-all duration-500 ease-in-out bg-kronos-50/60 backdrop-blur-lg transform ${
+          className={`fixed top-0 right-0 z-10 w-fill flex flex-col justify-end h-full transition-all duration-500 ease-in-out bg-kronos-50/40 backdrop-blur-lg transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -91,9 +91,18 @@ const Drawer: React.FC = () => {
             </ul>
           </menu>
           <section className="bg-kronos-50/90 flex flex-col items-center place-content-center p-4 py-6 flex-wrap z-20">
-            <div className="text-sm p-2">
-              <span>もっと詳しく知りたい／導入を検討したい</span>
-              <p>DXって何？という方も、まずはご相談を！</p>
+            <div className="text-sm space-y-1 px-8 pb-3">
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white px-2.5 py-0.5 me-1">
+                もっと詳しく知りたい
+              </span>
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 ">
+                導入を検討したい
+              </span>
+              <br />
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 me-1">
+                DXって何？という方
+              </span>
+              <span> も、まずはご相談を！</span>
             </div>
             <a href="#contact" onClick={toggleDrawer}>
               <button

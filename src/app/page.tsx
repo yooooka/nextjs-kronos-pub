@@ -80,13 +80,21 @@ export default function Home() {
                 <Menu />
               </div>
             </div>
-            <section className="bg-kronos-50/90 bottom-0 absolute w-full lg:flex hidden items-center place-content-center p-4 flex-wrap z-10">
-              <div className="text-sm p-2">
-                <span>もっと詳しく知りたい／導入を検討したい</span>
-                <p>DXって何？という方も、まずはご相談を！</p>
+            <section className="bg-kronos-50/90 bottom-0 absolute lg:flex hidden items-center p-4 z-10 justify-evenly mx-auto">
+              <div className="text-sm py-2 space-y-1 basis-2/3 mx-auto text-center">
+                <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white px-2.5 py-0.5 me-1">
+                  もっと詳しく知りたい
+                </span>
+                <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 ">
+                  導入を検討したい
+                </span>
+                <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 me-1">
+                  DXって何？という方
+                </span>
+                <span> も、まずはご相談を！</span>
               </div>
-              <a href="#contact">
-                <button className="prose group relative inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center w-fit">
+              <a href="#contact" className="basis-1/3">
+                <button className="prose group relative w-max inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center">
                   <MdArrowForward
                     fill="currentColor"
                     className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
