@@ -79,6 +79,9 @@ export default function ContactForm() {
       </p>
       <form
         onSubmit={handleSubmit}
+        action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
+        method="post"
+        encType="multipart/form-data"
         className="mx-auto my-8 p-4 md:p-6 bg-white/80 rounded-lg"
       >
         <div className="flex flex-col my-4">
@@ -94,6 +97,7 @@ export default function ContactForm() {
                   id="helpdesk"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
+                  name="ヘルプデスクサービス"
                 />
                 <span className="ml-2">ヘルプデスクサービス</span>
               </label>
@@ -105,6 +109,7 @@ export default function ContactForm() {
                   id="login"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
+                  name="GMOトラスト・ログイン"
                 />
                 <span className="ml-2">GMOトラスト・ログイン</span>
               </label>
@@ -116,6 +121,7 @@ export default function ContactForm() {
                   id="sign"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
+                  name="氏名"
                 />
                 <span className="ml-2">GMOサイン</span>
               </label>
@@ -127,6 +133,7 @@ export default function ContactForm() {
                   id="samba"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
+                  name="セキュアSAMBA"
                 />
                 <span className="ml-2">セキュアSAMBA</span>
               </label>
@@ -138,6 +145,7 @@ export default function ContactForm() {
                   id="aos"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
+                  name="AOS BOX"
                 />
                 <span className="ml-2">AOS BOX</span>
               </label>
@@ -153,6 +161,7 @@ export default function ContactForm() {
               placeholder="クロノス　太郎"
               type="text"
               id="name"
+              name="氏名"
             />
             <label
               htmlFor="name"
@@ -171,6 +180,7 @@ export default function ContactForm() {
               placeholder="サンプル会社"
               type="text"
               id="company"
+              name="会社名"
             />
             <label
               htmlFor="company"
@@ -189,6 +199,7 @@ export default function ContactForm() {
               placeholder="email@example.com"
               type="email"
               id="email"
+              name="メールアドレス"
             />
             <label
               htmlFor="email"
@@ -210,6 +221,7 @@ export default function ContactForm() {
               placeholder="01-2345-6789"
               type="tel"
               id="phone"
+              name="電話番号"
             />
             <label
               htmlFor="phone"
@@ -230,6 +242,7 @@ export default function ContactForm() {
               placeholder="お問合せ内容"
               rows={8}
               id="message"
+              name="お問い合わせ内容"
             ></textarea>
             <label
               htmlFor="message"
@@ -245,6 +258,7 @@ export default function ContactForm() {
               onChange={handleAgreementChange}
               type="checkbox"
               className="peer form-checkbox accent-kronos-light"
+              name="個人情報取扱"
             />
             <span className="text-sm grow m-2">
               <a href="#">個人情報の取り扱い</a>について同意する
