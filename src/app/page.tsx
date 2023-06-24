@@ -11,7 +11,7 @@ import Faq from "./faq";
 import Drawer from "./drawer";
 import Steps from "./steps";
 import Services from "./services";
-import Contact from "./contact";
+import ContactHtml from "./contact-html";
 import Menu from "./menu";
 import { MdArrowForward } from "react-icons/md";
 import { motion, Variants, MotionConfig } from "framer-motion";
@@ -214,7 +214,7 @@ export default function Home() {
               id="contact"
               className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
-              <Contact />
+              <ContactHtml />
             </section>
             <footer className="px-8 pb-8 w-full">
               <div className="prose prose-stone mx-auto text-center text-sm">

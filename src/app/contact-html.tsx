@@ -1,73 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
-import { MdArrowForward } from "react-icons/md";
-
-interface FormState {
-  name: string;
-  company: string;
-  email: string;
-  phone: string;
-  message: string;
-  products: {
-    helpdesk: boolean;
-    login: boolean;
-    sign: boolean;
-    samba: boolean;
-    aos: boolean;
-  };
-  agree: boolean;
-}
-
-export default function ContactForm() {
-  const [formState, setFormState] = useState<FormState>({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
-    message: "",
-    products: {
-      helpdesk: false,
-      login: false,
-      sign: false,
-      samba: false,
-      aos: false,
-    },
-    agree: false,
-  });
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-
-    // Here you would typically handle form submission, like sending the form data to a server
-
-    console.log("Form submitted", formState);
-  };
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormState({
-      ...formState,
-      [e.target.id]: e.target.value,
-    });
-  };
-
-  const handleCheckboxChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setFormState({
-      ...formState,
-      products: {
-        ...formState.products,
-        [e.target.id]: e.target.checked,
-      },
-    });
-  };
-
-  const handleAgreementChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setFormState({
-      ...formState,
-      agree: e.target.checked,
-    });
-  };
-
+export default function ContactHtml() {
   return (
     <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
       <h2 className="mb-2">お問い合わせフォーム</h2>
@@ -78,7 +9,6 @@ export default function ContactForm() {
         こちらのメールフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form
-        onSubmit={handleSubmit}
         action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
         method="post"
         encType="multipart/form-data"
@@ -93,7 +23,6 @@ export default function ContactForm() {
             <div className="w-full sm:w-1/2">
               <label className="flex items-center">
                 <input
-                  onChange={handleCheckboxChange}
                   id="helpdesk"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
@@ -105,7 +34,6 @@ export default function ContactForm() {
             <div className="w-full sm:w-1/2">
               <label className="flex items-center">
                 <input
-                  onChange={handleCheckboxChange}
                   id="login"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
@@ -117,7 +45,6 @@ export default function ContactForm() {
             <div className="w-full sm:w-1/2">
               <label className="flex items-center">
                 <input
-                  onChange={handleCheckboxChange}
                   id="sign"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
@@ -129,7 +56,6 @@ export default function ContactForm() {
             <div className="w-full sm:w-1/2">
               <label className="flex items-center">
                 <input
-                  onChange={handleCheckboxChange}
                   id="samba"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
@@ -141,7 +67,6 @@ export default function ContactForm() {
             <div className="w-full sm:w-1/2">
               <label className="flex items-center">
                 <input
-                  onChange={handleCheckboxChange}
                   id="aos"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
@@ -155,8 +80,6 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
           <div className="relative mt-3">
             <input
-              value={formState.name}
-              onChange={handleInputChange}
               className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
               placeholder="クロノス　太郎"
               type="text"
@@ -174,8 +97,6 @@ export default function ContactForm() {
           </div>
           <div className="relative mt-3">
             <input
-              value={formState.company}
-              onChange={handleInputChange}
               className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
               placeholder="サンプル会社"
               type="text"
@@ -193,8 +114,6 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
           <div className="relative mt-3">
             <input
-              value={formState.email}
-              onChange={handleInputChange}
               className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
               placeholder="email@example.com"
               type="email"
@@ -215,8 +134,6 @@ export default function ContactForm() {
           </div>
           <div className="relative mt-3">
             <input
-              value={formState.phone}
-              onChange={handleInputChange}
               className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
               placeholder="01-2345-6789"
               type="tel"
@@ -236,10 +153,8 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-4">
           <div className="relative mt-3">
             <textarea
-              value={formState.message}
-              onChange={handleInputChange}
               className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
-              placeholder="お問合せ内容"
+              placeholder="お問い合わせ内容"
               rows={8}
               id="message"
               name="お問い合わせ内容"
@@ -255,36 +170,18 @@ export default function ContactForm() {
         <div className="mt-0">
           <label className="flex items-center flex-wrap">
             <input
-              onChange={handleAgreementChange}
               type="checkbox"
               className="peer form-checkbox accent-kronos-light"
-              name="個人情報取扱"
+              name="個人情報の取り扱いに同意"
             />
             <span className="text-sm grow m-2">
               <a href="#">個人情報の取り扱い</a>について同意する
             </span>
-            <button
-              className={`inline-flex items-center w-fit rounded-full px-8 py-2 text-white relative group ${
-                formState.agree
-                  ? "bg-primary-dark hover:bg-kronos"
-                  : "bg-gray-300  contrast-more:bg-stone-500 cursor-not-allowed"
-              }`}
-              disabled={!formState.agree}
-            >
-              {formState.agree ? (
-                <MdArrowForward
-                  fill="currentColor"
-                  className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
-                />
-              ) : null}
-              <span
-                className={`font-bold ${
-                  formState.agree ? "group-hover:me-3 transition-all" : null
-                }`}
-              >
-                確認する
-              </span>
-            </button>
+            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos">
+              <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
+                <span className="font-bold">確認する</span>
+              </button>
+            </div>
           </label>
         </div>
       </form>
