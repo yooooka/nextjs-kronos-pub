@@ -14,6 +14,8 @@ Don't forget minify output.css
 
 Sharp Missing In Production
 
+Menu hover animation?
+
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 

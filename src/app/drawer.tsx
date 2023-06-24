@@ -49,44 +49,36 @@ const Drawer: React.FC = () => {
           <menu className="mx-16 my-8 not-prose font-bold">
             <ul className="not-prose list-none space-y-8 text-lg">
               <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <MdArrowForward className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                 <a href="#dx-explained" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-200 pb-1 whitespace-nowrap">
+                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
                     DXとは？
                   </span>
                 </a>
               </li>
               <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <MdArrowForward className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
                 <a href="#steps" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-200 pb-1 whitespace-nowrap">
+                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
                     DX導入の5つのステップ
                   </span>
                 </a>
               </li>
               <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <MdArrowForward className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
                 <a href="#recommendations" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-200 pb-1 whitespace-nowrap">
+                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
                     5つのDXサービス
                   </span>
                 </a>
               </li>
               <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <MdArrowForward className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
-
                 <a href="#cases" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-200 pb-1 whitespace-nowrap">
+                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
                     導入事例
                   </span>
                 </a>
               </li>
               <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <MdArrowForward className="opacity-0 group-hover:opacity-100 material-symbols-rounded text-primary transition-all -translate-x-6 group-hover:translate-x-0 duration-300 text-xl mr-3" />
                 <a href="#faq" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-200 pb-1 whitespace-nowrap">
+                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
                     よくある質問
                   </span>
                 </a>
@@ -104,10 +96,13 @@ const Drawer: React.FC = () => {
               <p>DXって何？という方も、まずはご相談を！</p>
             </div>
             <a href="#contact" onClick={toggleDrawer}>
-              <button className="prose group relative inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center w-fit">
+              <button
+                dir="rtl"
+                className="prose group relative inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center w-fit"
+              >
                 <MdArrowForward
                   fill="currentColor"
-                  className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
+                  className="absolute end-full opacity-0 transition-all group-hover:end-5 rotate-180 group-hover:opacity-100 text-2xl"
                 />
                 <span className="font-bold transition-all group-hover:me-3">
                   お問い合わせ
