@@ -12,7 +12,7 @@ export default function ContactHtml() {
         action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
         method="post"
         encType="multipart/form-data"
-        className="mx-auto my-8 p-4 md:p-6 bg-white/80 rounded-lg"
+        className="mx-auto mt-8 p-4 md:p-6 bg-white/80 rounded-lg"
       >
         <div className="flex flex-col my-4">
           <p className="mt-0 before:content-['*'] before:text-red-500 block font-medium text-sm">

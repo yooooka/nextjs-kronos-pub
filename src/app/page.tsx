@@ -216,10 +216,11 @@ export default function Home() {
             >
               <ContactHtml />
             </section>
-            <footer className="px-8 pb-8 w-full">
-              <div className="prose prose-stone mx-auto text-center text-sm">
-                © 2023 株式会社クロノス
-              </div>
+            <footer className="px-8 pb-8 w-full text-center prose prose-stone max-w-none">
+              <a href="#dx-explained" className="mb-3 mx-auto inline-block">
+                ↑ ページトップへ
+              </a>
+              <div className="mx-auto text-sm">© 2023 株式会社クロノス</div>
             </footer>
           </main>
         </div>
