@@ -774,7 +774,7 @@ input{
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
 <div style="color:red"><?php echo $errm; ?></div>
 <br /><br />
-<input class="input-button" type="button" value=" 前画面に戻る " onClick="history.go(-1)">
+<input class="input-button" type="button" value=" 前画面に戻る" onClick="history.go(-1)">
 </div>
 </body>
 </html>

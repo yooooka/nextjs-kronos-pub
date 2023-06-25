@@ -56,7 +56,7 @@ export default function Home() {
             <Drawer />
             <nav className="p-3 sm:flex justify-between items-center">
               <div className="bg-no-repeat w-[120px] h-[36px] absolute top-3 left-6">
-                <a href="kronos-logo" id="logo-top">
+                <a href="#" id="logo-top">
                   <span className="sr-only">Kronos</span>
                   <Image src={kronos} alt="クロノス　ロゴ" fill />
                 </a>
