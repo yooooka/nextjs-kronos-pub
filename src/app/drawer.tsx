@@ -91,15 +91,15 @@ const Drawer: React.FC = () => {
             </ul>
           </menu>
           <section className="bg-kronos-50/90 flex flex-col items-center place-content-center p-4 py-6 flex-wrap z-20">
-            <div className="text-sm space-y-1 px-8 pb-3">
-              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white px-2.5 py-0.5 me-1">
+            <div className="text-sm space-y-1 px-8 pb-3 text-stone-700">
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white px-3 py-1 me-1">
                 もっと詳しく知りたい
               </span>
-              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 ">
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white  px-3 py-1 ">
                 導入を検討したい
               </span>
               <br />
-              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-lg bg-white  px-2.5 py-0.5 me-1">
+              <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white  px-3 py-1 me-1">
                 DXって何？という方
               </span>
               <span> も、まずはご相談を！</span>

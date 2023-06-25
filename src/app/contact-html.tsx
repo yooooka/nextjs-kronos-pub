@@ -177,7 +177,7 @@ export default function ContactHtml() {
             <span className="text-sm grow m-2">
               <a href="#">個人情報の取り扱い</a>について同意する
             </span>
-            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos">
+            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos [&_button]:cursor-not-allowed peer-checked:[&_button]:cursor-pointer">
               <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
                 <span className="font-bold">確認する</span>
               </button>
