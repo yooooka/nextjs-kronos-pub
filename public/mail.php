@@ -616,18 +616,24 @@ table.formTable th{
 	background:#efefef;
 	text-align:left;
 }
+
+table.formTable td{
+	background:white;
+}
+
 p.error_messe{
-	margin:5px 0;
+	margin:0.8rem 0;
 	color:red;
 }
 input{
 	padding-top:0.5rem;
 	padding-bottom:0.5rem; 
 	padding-left:2rem;
-	padding-right:2rem; 
+	padding-right:2rem;
 }
 .kronos{
 	padding:1rem;
+	margin-top: 1rem;
 	text-align: center;
 }
 /*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
@@ -641,10 +647,14 @@ table.formTable th, table.formTable td {
 	display:block;
 }
 table.formTable th {
-	margin-top:5px;
+	margin-top:0.5rem;;
 	border-bottom:0;
 }
-form input[type="submit"], form input[type="reset"], form input[type="button"] {
+table.formTable tr:first-of-type th {
+	margin-top: 0;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
 	display:block;
 	width:100%;
 	height:40px;
@@ -669,7 +679,8 @@ form input[type="submit"], form input[type="reset"], form input[type="button"] {
 <?php if($empty_flag == 1){ ?>
 <div align="center">
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
+<?php echo $errm; ?><br /><br />
+<input type="button" value=" 前画面に戻る " onClick="history.go(-1)">
 </div>
 <?php }else{ ?>
 <h3>確認画面</h3>
@@ -695,7 +706,7 @@ if(isset($_FILES[$upfile_key]["tmp_name"])){
 	}
 }
 ?>
-<input type="button" value="前画面に戻る" onClick="history.back()">
+<input type="button" value="前画面に戻る" onClick="history.go(-1)">
 <input type="submit" value="　送信する　">
 </p>
 </form>
@@ -747,6 +758,7 @@ input{
 	padding-left:2rem;
 	padding-right:2rem; 
 }
+
 </style>
 </head>
 <body>
@@ -761,7 +773,8 @@ input{
 <?php if($empty_flag == 1){ ?>
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
 <div style="color:red"><?php echo $errm; ?></div>
-<br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
+<br /><br />
+<input class="input-button" type="button" value=" 前画面に戻る " onClick="history.go(-1)">
 </div>
 </body>
 </html>
@@ -781,7 +794,7 @@ input{
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
 else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) { 
 	if($empty_flag == 1){ ?>
-<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
+<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.go(-1)"></div>
 <?php 
 	}else{ header("Location: ".$thanksPage); }
 }
