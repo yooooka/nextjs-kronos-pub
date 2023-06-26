@@ -17,6 +17,8 @@ Menu hover animation?
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
+Privacy policy linke and check
+
 ## Getting Started
 
 First, run the development server:

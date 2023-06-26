@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 export default function ContactHtml() {
-  const [checks, setChecks] = useState();
+  const [isAgreed, setIsAgreed] = useState(false);
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsAgreed(e.target.checked);
+  };
 
   return (
     <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
@@ -182,12 +185,16 @@ export default function ContactHtml() {
               type="checkbox"
               className="peer form-checkbox accent-kronos-light"
               name="個人情報の取り扱いに同意"
+              onChange={handleCheckboxChange}
             />
             <span className="text-sm grow ms-2 my-2">
               <a href="#">個人情報の取り扱い</a>について同意する
             </span>
             <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos [&_button]:cursor-not-allowed peer-checked:[&_button]:cursor-pointer my-2">
-              <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
+              <button
+                className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white"
+                disabled={!isAgreed}
+              >
                 <span className="font-bold">確認する</span>
               </button>
             </div>
