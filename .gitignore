@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 /.vscode
+kronos-staging.txt
 
 # debug
 npm-debug.log*
