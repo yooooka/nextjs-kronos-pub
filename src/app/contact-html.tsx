@@ -1,13 +1,90 @@
 "use client";
 
-import { useState } from "react";
+import React, { FC, ChangeEvent, useState } from "react";
+
+// Define types for props
+type CheckboxFieldProps = {
+  id: string;
+  label: string;
+  name: string;
+  className: string;
+};
+
+type TextFieldProps = {
+  id: string;
+  placeholder: string;
+  type: string;
+  label: string;
+  required: boolean;
+  name: string;
+};
+
+// Components for each form field
+const CheckboxField: FC<CheckboxFieldProps> = ({
+  id,
+  label,
+  name,
+  className,
+}) => (
+  <div className={className}>
+    <label className="flex items-center">
+      <input
+        id={id}
+        type="checkbox"
+        className="form-checkbox accent-kronos-light"
+        value={label}
+        name={name}
+      />
+      <span className="ml-2">{label}</span>
+    </label>
+  </div>
+);
+
+const TextField: FC<TextFieldProps> = ({
+  id,
+  placeholder,
+  type,
+  label,
+  required,
+  name,
+}) => (
+  <div className="relative mt-3">
+    <input
+      className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
+      placeholder={placeholder}
+      type={type}
+      id={id}
+      name={name}
+    />
+    <label
+      htmlFor={id}
+      className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
+    >
+      <span
+        className={
+          required
+            ? "before:content-['*'] before:text-red-500 block font-medium"
+            : "block font-medium"
+        }
+      >
+        {label}
+      </span>
+    </label>
+  </div>
+);
 
 export default function ContactHtml() {
   const [isAgreed, setIsAgreed] = useState(false);
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsAgreed(e.target.checked);
   };
-
+  const products = [
+    { id: "helpdesk", label: "ヘルプデスクサービス" },
+    { id: "login", label: "GMOトラスト・ログイン" },
+    { id: "sign", label: "GMOサイン" },
+    { id: "samba", label: "セキュアSAMBA" },
+    { id: "aos", label: "AOS BOX" },
+  ];
   return (
     <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
       <h2 className="mb-2">お問い合わせフォーム</h2>
@@ -27,142 +104,53 @@ export default function ContactHtml() {
           <p className="mt-0 before:content-['*'] before:text-red-500 block font-medium text-sm">
             お問い合わせ製品を選択してください。
           </p>
-
           <div className="flex flex-wrap">
-            <div className="w-full sm:w-1/2">
-              <label className="flex items-center">
-                <input
-                  id="helpdesk"
-                  type="checkbox"
-                  className="form-checkbox accent-kronos-light"
-                  value="ヘルプデスクサービス"
-                  name="お問い合わせ製品[]"
-                />
-                <span className="ml-2">ヘルプデスクサービス</span>
-              </label>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <label className="flex items-center">
-                <input
-                  id="login"
-                  type="checkbox"
-                  className="form-checkbox accent-kronos-light"
-                  value="GMOトラスト・ログイン"
-                  name="お問い合わせ製品[]"
-                />
-                <span className="ml-2">GMOトラスト・ログイン</span>
-              </label>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <label className="flex items-center">
-                <input
-                  id="sign"
-                  type="checkbox"
-                  className="form-checkbox accent-kronos-light"
-                  value="GMOサイン"
-                  name="お問い合わせ製品[]"
-                />
-                <span className="ml-2">GMOサイン</span>
-              </label>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <label className="flex items-center">
-                <input
-                  id="samba"
-                  type="checkbox"
-                  className="form-checkbox accent-kronos-light"
-                  value="セキュアSAMBA"
-                  name="お問い合わせ製品[]"
-                />
-                <span className="ml-2">セキュアSAMBA</span>
-              </label>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <label className="flex items-center">
-                <input
-                  id="aos"
-                  type="checkbox"
-                  className="form-checkbox accent-kronos-light"
-                  value="AOS BOX"
-                  name="お問い合わせ製品[]"
-                />
-                <span className="ml-2">AOS BOX</span>
-              </label>
-            </div>
+            {products.map((product) => (
+              <CheckboxField
+                key={product.id}
+                id={product.id}
+                label={product.label}
+                name="お問い合わせ製品[]"
+                className="w-full sm:w-1/2"
+              />
+            ))}
           </div>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
-          <div className="relative mt-3">
-            <input
-              className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
-              placeholder="クロノス　太郎"
-              type="text"
-              id="name"
-              name="氏名"
-            />
-            <label
-              htmlFor="name"
-              className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
-            >
-              <span className="before:content-['*'] before:text-red-500 block">
-                氏名
-              </span>
-            </label>
-          </div>
-          <div className="relative mt-3">
-            <input
-              className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
-              placeholder="サンプル会社"
-              type="text"
-              id="company"
-              name="会社名"
-            />
-            <label
-              htmlFor="company"
-              className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
-            >
-              <span className="block font-medium">会社名</span>
-            </label>
-          </div>
+          <TextField
+            id="name"
+            placeholder="クロノス　太郎"
+            type="text"
+            label="氏名"
+            required
+            name="氏名"
+          />
+          <TextField
+            id="company"
+            placeholder="サンプル会社"
+            type="text"
+            label="会社名"
+            required={false}
+            name="会社名"
+          />
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
-          <div className="relative mt-3">
-            <input
-              className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
-              placeholder="email@example.com"
-              type="email"
-              id="email"
-              name="メールアドレス"
-            />
-            <label
-              htmlFor="email"
-              className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
-            >
-              <span className="before:content-['*'] before:text-red-500 block font-medium">
-                メールアドレス
-              </span>
-            </label>
-            <p className="mt-2 hidden peer-invalid:block text-red-600 text-sm">
-              メールアドレスが正しく入力されていますか？例）email@example.com
-            </p>
-          </div>
-          <div className="relative mt-3">
-            <input
-              className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
-              placeholder="01-2345-6789"
-              type="tel"
-              id="phone"
-              name="電話番号"
-            />
-            <label
-              htmlFor="phone"
-              className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
-            >
-              <span className="before:content-['*'] before:text-red-500 block font-medium">
-                電話番号
-              </span>
-            </label>
-          </div>
+          <TextField
+            id="email"
+            placeholder="email@example.com"
+            type="email"
+            label="メールアドレス"
+            required
+            name="メールアドレス"
+          />
+          <TextField
+            id="phone"
+            placeholder="01-2345-6789"
+            type="tel"
+            label="電話番号"
+            required
+            name="電話番号"
+          />
         </div>
         <div className="grid grid-cols-1 gap-4">
           <div className="relative mt-3">
@@ -182,19 +170,25 @@ export default function ContactHtml() {
           </div>
         </div>
         <div className="mt-0">
-          <label className="flex items-center flex-wrap justify-center">
-            <input
-              type="checkbox"
-              className="peer form-checkbox accent-kronos-light"
-              name="個人情報の取り扱いに同意"
-              onChange={handleCheckboxChange}
-            />
-            <span className="text-sm grow ms-2 my-2">
-              <a href="#">個人情報の取り扱い</a>について同意する
-            </span>
-            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos [&_button]:cursor-not-allowed peer-checked:[&_button]:cursor-pointer my-2">
+          <label className="flex items-center flex-wrap justify-between">
+            <div className="w-fit">
+              <input
+                type="checkbox"
+                className="peer form-checkbox cursor-pointer accent-kronos-light"
+                name="個人情報の取り扱いに同意"
+                onChange={handleCheckboxChange}
+              />
+              <span className="text-sm inline-block ms-2 my-2">
+                <a href="#">個人情報の取り扱い</a>について同意する
+              </span>
+            </div>
+            <div className="my-2">
               <button
-                className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white"
+                className={`inline-flex rounded-full px-8 py-2 text-white ${
+                  isAgreed
+                    ? "cursor-pointer bg-primary-dark  hover:bg-kronos"
+                    : "cursor-not-allowed  bg-stone-300"
+                }`}
                 disabled={!isAgreed}
               >
                 <span className="font-bold">確認する</span>

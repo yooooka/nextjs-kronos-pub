@@ -6,7 +6,7 @@ import { MdArrowForward } from "react-icons/md";
 interface DrawerItemProps {
   href: string;
   label: string;
-  onClick: () => void; // Define onClick event handler
+  onClick: () => void;
 }
 
 const DrawerItem: FC<DrawerItemProps> = ({

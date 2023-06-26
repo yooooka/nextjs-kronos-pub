@@ -147,7 +147,7 @@ export default function Home() {
                     variants={titleVariants}
                   >
                     <Image
-                      alt="DXによる"
+                      alt="タイトル画像"
                       src={title01}
                       className="mx-auto mb-4 h-[60px] max-w-none object-contain"
                     />

@@ -36,7 +36,7 @@ export default function Steps() {
         variants={titleVariants}
       >
         <Image
-          alt="クロノスがお手伝いする"
+          alt="タイトル画像"
           src={title02}
           className="mx-auto mb-4 h-[60px] max-w-none object-contain"
         />
@@ -50,7 +50,7 @@ export default function Steps() {
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
             src={hearing}
-            alt="ヒアリングイメージ"
+            alt="ヒアリングを表す画像"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
           <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
@@ -68,7 +68,7 @@ export default function Steps() {
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
             src={presentation}
-            alt="DXプランのご提案イメージ"
+            alt="DXプランのご提案を表す画像"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
           <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
@@ -86,7 +86,7 @@ export default function Steps() {
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
             src={consultation}
-            alt="DXプランの検討イメージ"
+            alt="DXプランの検討を表す画像"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
           <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
@@ -104,7 +104,7 @@ export default function Steps() {
         <li className="relative sm:arrow grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
             src={implement}
-            alt="導入イメージ"
+            alt="導入を表す画像"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
           <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">
@@ -122,7 +122,7 @@ export default function Steps() {
         <li className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-start">
           <Image
             src={helpDesk}
-            alt="継続支援イメージ"
+            alt="継続支援を表す画像"
             className="col-start-1 sm:row-span-2 mb-4 sm:mb-0 m-auto"
           />
           <h3 className="-order-1 sm:-order-none flex items-end place-self-center sm:place-self-start self-end sm:self-end mb-0">

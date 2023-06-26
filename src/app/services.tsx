@@ -36,7 +36,7 @@ export default function Steps() {
           variants={titleVariants}
         >
           <Image
-            alt="クロノスがおすすめする"
+            alt="タイトル画像"
             src={title03}
             className="mx-auto mb-4 h-[60px] max-w-none object-contain"
           />
@@ -56,7 +56,7 @@ export default function Steps() {
           </h4>
           <Image
             src={sHelpDesk}
-            alt="ヘルプデスクサービス"
+            alt="ヘルプデスクサービスを表す画像"
             className="max-width-none mx-auto"
           />
           <p className="mt-1">
@@ -69,11 +69,11 @@ export default function Steps() {
           <Image
             src={gmoLogin}
             className="max-w-[280px] m-auto"
-            alt="GMO トラストログイン"
+            alt="GMO トラストログインロゴ"
           />
           <Image
             src={sTrustLogin}
-            alt="GMO トラストログイン"
+            alt="GMO トラストログインを表す画像"
             className="max-width-none mx-auto"
           />
           <p className="mt-1">
@@ -86,11 +86,11 @@ export default function Steps() {
           <Image
             src={gmoSign}
             className="max-w-[280px] m-auto"
-            alt="GMO サイン"
+            alt="GMO サインロゴ"
           />
           <Image
             src={sSign}
-            alt="GMO サイン"
+            alt="GMO サインを表す画像"
             className="max-width-none mx-auto"
           />
           <p className="mt-1">
@@ -103,11 +103,11 @@ export default function Steps() {
           <Image
             src={samba}
             className="max-w-[180px] m-auto"
-            alt="セキュアSAMBA"
+            alt="セキュアSAMBAロゴ"
           />
           <Image
             src={sSamba}
-            alt="セキュアSAMBA"
+            alt="セキュアSAMBAを表す画像"
             className="max-width-none mx-auto"
           />
           <p className="mt-1">
@@ -117,10 +117,14 @@ export default function Steps() {
         <div className="block rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 pb-4 transition hover:bg-kronos-50">
           <h3 className="text-center">バックアップにかける時間を「0」に</h3>
           <h3 className="sr-only">AOS BOX</h3>
-          <Image src={aosbox} className="max-w-[180px] m-auto" alt="AOS BOX" />
+          <Image
+            src={aosbox}
+            className="max-w-[180px] m-auto"
+            alt="AOS BOXロゴ"
+          />
           <Image
             src={sAosbox}
-            alt="AOS BOX"
+            alt="AOS BOXを表す画像"
             className="max-width-none mx-auto"
           />
           <p className="mt-1">
