@@ -10,8 +10,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Todo
 
-Don't forget minify output.css
-
 Sharp Missing In Production
 
 Menu hover animation?
