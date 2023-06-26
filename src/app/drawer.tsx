@@ -1,8 +1,27 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { FC, useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdArrowForward } from "react-icons/md";
+interface DrawerItemProps {
+  href: string;
+  label: string;
+  onClick: () => void; // Define onClick event handler
+}
+
+const DrawerItem: FC<DrawerItemProps> = ({
+  href,
+  label,
+  onClick = () => {},
+}) => (
+  <li className="group flex items-center place-content-end hover:cursor-pointer">
+    <a href={href} onClick={onClick}>
+      <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
+        {label}
+      </span>
+    </a>
+  </li>
+);
 
 const Drawer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +30,19 @@ const Drawer: React.FC = () => {
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  const drawerItems: DrawerItemProps[] = [
+    { href: "#dx-explained", label: "DXとは？", onClick: toggleDrawer },
+    { href: "#steps", label: "DX導入の5つのステップ", onClick: toggleDrawer },
+    {
+      href: "#recommendations",
+      label: "5つのDXサービス",
+      onClick: toggleDrawer,
+    },
+    { href: "#cases", label: "導入事例", onClick: toggleDrawer },
+    { href: "#faq", label: "よくある質問", onClick: toggleDrawer },
+    { href: "#page-top", label: "↑ ページトップへ", onClick: toggleDrawer },
+  ];
 
   const handleClickOutside = (e: MouseEvent) => {
     if (node.current && !node.current.contains(e.target as Node)) {
@@ -48,46 +80,14 @@ const Drawer: React.FC = () => {
         >
           <menu className="mx-16 my-8 not-prose font-bold">
             <ul className="not-prose list-none space-y-8 text-lg">
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#dx-explained" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
-                    DXとは？
-                  </span>
-                </a>
-              </li>
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#steps" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
-                    DX導入の5つのステップ
-                  </span>
-                </a>
-              </li>
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#recommendations" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
-                    5つのDXサービス
-                  </span>
-                </a>
-              </li>
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#cases" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
-                    導入事例
-                  </span>
-                </a>
-              </li>
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#faq" onClick={toggleDrawer}>
-                  <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
-                    よくある質問
-                  </span>
-                </a>
-              </li>
-              <li className="group flex items-center place-content-end hover:cursor-pointer">
-                <a href="#page-top" onClick={toggleDrawer}>
-                  <span className="pb-1">↑ ページトップへ</span>
-                </a>
-              </li>
+              {drawerItems.map((item, index) => (
+                <DrawerItem
+                  key={index}
+                  href={item.href}
+                  label={item.label}
+                  onClick={toggleDrawer}
+                />
+              ))}
             </ul>
           </menu>
           <section className="bg-kronos-50/90 flex flex-col items-center place-content-center p-4 py-6 flex-wrap z-20">
