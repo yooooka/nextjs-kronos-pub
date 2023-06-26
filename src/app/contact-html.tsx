@@ -168,16 +168,16 @@ export default function ContactHtml() {
           </div>
         </div>
         <div className="mt-0">
-          <label className="flex items-center flex-wrap">
+          <label className="flex items-center flex-wrap justify-center">
             <input
               type="checkbox"
               className="peer form-checkbox accent-kronos-light"
               name="個人情報の取り扱いに同意"
             />
-            <span className="text-sm grow m-2">
+            <span className="text-sm grow ms-2 my-2">
               <a href="#">個人情報の取り扱い</a>について同意する
             </span>
-            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos [&_button]:cursor-not-allowed peer-checked:[&_button]:cursor-pointer">
+            <div className="peer-checked:[&_button]:bg-primary-dark peer-checked:[&_button:hover]:bg-kronos [&_button]:cursor-not-allowed peer-checked:[&_button]:cursor-pointer my-2">
               <button className="bg-stone-300 inline-flex rounded-full px-8 py-2 text-white">
                 <span className="font-bold">確認する</span>
               </button>

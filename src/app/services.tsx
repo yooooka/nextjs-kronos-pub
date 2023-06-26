@@ -48,7 +48,7 @@ export default function Steps() {
           DX SERVICES
         </span>
       </div>
-      <div className="prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min sm:mx-12">
+      <div className="sm:prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min sm:mx-12">
         <div className="flex flex-col rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 pb-4 transition hover:bg-kronos-50">
           <h3 className="text-center">導入～運用まで伴走し続けます</h3>
           <h4 className="my-4 text-2xl font-bold text-center">

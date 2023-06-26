@@ -1,5 +1,5 @@
 "use client";
-
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import hero from "./assets/hero.svg";
 import title01 from "./assets/title01.svg";
@@ -31,6 +31,25 @@ const titleVariants: Variants = {
 };
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(
+        navigator.userAgent
+      );
+      setIsMobile(isMobileDevice);
+    };
+
+    checkIsMobile(); // Run the check initially
+
+    window.addEventListener("resize", checkIsMobile); // Run the check on window resize
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile); // Clean up the event listener
+    };
+  }, []);
+
   return (
     <MotionConfig reducedMotion="user">
       <div
@@ -216,8 +235,11 @@ export default function Home() {
             >
               <ContactHtml />
             </section>
-            <footer className="px-8 pb-8 w-full text-center prose prose-stone max-w-none">
-              <a href="#dx-explained" className="mb-3 mx-auto inline-block">
+            <footer className="px-12 pb-12 w-full text-center prose prose-stone max-w-none">
+              <a
+                href={isMobile ? "#page-top" : "#dx-explained"}
+                className="mb-3 mx-auto inline-block"
+              >
                 ↑ ページトップへ
               </a>
               <div className="mx-auto text-sm">© 2023 株式会社クロノス</div>

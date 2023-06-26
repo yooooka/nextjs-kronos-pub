@@ -589,7 +589,7 @@ else if($confirmDsp == 1){
 /* 自由に編集下さい */
 html {
 	font-family:sans-serif;
-	background-color:#fff6ed;
+	background-color:#f8f6ed;
 }
 h3 {
 	text-align:center;
@@ -735,7 +735,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <style type="text/css">
 html {
 	font-family:sans-serif;
-	background-color:#fff6ed;
+	background-color:#f8f6ed;
 }
 h3 {
 	text-align:center;
