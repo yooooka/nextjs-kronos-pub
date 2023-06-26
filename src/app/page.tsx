@@ -31,22 +31,20 @@ const titleVariants: Variants = {
 };
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    const checkIsMobile = () => {
-      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(
-        navigator.userAgent
-      );
-      setIsMobile(isMobileDevice);
+    const checkScreenSize = () => {
+      const isSmallScreen = window.innerWidth <= 1024;
+      setIsSmallScreen(isSmallScreen);
     };
 
-    checkIsMobile(); // Run the check initially
+    checkScreenSize(); // Run the check initially
 
-    window.addEventListener("resize", checkIsMobile); // Run the check on window resize
+    window.addEventListener("resize", checkScreenSize); // Run the check on window resize
 
     return () => {
-      window.removeEventListener("resize", checkIsMobile); // Clean up the event listener
+      window.removeEventListener("resize", checkScreenSize); // Clean up the event listener
     };
   }, []);
 
@@ -237,7 +235,7 @@ export default function Home() {
             </section>
             <footer className="px-12 pb-12 w-full text-center prose prose-stone max-w-none">
               <a
-                href={isMobile ? "#page-top" : "#dx-explained"}
+                href={isSmallScreen ? "#page-top" : "#dx-explained"}
                 className="mb-3 mx-auto inline-block"
               >
                 ↑ ページトップへ
