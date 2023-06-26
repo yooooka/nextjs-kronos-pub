@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function ContactHtml() {
+  const [checks, setChecks] = useState();
+
   return (
     <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
       <h2 className="mb-2">お問い合わせフォーム</h2>
@@ -26,7 +30,8 @@ export default function ContactHtml() {
                   id="helpdesk"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
-                  name="ヘルプデスクサービス"
+                  value="ヘルプデスクサービス"
+                  name="お問い合わせ製品[]"
                 />
                 <span className="ml-2">ヘルプデスクサービス</span>
               </label>
@@ -37,7 +42,8 @@ export default function ContactHtml() {
                   id="login"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
-                  name="GMOトラスト・ログイン"
+                  value="GMOトラスト・ログイン"
+                  name="お問い合わせ製品[]"
                 />
                 <span className="ml-2">GMOトラスト・ログイン</span>
               </label>
@@ -48,7 +54,8 @@ export default function ContactHtml() {
                   id="sign"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
-                  name="GMOサイン"
+                  value="GMOサイン"
+                  name="お問い合わせ製品[]"
                 />
                 <span className="ml-2">GMOサイン</span>
               </label>
@@ -59,7 +66,8 @@ export default function ContactHtml() {
                   id="samba"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
-                  name="セキュアSAMBA"
+                  value="セキュアSAMBA"
+                  name="お問い合わせ製品[]"
                 />
                 <span className="ml-2">セキュアSAMBA</span>
               </label>
@@ -70,7 +78,8 @@ export default function ContactHtml() {
                   id="aos"
                   type="checkbox"
                   className="form-checkbox accent-kronos-light"
-                  name="AOS BOX"
+                  value="AOS BOX"
+                  name="お問い合わせ製品[]"
                 />
                 <span className="ml-2">AOS BOX</span>
               </label>
