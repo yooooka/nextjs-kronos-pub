@@ -25,7 +25,7 @@ const titleVariants: Variants = {
   },
 };
 
-export default function Steps() {
+export default function Services() {
   return (
     <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
       <div className="mx-auto prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
@@ -48,7 +48,7 @@ export default function Steps() {
           DX SERVICES
         </span>
       </div>
-      <div className="sm:prose-p:text-[0.85rem] prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min sm:mx-12">
+      <div className="prose-h3:mt-0 prose-h3:text-base mt-8 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-1 auto-cols-min sm:mx-12">
         <div className="flex flex-col rounded-lg bg-white shadow-lg shadow-kronos-600/20 p-8 pb-4 transition hover:bg-kronos-50">
           <h3 className="text-center">導入～運用まで伴走し続けます</h3>
           <h4 className="my-4 text-2xl font-bold text-center">
