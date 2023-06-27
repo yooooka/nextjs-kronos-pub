@@ -3,8 +3,8 @@ import React, { FC, useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 const variants = {
-  open: { opacity: [1, 1, 1], y: 64, rotate: [0, 180] },
-  closed: { opacity: [1, 1, 1], y: 0, rotate: [-180, 0] },
+  open: { opacity: 1, y: 72 },
+  closed: { opacity: 1, y: 0 },
 };
 interface DrawerItemProps {
   href: string;
