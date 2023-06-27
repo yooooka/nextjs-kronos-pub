@@ -23,16 +23,11 @@ export default function Opening() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (!isMobile) {
-      const timer = setTimeout(() => {
-        setIsVisible(false);
-      }, 5200); // 1 second duration * 6 repeats = 6 seconds
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 5200); // 1 second duration * 6 repeats = 6 seconds
 
-      return () => clearTimeout(timer);
-    } else {
-      setIsVisible(true);
-    }
+    return () => clearTimeout(timer);
   }, []);
 
   return (
