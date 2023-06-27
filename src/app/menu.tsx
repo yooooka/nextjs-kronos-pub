@@ -20,7 +20,6 @@ const Menu: FC = () => {
     { href: "#dx-explained", label: "DXとは？" },
     { href: "#steps", label: "DX導入の5つのステップ" },
     { href: "#recommendations", label: "5つのDXサービス" },
-    { href: "#cases", label: "導入事例" },
     { href: "#faq", label: "よくある質問" },
   ];
 

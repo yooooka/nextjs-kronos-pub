@@ -39,7 +39,6 @@ const Drawer: React.FC = () => {
       label: "5つのDXサービス",
       onClick: toggleDrawer,
     },
-    { href: "#cases", label: "導入事例", onClick: toggleDrawer },
     { href: "#faq", label: "よくある質問", onClick: toggleDrawer },
     { href: "#page-top", label: "↑ ページトップへ", onClick: toggleDrawer },
   ];
