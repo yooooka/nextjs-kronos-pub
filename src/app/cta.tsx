@@ -40,27 +40,27 @@ const Cta: React.FC = () => {
           exit="offscreen"
           viewport={{ once: true, amount: 0 }}
           variants={titleVariants}
-          className={`bg-kronos-50/90 bottom-0 lg:absolute flex items-center py-2 px-4 sm:p-4 z-10 lg:justify-center mx-auto text-center w-full ${
+          className={`bottom-0 z-10 mx-auto flex w-full items-center bg-kronos-50/90 px-4 py-2 text-center sm:p-4 lg:absolute lg:justify-center ${
             isVisible ? "fixed" : ""
           }`}
         >
-          <div className="flex flex-col sm:flex-row sm:flex-wrap items-center text-sm py-2 space-y-1  space-x-1 basis-1/2 sm:basis-2/3 mx-auto justify-center text-stone-700">
-            <span className="hidden sm:inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white px-3 py-1">
+          <div className="mx-auto flex basis-1/2 flex-col items-center justify-center space-x-1 space-y-1  py-2 text-sm text-stone-700 sm:basis-2/3 sm:flex-row sm:flex-wrap">
+            <span className="hidden max-w-max rounded-full border-2 border-kronos-light bg-white px-3 py-1 font-bold sm:inline-block">
               もっと詳しく知りたい
             </span>
-            <span className="hidden sm:inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white  px-3 py-1 ">
+            <span className="hidden max-w-max rounded-full border-2 border-kronos-light bg-white px-3 py-1  font-bold sm:inline-block ">
               導入を検討したい
             </span>
-            <span className="inline-block max-w-max border-2 font-bold border-kronos-light rounded-full bg-white  px-3 py-1 me-1">
+            <span className="me-1 inline-block max-w-max rounded-full border-2 border-kronos-light bg-white  px-3 py-1 font-bold">
               DXって何？という方
             </span>
             <span> も、まずはご相談を！</span>
           </div>
           <a href="#contact" className="basis-1/2 sm:basis-1/3">
-            <button className="prose group relative w-max inline-flex items-center rounded-full bg-primary-dark px-8 py-2 text-white focus:outline-none focus:ring hover:bg-kronos lg:text-center">
+            <button className="group prose relative inline-flex w-max items-center rounded-full bg-primary-dark px-8 py-2 text-white hover:bg-kronos focus:outline-none focus:ring lg:text-center">
               <MdArrowForward
                 fill="currentColor"
-                className="absolute end-full opacity-0 transition-all group-hover:end-5 group-hover:opacity-100 text-2xl"
+                className="absolute end-full text-2xl opacity-0 transition-all group-hover:end-5 group-hover:opacity-100"
               />
               <span className="font-bold transition-all group-hover:me-3">
                 お問い合わせ

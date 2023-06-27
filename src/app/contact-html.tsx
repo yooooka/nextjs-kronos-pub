@@ -48,7 +48,7 @@ const TextField: FC<TextFieldProps> = ({
 }) => (
   <div className="relative mt-3">
     <input
-      className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
+      className="peer w-full rounded-lg border border-stone-200 p-3 placeholder-transparent ring-primary-light focus:outline-none focus:ring-4"
       placeholder={placeholder}
       type={type}
       id={id}
@@ -56,12 +56,12 @@ const TextField: FC<TextFieldProps> = ({
     />
     <label
       htmlFor={id}
-      className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
+      className="absolute -top-6 left-2.5 text-xs text-stone-600 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base  peer-placeholder-shown:text-stone-500 peer-focus:-top-6 peer-focus:text-xs peer-focus:text-stone-900 contrast-more:peer-placeholder-shown:text-stone-800"
     >
       <span
         className={
           required
-            ? "before:content-['*'] before:text-red-500 block font-medium"
+            ? "block font-medium before:text-red-500 before:content-['*']"
             : "block font-medium"
         }
       >
@@ -84,9 +84,9 @@ export default function ContactHtml() {
     { id: "aos", label: "AOS BOX" },
   ];
   return (
-    <div className="mx-auto prose prose-stone p-8 lg:p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
+    <div className="prose prose-stone mx-auto max-w-screen-md p-8 prose-h2:text-center prose-h2:text-2xl lg:p-12">
       <h2 className="mb-2">お問い合わせフォーム</h2>
-      <span className="text-center text-kronos font-bold block text-lg pb-4 font-outfit">
+      <span className="block pb-4 text-center font-outfit text-lg font-bold text-kronos">
         CONTACT
       </span>
       <p className="sm:px-8">
@@ -96,10 +96,10 @@ export default function ContactHtml() {
         action="https://kronoz.co.jp/dx-support/mail.php"
         method="post"
         encType="multipart/form-data"
-        className="mx-auto mt-8 p-4 md:p-6 bg-white/80 rounded-lg"
+        className="mx-auto mt-8 rounded-lg bg-white/80 p-4 md:p-6"
       >
-        <div className="flex flex-col my-4">
-          <p className="mt-0 before:content-['*'] before:text-red-500 block font-medium text-sm">
+        <div className="my-4 flex flex-col">
+          <p className="mt-0 block text-sm font-medium before:text-red-500 before:content-['*']">
             お問い合わせ製品を選択してください。
           </p>
           <div className="flex flex-wrap">
@@ -114,7 +114,7 @@ export default function ContactHtml() {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
+        <div className="my-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <TextField
             id="name"
             placeholder="クロノス　太郎"
@@ -132,7 +132,7 @@ export default function ContactHtml() {
             name="会社名"
           />
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 my-4">
+        <div className="my-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <TextField
             id="email"
             placeholder="email@example.com"
@@ -153,7 +153,7 @@ export default function ContactHtml() {
         <div className="grid grid-cols-1 gap-4">
           <div className="relative mt-3">
             <textarea
-              className="peer border w-full rounded-lg border-stone-200 p-3 focus:ring-4 ring-primary-light focus:outline-none placeholder-transparent"
+              className="peer w-full rounded-lg border border-stone-200 p-3 placeholder-transparent ring-primary-light focus:outline-none focus:ring-4"
               placeholder="お問い合わせ内容"
               rows={8}
               id="message"
@@ -161,22 +161,22 @@ export default function ContactHtml() {
             ></textarea>
             <label
               htmlFor="message"
-              className="absolute left-2.5 -top-6 text-stone-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-stone-500 contrast-more:peer-placeholder-shown:text-stone-800  peer-placeholder-shown:top-4 peer-focus:-top-6 peer-focus:text-stone-900 peer-focus:text-xs text-xs"
+              className="absolute -top-6 left-2.5 text-xs text-stone-600 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base  peer-placeholder-shown:text-stone-500 peer-focus:-top-6 peer-focus:text-xs peer-focus:text-stone-900 contrast-more:peer-placeholder-shown:text-stone-800"
             >
               お問い合わせ内容
             </label>
           </div>
         </div>
         <div className="mt-0">
-          <label className="flex items-center flex-wrap sm:justify-between sm:flex-row justify-center flex-col">
+          <label className="flex flex-col flex-wrap items-center justify-center sm:flex-row sm:justify-between">
             <div className="w-fit">
               <input
                 type="checkbox"
-                className="peer form-checkbox cursor-pointer accent-kronos-light"
+                className="form-checkbox peer cursor-pointer accent-kronos-light"
                 name="個人情報の取り扱いに同意"
                 onChange={handleCheckboxChange}
               />
-              <span className="text-sm inline-block ms-2">
+              <span className="ms-2 inline-block text-sm">
                 <a href="https://kronoz.co.jp/privacy-policy/" target="_blank">
                   個人情報の取り扱い
                 </a>

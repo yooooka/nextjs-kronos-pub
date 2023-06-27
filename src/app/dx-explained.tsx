@@ -18,7 +18,7 @@ const titleVariants: Variants = {
 
 export default function DxExplained() {
   return (
-    <div className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 prose prose-stone prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-bold prose-li:mt-0 max-w-screen-md m-auto p-12">
+    <div className="prose prose-stone m-auto max-w-screen-md bg-gradient-to-b from-kronos-50 to-kronos-50/0 p-12 prose-h2:text-center prose-h2:text-2xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-bold prose-li:mt-0 sm:prose-h2:text-3xl">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -32,14 +32,14 @@ export default function DxExplained() {
         />
       </motion.div>
       <h2 className="sr-only">DXによる</h2>
-      <h2 className="pb-2 m-auto w-fit">
+      <h2 className="m-auto w-fit pb-2">
         「効率化」
-        <span className="text-kronos text-3xl lg:text-4xl align-middle font-normal">
+        <span className="align-middle text-3xl font-normal text-kronos lg:text-4xl">
           ×
         </span>
         「継続化」で効果を最大化
       </h2>
-      <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+      <span className="block pb-4 text-center font-outfit text-lg font-semibold text-kronos">
         WHAT IS DX?
       </span>
       <div className="sm:prose-p:px-8">

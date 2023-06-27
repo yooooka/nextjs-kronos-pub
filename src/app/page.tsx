@@ -19,7 +19,7 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <div
         id="anchor"
-        className="text-stone-900 snap-y snap-mandatory h-screen overflow-y-scroll font-mplus"
+        className="h-screen snap-y snap-mandatory overflow-y-scroll font-mplus text-stone-900"
       >
         <header>
           <h1 className="sr-only">話題のDX導入って、 何から始めればいいの？</h1>
@@ -27,7 +27,7 @@ export default function Home() {
         </header>
         <div
           id="split-top"
-          className="h-screen lg:flex lg:flex-row relative overflow-auto snap-start sm:snap-always"
+          className="relative h-screen snap-start overflow-auto sm:snap-always lg:flex lg:flex-row"
           style={{
             backgroundImage: `url(${bgWhite.src})`,
             backgroundPosition: "center",
@@ -35,24 +35,24 @@ export default function Home() {
         >
           <LeftSide />
           <main
-            className="lg:flex-[0_0_50%] lg:w-[50%]" //右側コンテンツ
+            className="lg:w-[50%] lg:flex-[0_0_50%]" //右側コンテンツ
           >
             <div className="flex flex-col items-end justify-end lg:h-full">
               <Image
                 alt="メイン画像"
                 src={hero}
-                className="lg:w-full lg:h-[100vh] h-[58vh] m-auto lg:pt-8 flex-auto"
+                className="m-auto h-[58vh] flex-auto lg:h-[100vh] lg:w-full lg:pt-8"
               />
             </div>
             <section
               id="dx-explained"
-              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
+              className="relative bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
               <DxExplained />
             </section>
             <section
               id="steps"
-              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
+              className="relative bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
               <Steps />
             </section>
@@ -64,7 +64,7 @@ export default function Home() {
             </section>
             <section // 導入事例、準備中
               id="cases"
-              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
+              className="relative bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             ></section>
             <section
               id="faq"
@@ -78,10 +78,10 @@ export default function Home() {
             >
               <ContactHtml />
             </section>
-            <footer className="px-12 pb-12 w-full text-center prose prose-stone max-w-none">
+            <footer className="prose prose-stone w-full max-w-none px-12 pb-12 text-center">
               <a
                 href={isSmallScreen ? "#page-top" : "#dx-explained"}
-                className="mb-3 mx-auto inline-block"
+                className="mx-auto mb-3 inline-block"
               >
                 ↑ ページトップへ
               </a>
