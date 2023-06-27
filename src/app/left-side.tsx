@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Drawer from "./drawer";
 import Menu from "./menu";

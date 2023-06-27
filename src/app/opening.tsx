@@ -24,7 +24,7 @@ export default function Opening() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false);
+      setIsVisible(true);
     }, 5200); // 1 second duration * 6 repeats = 6 seconds
 
     return () => clearTimeout(timer);
@@ -71,7 +71,7 @@ export default function Opening() {
                 >
                   <Image alt="wadai" src={title00} className="mx-auto" />
                 </motion.div>
-                <h1 className="px-6 pb-8 lg:typewriter">
+                <h1 className="px-6 lg:typewriter">
                   DX導入って、 何から始めればいいの？
                 </h1>
                 <motion.div
@@ -86,7 +86,7 @@ export default function Opening() {
                   }}
                   viewport={{ once: true, amount: 0 }}
                   variants={titleVariants}
-                  className=" absolute bottom-1/4"
+                  className="absolute bottom-[24vh]"
                 >
                   <a href="#split-top" className="group no-underline">
                     <div className="text-kronos-50 -rotate-90">Scroll</div>
