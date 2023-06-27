@@ -4,8 +4,7 @@ import Drawer from "./drawer";
 import Menu from "./menu";
 import kronos from "./assets/kronos.svg";
 import yorisoi from "./assets/yorisoi.svg";
-import Cta from "./cta-contact";
-import Testing from "./testing";
+import Cta from "./cta";
 
 const LeftSide: React.FC = () => {
   return (
@@ -36,7 +35,7 @@ const LeftSide: React.FC = () => {
           <Menu />
         </div>
       </div>
-      <Testing />
+      <Cta />
     </aside>
   );
 };
