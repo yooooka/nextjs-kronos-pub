@@ -5,6 +5,7 @@ import Menu from "./menu";
 import kronos from "./assets/kronos.svg";
 import yorisoi from "./assets/yorisoi.svg";
 import Cta from "./cta-contact";
+import Testing from "./testing";
 
 const LeftSide: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const LeftSide: React.FC = () => {
           <Menu />
         </div>
       </div>
-      <Cta />
+      <Testing />
     </aside>
   );
 };
