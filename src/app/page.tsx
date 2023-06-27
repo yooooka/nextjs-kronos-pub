@@ -9,7 +9,6 @@ import Steps from "./steps";
 import Services from "./services";
 import ContactHtml from "./contact-html";
 import DxExplained from "./dx-explained";
-import Cases from "./cases";
 import { MotionConfig } from "framer-motion";
 import LeftSide from "./left-side";
 import useWindowSize from "./useWindowSize";
@@ -35,10 +34,12 @@ export default function Home() {
           }}
         >
           <LeftSide />
-          <main className="lg:flex-[0_0_50%] lg:w-[50%]">
+          <main
+            className="lg:flex-[0_0_50%] lg:w-[50%]" //右側コンテンツ
+          >
             <div className="flex flex-col items-end justify-end lg:h-full">
               <Image
-                alt="hero image"
+                alt="メイン画像"
                 src={hero}
                 className="lg:w-full lg:h-[100vh] h-[58vh] m-auto lg:pt-8 flex-auto"
               />
@@ -71,13 +72,7 @@ export default function Home() {
               id="faq"
               className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
-              <div className="mx-auto max-w-screen-md prose prose-stone lg:p-12 p-6 prose-h2:text-center prose-h2:text-2xl">
-                <h2 className="mb-2">よくある質問</h2>
-                <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
-                  FAQ
-                </span>
-                <Faq />
-              </div>
+              <Faq />
             </section>
             <section
               id="contact"
