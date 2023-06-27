@@ -1,6 +1,4 @@
-"use client";
-
-import React, { FC, ChangeEvent, useState } from "react";
+import React, { FC, useState } from "react";
 
 // Define types for props
 type CheckboxFieldProps = {
@@ -86,7 +84,7 @@ export default function ContactHtml() {
     { id: "aos", label: "AOS BOX" },
   ];
   return (
-    <div className="mx-auto prose prose-stone p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
+    <div className="mx-auto prose prose-stone p-8 lg:p-12 max-w-screen-md prose-h2:text-center prose-h2:text-2xl">
       <h2 className="mb-2">お問い合わせフォーム</h2>
       <span className="text-center text-kronos font-bold block text-lg pb-4 font-outfit">
         CONTACT
@@ -95,7 +93,7 @@ export default function ContactHtml() {
         こちらのメールフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form
-        action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
+        action="https://kronoz.co.jp/dx-support/mail.php"
         method="post"
         encType="multipart/form-data"
         className="mx-auto mt-8 p-4 md:p-6 bg-white/80 rounded-lg"
@@ -170,7 +168,7 @@ export default function ContactHtml() {
           </div>
         </div>
         <div className="mt-0">
-          <label className="flex items-center flex-wrap justify-between">
+          <label className="flex items-center flex-wrap sm:justify-between sm:flex-row justify-center flex-col">
             <div className="w-fit">
               <input
                 type="checkbox"
@@ -178,8 +176,11 @@ export default function ContactHtml() {
                 name="個人情報の取り扱いに同意"
                 onChange={handleCheckboxChange}
               />
-              <span className="text-sm inline-block ms-2 my-2">
-                <a href="#">個人情報の取り扱い</a>について同意する
+              <span className="text-sm inline-block ms-2">
+                <a href="https://kronoz.co.jp/privacy-policy/" target="_blank">
+                  個人情報の取り扱い
+                </a>
+                について同意する
               </span>
             </div>
             <div className="my-2">

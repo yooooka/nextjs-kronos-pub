@@ -5,6 +5,7 @@ https://www.framer.com/motion/
 https://react-icons.github.io/react-icons/
 
 https://www.npmjs.com/package/react-icons
+https://www.npmjs.com/package/@next/font
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -12,14 +13,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Sharp Missing In Production
 
-Menu hover animation?
-
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
-Privacy policy link and check
 
-Kronos logo link?
+Change absolute paths
 
 ## Getting Started
 

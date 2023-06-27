@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import hero from "./assets/hero.svg";
 import bgWhite from "./assets/xd-pattern-white.png";
@@ -44,29 +44,27 @@ export default function Home() {
                 className="lg:w-full lg:h-[100vh] h-[58vh] m-auto lg:pt-8 flex-auto"
               />
             </div>
-            <div>
-              <section
-                id="dx-explained"
-                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
-              >
-                <DxExplained />
-              </section>
-              <section
-                id="steps"
-                className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
-              >
-                <Steps />
-              </section>
-            </div>
             <section
-              id="recommendations"
+              id="dx-explained"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
+            >
+              <DxExplained />
+            </section>
+            <section
+              id="steps"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
+            >
+              <Steps />
+            </section>
+            <section
+              id="services"
               className="bg-gradient-to-b from-kronos-50 to-kronos-50/0"
             >
               <Services />
             </section>
             <section // 導入事例、準備中
               id="cases"
-              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 text-stone-900 relative"
+              className="bg-gradient-to-b from-kronos-50 to-kronos-50/0 relative"
             ></section>
             <section
               id="faq"
