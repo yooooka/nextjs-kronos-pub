@@ -1,8 +1,11 @@
 "use client";
-
 import React, { FC, useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { MdArrowForward } from "react-icons/md";
+import { motion } from "framer-motion";
+const variants = {
+  open: { opacity: 1, y: 64, scale: [1, 1.2, 1.2, 1, 1] },
+  closed: { opacity: 1, y: 0 },
+};
 interface DrawerItemProps {
   href: string;
   label: string;
@@ -57,16 +60,18 @@ const Drawer: React.FC = () => {
 
   return (
     <div ref={node} className="lg:hidden">
-      <button
+      <motion.button
         onClick={toggleDrawer}
-        className="z-30 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed bottom-4 right-4 peer-checked:rotate-0 shadow-lg"
+        animate={isOpen ? "open" : "closed"}
+        variants={variants}
+        className={`z-30 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed right-4 bottom-24 shadow-lg`}
       >
         {isOpen ? (
           <FaTimes className="text-2xl" />
         ) : (
           <FaBars className="text-2xl" />
         )}
-      </button>
+      </motion.button>
       <div
         className={`fixed top-0 right-0 z-20 w-fill flex flex-col justify-end h-full transition-all duration-500 ease-in-out bg-kronos-50/40 backdrop-blur-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
