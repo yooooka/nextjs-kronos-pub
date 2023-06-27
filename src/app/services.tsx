@@ -55,7 +55,7 @@ export default function Services() {
           <h3 className="sr-only">ヘルプデスクサービス</h3>
           <Image
             src={helpDesk}
-            className="m-auto max-w-[280px]"
+            className="m-auto max-w-[240px]"
             alt="ヘルプデスクサービスロゴ"
           />
           <Image
@@ -72,7 +72,7 @@ export default function Services() {
           <h3 className="sr-only">トラスト・ログイン</h3>
           <Image
             src={gmoLogin}
-            className="m-auto max-w-[280px]"
+            className="m-auto max-w-[240px]"
             alt="GMO トラストログインロゴ"
           />
           <Image

@@ -40,7 +40,7 @@ const Cta: React.FC = () => {
           exit="offscreen"
           viewport={{ once: true, amount: 0 }}
           variants={titleVariants}
-          className={`bottom-0 z-10 mx-auto flex w-full items-center bg-kronos-50/90 px-4 py-2 text-center sm:p-4 lg:absolute lg:justify-center ${
+          className={`bottom-0 z-10 mx-auto flex w-full items-center bg-kronos-50/90 px-4 py-2 text-center lg:absolute lg:justify-center lg:text-justify ${
             isVisible ? "fixed" : ""
           }`}
         >

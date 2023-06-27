@@ -24,7 +24,7 @@ export default function Opening() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(true);
+      setIsVisible(false);
     }, 5200); // 1 second duration * 6 repeats = 6 seconds
 
     return () => clearTimeout(timer);
