@@ -25,6 +25,8 @@ Opening animation for mobile
 
 Joe's PR
 
+Modal for privacy policy?
+
 ## Getting Started
 
 First, run the development server:

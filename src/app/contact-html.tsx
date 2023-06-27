@@ -170,7 +170,7 @@ export default function ContactHtml() {
           </div>
         </div>
         <div className="mt-0">
-          <label className="flex items-center flex-wrap justify-between">
+          <label className="flex items-center flex-wrap sm:justify-between sm:flex-row justify-center flex-col">
             <div className="w-fit">
               <input
                 type="checkbox"
@@ -178,8 +178,11 @@ export default function ContactHtml() {
                 name="個人情報の取り扱いに同意"
                 onChange={handleCheckboxChange}
               />
-              <span className="text-sm inline-block ms-2 my-2">
-                <a href="#">個人情報の取り扱い</a>について同意する
+              <span className="text-sm inline-block ms-2">
+                <a href="https://kronoz.co.jp/privacy-policy/" target="_blank">
+                  個人情報の取り扱い
+                </a>
+                について同意する
               </span>
             </div>
             <div className="my-2">
