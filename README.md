@@ -21,6 +21,10 @@ Privacy policy link and check
 
 Kronos logo link?
 
+Opening animation for mobile
+
+Joe's PR
+
 ## Getting Started
 
 First, run the development server:
