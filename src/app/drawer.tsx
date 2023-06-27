@@ -16,7 +16,7 @@ const DrawerItem: FC<DrawerItemProps> = ({
 }) => (
   <li className="group flex items-center place-content-end hover:cursor-pointer">
     <a href={href} onClick={onClick}>
-      <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap">
+      <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap  group-hover:border-kronos-dark transition-all delay-150 inline-block">
         {label}
       </span>
     </a>
@@ -34,11 +34,7 @@ const Drawer: React.FC = () => {
   const drawerItems: DrawerItemProps[] = [
     { href: "#dx-explained", label: "DXとは？", onClick: toggleDrawer },
     { href: "#steps", label: "DX導入の5つのステップ", onClick: toggleDrawer },
-    {
-      href: "#services",
-      label: "5つのDXサービス",
-      onClick: toggleDrawer,
-    },
+    { href: "#services", label: "5つのDXサービス", onClick: toggleDrawer },
     { href: "#faq", label: "よくある質問", onClick: toggleDrawer },
     { href: "#page-top", label: "↑ ページトップへ", onClick: toggleDrawer },
   ];
