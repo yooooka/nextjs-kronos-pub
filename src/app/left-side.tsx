@@ -28,6 +28,10 @@ const LeftSide: React.FC = () => {
           <h2 className="m-auto w-full sm:w-11/12 text-base">
             株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い。
           </h2>
+          <h2 className="m-auto w-full sm:w-11/12 text-base">
+            ITのプロフェッショナルが
+            継続した業務効率化でビジネスを成功に導きます。
+          </h2>
           <Menu />
         </div>
       </div>
