@@ -16,7 +16,6 @@ Sharp Missing In Production
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
-Joe's PR
 
 Change absolute paths
 
