@@ -17,15 +17,15 @@ Menu hover animation?
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
-Privacy policy link and check
-
 Kronos logo link?
 
 Opening animation for mobile
 
 Joe's PR
 
-Modal for privacy policy?
+FAQ accordion motion?
+
+Change absolute paths
 
 ## Getting Started
 

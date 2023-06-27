@@ -19,7 +19,7 @@ const Menu: FC = () => {
   const menuItems: MenuItemProps[] = [
     { href: "#dx-explained", label: "DXとは？" },
     { href: "#steps", label: "DX導入の5つのステップ" },
-    { href: "#recommendations", label: "5つのDXサービス" },
+    { href: "#services", label: "5つのDXサービス" },
     { href: "#faq", label: "よくある質問" },
   ];
 

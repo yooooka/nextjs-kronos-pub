@@ -35,7 +35,7 @@ const Drawer: React.FC = () => {
     { href: "#dx-explained", label: "DXとは？", onClick: toggleDrawer },
     { href: "#steps", label: "DX導入の5つのステップ", onClick: toggleDrawer },
     {
-      href: "#recommendations",
+      href: "#services",
       label: "5つのDXサービス",
       onClick: toggleDrawer,
     },

@@ -1,6 +1,4 @@
-"use client";
-
-import React, { FC, ChangeEvent, useState } from "react";
+import React, { FC, useState } from "react";
 
 // Define types for props
 type CheckboxFieldProps = {

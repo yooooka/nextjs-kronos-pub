@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 interface FAQ {
