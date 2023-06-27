@@ -79,7 +79,7 @@ export default function ContactForm() {
       </p>
       <form
         onSubmit={handleSubmit}
-        action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
+        action="https://kronoz.co.jp/dx-support/mail.php"
         method="post"
         encType="multipart/form-data"
         className="mx-auto my-8 p-4 md:p-6 bg-white/80 rounded-lg"

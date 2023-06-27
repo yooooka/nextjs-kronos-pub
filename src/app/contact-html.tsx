@@ -93,7 +93,7 @@ export default function ContactHtml() {
         こちらのメールフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form
-        action="https://kronos-dx-support.graspstg.com/nextjs/mail.php"
+        action="https://kronoz.co.jp/dx-support/mail.php"
         method="post"
         encType="multipart/form-data"
         className="mx-auto mt-8 p-4 md:p-6 bg-white/80 rounded-lg"

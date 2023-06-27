@@ -12,18 +12,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Sharp Missing In Production
 
-Menu hover animation?
-
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
-Kronos logo link?
-
-Opening animation for mobile
-
 Joe's PR
-
-FAQ accordion motion?
 
 Change absolute paths
 
