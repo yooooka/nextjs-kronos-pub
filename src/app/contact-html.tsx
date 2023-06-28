@@ -84,7 +84,7 @@ export default function ContactHtml() {
     { id: "aos", label: "AOS BOX" },
   ];
   return (
-    <div className="prose prose-stone mx-auto max-w-screen-md p-8 px-4 prose-h2:text-center prose-h2:text-2xl lg:px-8">
+    <div className="prose prose-stone mx-auto max-w-screen-md p-8 px-4 prose-h2:text-center prose-h2:text-2xl lg:p-12">
       <h2 className="mb-2">お問い合わせフォーム</h2>
       <span className="block pb-4 text-center font-outfit text-lg font-bold text-kronos">
         CONTACT
