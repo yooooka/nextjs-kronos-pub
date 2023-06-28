@@ -12,10 +12,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Todo
 
-iPhone tap to top scroll not working
+iPhone tap to top scroll disabled
 (snap, animation, conflicts)
-
-Change absolute paths
 
 Delete robots: "noindex" when the LP launch
 

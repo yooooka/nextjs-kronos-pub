@@ -84,12 +84,12 @@ export default function ContactHtml() {
     { id: "aos", label: "AOS BOX" },
   ];
   return (
-    <div className="prose prose-stone mx-auto max-w-screen-md p-8 prose-h2:text-center prose-h2:text-2xl lg:p-12">
+    <div className="prose prose-stone mx-auto max-w-screen-md p-8 px-4 prose-h2:text-center prose-h2:text-2xl lg:px-8">
       <h2 className="mb-2">お問い合わせフォーム</h2>
       <span className="block pb-4 text-center font-outfit text-lg font-bold text-kronos">
         CONTACT
       </span>
-      <p className="mt-4 sm:px-8">
+      <p className="mt-4 px-4 sm:px-6">
         こちらのフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form
