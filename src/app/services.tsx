@@ -49,7 +49,7 @@ export default function Services() {
           DX SERVICES
         </span>
       </div>
-      <div className="mt-8 grid auto-cols-min grid-cols-1 gap-6 prose-h3:mt-0 prose-h3:text-base sm:mx-12 md:grid-cols-2 lg:grid-cols-1 lg:gap-12">
+      <div className="mt-4 grid auto-cols-min grid-cols-1 gap-6 prose-h3:mt-0 prose-h3:text-base sm:mx-12 md:grid-cols-2 lg:grid-cols-1 lg:gap-12">
         <div className="block rounded-lg bg-white p-8 pb-4 shadow-lg shadow-kronos-600/20 transition hover:bg-kronos-50">
           <h3 className="text-center">導入～運用まで伴走し続けます</h3>
           <h3 className="sr-only">ヘルプデスクサービス</h3>

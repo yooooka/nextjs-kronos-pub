@@ -78,7 +78,7 @@ export default function Home() {
             >
               <ContactHtml />
             </section>
-            <footer className="prose prose-stone w-full max-w-none px-12 pb-12 text-center">
+            <footer className="prose prose-stone w-full max-w-none px-12 pb-28 text-center lg:pb-12">
               <a
                 href={isSmallScreen ? "#page-top" : "#dx-explained"}
                 className="mx-auto mb-3 inline-block"

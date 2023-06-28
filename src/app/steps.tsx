@@ -28,7 +28,7 @@ const titleVariants: Variants = {
 
 export default function Steps() {
   return (
-    <div className="prose prose-stone m-auto max-w-screen-md bg-gradient-to-b from-kronos-50 to-kronos-50/0 p-8 font-outfit prose-h2:text-center prose-h2:text-2xl prose-h4:mt-0 prose-h4:text-xl prose-h4:font-bold prose-li:mt-0 sm:p-12 sm:prose-h2:text-3xl">
+    <div className="prose-h4:mt-0prose-h4:text-xl prose prose-stone m-auto max-w-screen-md bg-gradient-to-b from-kronos-50 to-kronos-50/0 p-8 font-outfit prose-h2:text-center prose-h2:text-2xl  prose-h3:mt-4 prose-h4:font-bold prose-li:mt-0 sm:p-12 sm:prose-h2:text-3xl">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -46,8 +46,8 @@ export default function Steps() {
       <span className="block pb-4 text-center font-outfit text-lg font-bold text-kronos">
         5 STEPS TO START
       </span>
-      <ol className="step-ol m-auto mt-8 max-w-xl pl-0 sm:space-y-12">
-        <li className="sm:arrow relative grid grid-cols-1 items-start justify-center gap-2 sm:grid-cols-2">
+      <ol className="step-ol m-auto max-w-xl pl-0 sm:space-y-12">
+        <li className="sm:arrow relative grid grid-cols-1 items-start justify-center gap-2 sm:mt-4 sm:grid-cols-2">
           <Image
             src={hearing}
             alt="ヒアリングを表す画像"

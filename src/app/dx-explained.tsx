@@ -37,12 +37,14 @@ export default function DxExplained() {
         <span className="align-middle text-3xl font-normal text-kronos lg:text-4xl">
           ×
         </span>
-        「継続化」で効果を最大化
+        「継続化」で
+        <br />
+        効果を最大化
       </h2>
       <span className="block pb-4 text-center font-outfit text-lg font-semibold text-kronos">
         WHAT IS DX?
       </span>
-      <div className="sm:prose-p:px-8">
+      <div className="prose-p:mt-4 sm:prose-p:px-8">
         <p>
           DXとは、ITを活用して業務の効率化を図ること。今までより少ない人数で、同じことができたり。同じ人数で、より大きな成果を手にすることができたり。
         </p>

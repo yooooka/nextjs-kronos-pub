@@ -89,7 +89,7 @@ export default function ContactHtml() {
       <span className="block pb-4 text-center font-outfit text-lg font-bold text-kronos">
         CONTACT
       </span>
-      <p className="sm:px-8">
+      <p className="mt-4 sm:px-8">
         こちらのフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form

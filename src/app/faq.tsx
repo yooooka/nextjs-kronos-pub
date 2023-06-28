@@ -40,7 +40,7 @@ const FAQ: React.FC = () => {
       <span className="block pb-4 text-center font-outfit text-lg font-semibold text-kronos">
         FAQ
       </span>
-      <div className="not-prose mx-auto space-y-3">
+      <div className="not-prose mx-auto my-4 space-y-3">
         {faqData.map((faq, index) => (
           <details key={index} className="group">
             <summary className="group flex cursor-pointer items-center rounded-full rounded-bl-none border-b-4 border-white bg-kronos-light px-5 py-2.5 ps-8 font-outfit transition-all duration-300 ease-out hover:bg-kronos">
