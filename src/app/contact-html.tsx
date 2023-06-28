@@ -90,7 +90,7 @@ export default function ContactHtml() {
         CONTACT
       </span>
       <p className="sm:px-8">
-        こちらのメールフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
+        こちらのフォームより、貴社からのお問い合わせを受け付けております。ご入力頂いた情報は、個人情報保護方針に基づき、適切に管理いたします。
       </p>
       <form
         action="https://kronoz.co.jp/dx-support/mail.php"
@@ -100,7 +100,7 @@ export default function ContactHtml() {
       >
         <div className="my-4 flex flex-col">
           <p className="mt-0 block text-sm font-medium before:text-red-500 before:content-['*']">
-            お問い合わせ製品を選択してください。
+            お問い合わせ製品またはサービスを選択してください。
           </p>
           <div className="flex flex-wrap">
             {products.map((product) => (

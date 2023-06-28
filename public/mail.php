@@ -73,7 +73,7 @@ $useToken = 1;
 $BccMail = "";
 
 // 管理者宛に送信されるメールのタイトル（件名）
-$subject = "【DX導入サポートLP】お問い合わせ受信のお知らせ";
+$subject = "DX導入サポートLPへお問い合わせが届きました";
 
 // 送信確認画面の表示(する=1, しない=0)
 $confirmDsp = 1;
@@ -125,18 +125,14 @@ TEXT;
 
 
 //自動返信メールに署名（フッター）を表示(する=1, しない=0)※管理者宛にも表示されます。
-$mailFooterDsp = 0;
+$mailFooterDsp = 1;
 
 //上記で「1」を選択時に表示する署名（フッター）（FOOTER～FOOTER;の間に記述してください）
 $mailSignature = <<< FOOTER
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-株式会社○○○○　佐藤太郎
-〒150-XXXX 東京都○○区○○ 　○○ビル○F　
-TEL：03- XXXX - XXXX 　FAX：03- XXXX - XXXX
-携帯：090- XXXX - XXXX 　
-E-mail:xxxx@xxxx.com
-URL: http://www.php-factory.net/
+クロノス　DX導入サポートLP
+https://kronoz.co.jp/dx-support/
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 FOOTER;

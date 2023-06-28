@@ -12,12 +12,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Todo
 
-Sharp Missing In Production
-
 iPhone tap to top scroll not working
 (snap, animation, conflicts)
 
 Change absolute paths
+
+Delete robots: "noindex" when the LP launch
 
 ## Getting Started
 
