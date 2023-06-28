@@ -22,7 +22,7 @@ const LeftSide: React.FC = () => {
         </div>
       </nav>
       <div className="mx-auto flex flex-col items-center justify-center lg:min-h-full">
-        <div className="prose prose-stone mx-auto w-9/12 max-w-none space-y-4 py-8 prose-h2:font-normal prose-h2:text-stone-700 sm:w-8/12 lg:mb-24 lg:p-3">
+        <div className="prose prose-stone mx-auto w-10/12 max-w-none space-y-4 py-8 prose-h2:font-normal prose-h2:text-stone-700 sm:w-8/12 lg:mb-24 lg:p-3">
           <Image src={yorisoi} alt="寄り添い力" className="mx-auto w-10/12" />
           <h1 className="sr-only text-4xl">寄り添い力</h1>
           <h2 className="m-auto w-full text-base sm:w-11/12">

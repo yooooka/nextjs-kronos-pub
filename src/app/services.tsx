@@ -28,7 +28,7 @@ const titleVariants: Variants = {
 
 export default function Services() {
   return (
-    <div className="prose prose-stone mx-auto max-w-screen-lg p-8 sm:px-6 lg:px-8">
+    <div className="prose prose-stone mx-auto max-w-screen-lg p-8 px-4 lg:px-8">
       <div className="mx-auto prose-h2:text-center prose-h2:text-2xl sm:prose-h2:text-3xl">
         <motion.div
           initial="offscreen"
@@ -49,8 +49,8 @@ export default function Services() {
           DX SERVICES
         </span>
       </div>
-      <div className="mt-8 grid auto-cols-min grid-cols-1 gap-12 prose-h3:mt-0 prose-h3:text-base sm:mx-12 md:grid-cols-2 lg:grid-cols-1">
-        <div className="flex flex-col rounded-lg bg-white p-8 pb-4 shadow-lg shadow-kronos-600/20 transition hover:bg-kronos-50">
+      <div className="mt-8 grid auto-cols-min grid-cols-1 gap-6 prose-h3:mt-0 prose-h3:text-base sm:mx-12 md:grid-cols-2 lg:grid-cols-1 lg:gap-12">
+        <div className="block rounded-lg bg-white p-8 pb-4 shadow-lg shadow-kronos-600/20 transition hover:bg-kronos-50">
           <h3 className="text-center">導入～運用まで伴走し続けます</h3>
           <h3 className="sr-only">ヘルプデスクサービス</h3>
           <Image
