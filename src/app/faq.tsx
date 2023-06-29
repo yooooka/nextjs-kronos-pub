@@ -35,23 +35,23 @@ const faqData: FAQ[] = [
 
 const FAQ: React.FC = () => {
   return (
-    <div className="mx-auto max-w-screen-md prose prose-stone lg:p-12 p-6 prose-h2:text-center prose-h2:text-2xl">
+    <div className="prose prose-stone mx-auto max-w-screen-md p-6 prose-h2:text-center prose-h2:text-2xl lg:p-12">
       <h2 className="mb-2">よくある質問</h2>
-      <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+      <span className="block pb-4 text-center font-outfit text-lg font-semibold text-kronos">
         FAQ
       </span>
-      <div className="not-prose mx-auto space-y-3">
+      <div className="not-prose mx-auto my-4 space-y-3">
         {faqData.map((faq, index) => (
           <details key={index} className="group">
-            <summary className="flex items-center px-5 py-2.5 border-b-4 border-white rounded-bl-none rounded-full bg-kronos-light cursor-pointer transition-all ease-out duration-300 ps-8 hover:bg-kronos font-outfit group">
-              <span className="inline-block group-hover:text-kronos-50 font-bold first-letter:text-lg first-letter:font-extrabold first-letter:pr-0.5 first-letter:text-kronos-dark first-letter:group-hover:text-white text-stone-900">
+            <summary className="group flex cursor-pointer items-center rounded-full rounded-bl-none border-b-4 border-white bg-kronos-light px-5 py-2.5 ps-8 font-outfit transition-all duration-300 ease-out hover:bg-kronos">
+              <span className="inline-block font-bold text-stone-900 first-letter:pr-0.5 first-letter:text-lg first-letter:font-extrabold first-letter:text-kronos-dark group-hover:text-kronos-50 first-letter:group-hover:text-white">
                 {index + 1 + "."} {faq.question}
               </span>
               <div className="ml-auto">
-                <MdKeyboardArrowRight className="opacity-80 transition-all group-open:rotate-90 align-middle text-3xl group-open:mt-1 text-white" />
+                <MdKeyboardArrowRight className="align-middle text-3xl text-white opacity-80 transition-all group-open:mt-1 group-open:rotate-90" />
               </div>
             </summary>
-            <div className="transition-all p-6 bg-kronos-50 rounded-tl-none rounded-2xl">
+            <div className="rounded-2xl rounded-tl-none bg-kronos-50 p-6 transition-all">
               <span className="inline-block ps-3">{faq.answer}</span>
             </div>
           </details>

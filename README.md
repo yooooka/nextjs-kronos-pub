@@ -6,18 +6,16 @@ https://react-icons.github.io/react-icons/
 
 https://www.npmjs.com/package/react-icons
 https://www.npmjs.com/package/@next/font
+https://www.npmjs.com/package/react-intersection-observer
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Todo
 
-Sharp Missing In Production
-
-iPhone tap to top scroll not working
+iPhone tap to top scroll disabled
 (snap, animation, conflicts)
 
-
-Change absolute paths
+Delete robots: "noindex" when the LP launch
 
 ## Getting Started
 

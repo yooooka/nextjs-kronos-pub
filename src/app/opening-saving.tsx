@@ -19,7 +19,7 @@ export default function Opening() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="snap-start sm:snap-always bg-kronos-400 relative transition-opacity duration-500"
+          className="relative snap-start bg-kronos-400 transition-opacity duration-500 sm:snap-always"
           initial={{ opacity: 1, y: 0 }}
           exit={{
             opacity: 0,
@@ -44,14 +44,14 @@ export default function Opening() {
               src={bg}
               alt="fpo"
               unoptimized={true}
-              className="fixed bottom"
+              className="bottom fixed"
             />
           </motion.div>
-          <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl lg:prose-h1:text-4xl lg:typewriter">
+          <section className="lg:typewriter prose prose-stone flex h-screen w-full max-w-none flex-col items-center justify-center p-12 text-center prose-h1:text-2xl lg:prose-h1:text-4xl">
             <h1 className="px-6">DX導入って、 何から始めればいいの？</h1>
             <a href="#split-top" className="group no-underline">
               <div className="text-stone-900">Scroll</div>
-              <MdOutlineSouth className="font-light animate-bounce text-3xl text-white group-hover:text-primary animation-delay-[2.5s] mx-auto" />
+              <MdOutlineSouth className="mx-auto animate-bounce text-3xl font-light text-white animation-delay-[2.5s] group-hover:text-primary" />
             </a>
           </section>
         </motion.div>
