@@ -24,7 +24,7 @@ export default function Opening() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(true);
+      setIsVisible(false);
     }, 5200); // 1 second duration * 6 repeats = 6 seconds
 
     return () => clearTimeout(timer);
@@ -45,7 +45,7 @@ export default function Opening() {
                 type: "spring",
               },
             }}
-            className="relative bg-gradient-to-r from-kronos-500 via-kronos-400 to-kronos-600 snap-start sm:snap-always background-animate w-full h-full animation-delay-[1s]"
+            className="background-animate relative h-full w-full snap-start bg-gradient-to-r from-kronos-500 via-kronos-400 to-kronos-600 animation-delay-[1s] sm:snap-always"
           >
             <motion.div
               layout
@@ -61,7 +61,7 @@ export default function Opening() {
                 backgroundPosition: "center",
               }}
             >
-              <section className="prose prose-stone flex flex-col h-screen justify-center items-center text-center w-full max-w-none p-12 prose-h1:text-2xl prose-h1:font-bold lg:prose-h1:text-4xl">
+              <section className="prose prose-stone flex h-screen w-full max-w-none flex-col items-center justify-center p-12 text-center prose-h1:text-2xl prose-h1:font-bold lg:prose-h1:text-4xl">
                 <motion.div
                   className="not-prose mb-2"
                   initial="offscreen"
@@ -71,7 +71,7 @@ export default function Opening() {
                 >
                   <Image alt="wadai" src={title00} className="mx-auto" />
                 </motion.div>
-                <h1 className="px-6 lg:typewriter">
+                <h1 className="lg:typewriter px-6">
                   DX導入って、 何から始めればいいの？
                 </h1>
                 <motion.div
@@ -89,8 +89,8 @@ export default function Opening() {
                   className="absolute bottom-[24vh]"
                 >
                   <a href="#split-top" className="group no-underline">
-                    <div className="text-kronos-50 -rotate-90">Scroll</div>
-                    <MdOutlineSouth className="mt-4 font-thing text-3xl text-kronos-50 group-hover:text-kronos-dark animation-delay-[2.5s] mx-auto animate-bounce" />
+                    <div className="-rotate-90 text-kronos-50">Scroll</div>
+                    <MdOutlineSouth className="font-thing mx-auto mt-4 animate-bounce text-3xl text-kronos-50 animation-delay-[2.5s] group-hover:text-kronos-dark" />
                   </a>
                 </motion.div>
               </section>

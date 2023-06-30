@@ -6,9 +6,9 @@ interface MenuItemProps {
 }
 
 const MenuItem: FC<MenuItemProps> = ({ href, label }) => (
-  <li className="group flex items-center place-content-end hover:cursor-pointer">
+  <li className="group flex place-content-end items-center hover:cursor-pointer">
     <a href={href}>
-      <span className="border-b-4 border-kronos-400 pb-1 group-hover:border-kronos-dark transition-all delay-150 inline-block">
+      <span className="inline-block border-b-4 border-kronos-400 pb-1 transition-all delay-150 group-hover:border-kronos-dark">
         {label}
       </span>
     </a>
@@ -24,7 +24,7 @@ const Menu: FC = () => {
   ];
 
   return (
-    <menu className="mt-8 not-prose font-bold mx-auto hidden lg:block lg:w-10/12">
+    <menu className="not-prose mx-auto mt-8 hidden font-bold lg:block lg:w-10/12">
       <ul className="not-prose list-none space-y-4 text-lg">
         {menuItems.map((item, index) => (
           <MenuItem key={index} href={item.href} label={item.label} />

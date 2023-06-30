@@ -2,9 +2,9 @@ import { m_plus_1p, outfit } from "./font";
 import "./globals.css";
 
 export const metadata = {
-  title: "DX導入ならクロノス株式会社",
+  title: "中小企業に「寄り添う」DX導入｜クロノス株式会社",
   description:
-    "株式会社クロノスは、「寄り添う」ことを大切に、中小企業のDX化をお手伝い",
+    "クロノスでは、ITを活用して中小企業のDXを推進。お客様に寄り添い、業務の効率化と効果の最大化を目指します。",
 };
 
 export default function RootLayout({

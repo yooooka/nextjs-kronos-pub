@@ -1,8 +1,11 @@
 "use client";
-
 import React, { FC, useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { MdArrowForward } from "react-icons/md";
+import { motion } from "framer-motion";
+const variants = {
+  open: { opacity: 1, y: 72 },
+  closed: { opacity: 1, y: 0 },
+};
 interface DrawerItemProps {
   href: string;
   label: string;
@@ -14,9 +17,9 @@ const DrawerItem: FC<DrawerItemProps> = ({
   label,
   onClick = () => {},
 }) => (
-  <li className="group flex items-center place-content-end hover:cursor-pointer">
+  <li className="group flex place-content-end items-center hover:cursor-pointer">
     <a href={href} onClick={onClick}>
-      <span className="border-b-4 border-kronos-light pb-1 whitespace-nowrap  group-hover:border-kronos-dark transition-all delay-150 inline-block">
+      <span className="inline-block whitespace-nowrap border-b-4 border-kronos-light  pb-1 transition-all delay-150 group-hover:border-kronos-dark">
         {label}
       </span>
     </a>
@@ -57,22 +60,24 @@ const Drawer: React.FC = () => {
 
   return (
     <div ref={node} className="lg:hidden">
-      <button
+      <motion.button
         onClick={toggleDrawer}
-        className="z-30 inline-block rounded-full bg-kronos-600 p-4 text-white hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500 fixed bottom-4 right-4 peer-checked:rotate-0 shadow-lg"
+        animate={isOpen ? "open" : "closed"}
+        variants={variants}
+        className={`fixed bottom-24 right-4 z-30 inline-block rounded-full bg-kronos-600 p-4 text-white shadow-lg hover:bg-kronos-200 hover:text-kronos-600 focus:outline-none active:text-kronos-500`}
       >
         {isOpen ? (
           <FaTimes className="text-2xl" />
         ) : (
           <FaBars className="text-2xl" />
         )}
-      </button>
+      </motion.button>
       <div
-        className={`fixed top-0 right-0 z-20 w-fill flex flex-col justify-end h-full transition-all duration-500 ease-in-out bg-kronos-50/40 backdrop-blur-lg transform ${
+        className={`w-fill fixed right-0 top-0 z-20 flex h-full transform flex-col justify-end bg-kronos-50/40 backdrop-blur-lg transition-all duration-500 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <menu className="mx-16 mb-24 not-prose font-bold">
+        <menu className="not-prose mx-16 mb-24 font-bold">
           <ul className="not-prose list-none space-y-8 text-lg">
             {drawerItems.map((item, index) => (
               <DrawerItem

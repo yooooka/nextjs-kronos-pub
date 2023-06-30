@@ -1,8 +1,8 @@
 export default function Cases() {
   return (
-    <div className="mx-auto prose prose-stone p-12 sm:py-16 max-w-screen-md prose-h2:text-center prose-h2:text-2xl isolate">
+    <div className="prose prose-stone isolate mx-auto max-w-screen-md p-12 prose-h2:text-center prose-h2:text-2xl sm:py-16">
       <h2 className="mb-2">導入事例</h2>
-      <span className="text-center text-kronos font-semibold block text-lg pb-4 font-outfit">
+      <span className="block pb-4 text-center font-outfit text-lg font-semibold text-kronos">
         CASE STUDY
       </span>
       <h3>相談内容</h3>
