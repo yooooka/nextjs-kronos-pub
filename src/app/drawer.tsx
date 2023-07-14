@@ -19,7 +19,7 @@ const DrawerItem: FC<DrawerItemProps> = ({
 }) => (
   <li className="group flex place-content-end items-center hover:cursor-pointer">
     <a href={href} onClick={onClick}>
-      <span className="inline-block whitespace-nowrap border-b-4 border-kronos-light  pb-1 transition-all delay-150 group-hover:border-kronos-dark">
+      <span className="inline-block whitespace-nowrap border-b-4 border-kronos-light pb-1 transition-all delay-150 group-hover:border-kronos-dark">
         {label}
       </span>
     </a>
