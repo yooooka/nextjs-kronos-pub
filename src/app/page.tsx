@@ -19,7 +19,7 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <div
         id="anchor"
-        className="h-screen snap-y snap-mandatory overflow-y-scroll font-mplus text-stone-900"
+        className="h-screen snap-y snap-mandatory font-mplus text-stone-900"
       >
         <header>
           <h1 className="sr-only">話題のDX導入って、 何から始めればいいの？</h1>
