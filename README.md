@@ -1,6 +1,8 @@
 # Kronos DX Support landing page
 https://kronoz.co.jp/dx-support/
 
+Deployment page<br />
+https://nextjs-kronos-pub.vercel.app/
 
 Note:
 
