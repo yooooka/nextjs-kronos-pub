@@ -38,7 +38,7 @@ export default function Steps() {
         <Image
           alt="タイトル画像"
           src={title02}
-          className="mx-auto mb-4 h-[60px] max-w-none object-contain"
+          className="mx-auto mb-4 h-[60px] w-auto max-w-none object-contain"
         />
       </motion.div>
       <h2 className="sr-only">クロノスがお手伝いする</h2>
@@ -105,7 +105,7 @@ export default function Steps() {
           <Image
             src={implement}
             alt="導入を表す画像"
-            className="col-start-1 m-auto mb-4 sm:row-span-2 sm:mb-0"
+            className="col-start-1 m-auto mb-4 w-auto sm:row-span-2 sm:mb-0"
           />
           <h3 className="-order-1 mb-0 flex items-end place-self-center self-end sm:-order-none sm:place-self-start sm:self-end">
             <Image

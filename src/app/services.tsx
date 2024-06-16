@@ -39,7 +39,7 @@ export default function Services() {
           <Image
             alt="タイトル画像"
             src={title03}
-            className="mx-auto mb-4 h-[60px] max-w-none object-contain"
+            className="mx-auto mb-4 h-[60px] w-auto max-w-none object-contain"
           />
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function Services() {
           <h3 className="sr-only">トラスト・ログイン</h3>
           <Image
             src={gmoLogin}
-            className="m-auto max-w-[240px]"
+            className="m-auto h-auto max-w-[240px]"
             alt="GMO トラストログインロゴ"
           />
           <Image
@@ -89,13 +89,13 @@ export default function Services() {
           <h3 className="sr-only">GMO サイン</h3>
           <Image
             src={gmoSign}
-            className="m-auto max-w-[280px]"
+            className="m-auto h-auto max-w-[280px]"
             alt="GMO サインロゴ"
           />
           <Image
             src={sSign}
             alt="GMO サインを表す画像"
-            className="max-width-none mx-auto"
+            className="max-width-none mx-auto h-auto w-auto"
           />
           <p className="mt-1">
             紙による書面の取り交わしを電子化し、契約業務のスピード化、ペーパーレス化、印紙税などのコスト削減を実現する、電子契約サービスです。業界トップクラスの高いセキュリティ技術により、安心安全に、効率的な契約業務を行えます。
@@ -106,7 +106,7 @@ export default function Services() {
           <h3 className="sr-only">セキュアSAMBA</h3>
           <Image
             src={samba}
-            className="m-auto max-w-[180px]"
+            className="m-auto h-auto max-w-[180px]"
             alt="セキュアSAMBAロゴ"
           />
           <Image
@@ -123,7 +123,7 @@ export default function Services() {
           <h3 className="sr-only">AOS BOX</h3>
           <Image
             src={aosbox}
-            className="m-auto max-w-[180px]"
+            className="m-auto h-auto max-w-[180px]"
             alt="AOS BOXロゴ"
           />
           <Image

@@ -69,7 +69,11 @@ export default function Opening() {
                   viewport={{ once: true, amount: 0 }}
                   variants={titleVariants}
                 >
-                  <Image alt="wadai" src={title00} className="mx-auto" />
+                  <Image
+                    alt="wadai"
+                    src={title00}
+                    className="mx-auto h-[60px] w-auto"
+                  />
                 </motion.div>
                 <h1 className="lg:typewriter px-6">
                   DX導入って、 何から始めればいいの？

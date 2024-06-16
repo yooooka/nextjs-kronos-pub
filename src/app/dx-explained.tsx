@@ -28,7 +28,7 @@ export default function DxExplained() {
         <Image
           alt="タイトル画像"
           src={title01}
-          className="mx-auto mb-4 h-[60px] max-w-none object-contain"
+          className="mx-auto mb-4 h-[60px] w-auto max-w-none object-contain"
         />
       </motion.div>
       <h2 className="sr-only">DXによる</h2>
