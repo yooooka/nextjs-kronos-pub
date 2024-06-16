@@ -6,7 +6,6 @@ const nextConfig = {
   // trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
   //   distDir: "dist",
-  assetPrefix: isProd ? "https://kronoz.co.jp/dx-support/" : undefined,
 };
 
 module.exports = nextConfig;
